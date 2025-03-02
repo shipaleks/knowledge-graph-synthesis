@@ -36,31 +36,42 @@ class AppConfig:
         return cls._instance
     
     def __init__(self):
-        """Инициализация объекта конфигурации. Загружает настройки из .env файла."""
+        """
+        Инициализирует экземпляр конфигурации.
+        
+        Загружает настройки из переменных окружения и устанавливает значения по умолчанию.
+        """
+        # Проверка инициализации
         if self._initialized:
             return
             
         # Загрузка переменных окружения из .env файла
         load_dotenv()
         
+        # Функция для очистки значений переменных окружения от комментариев
+        def clean_env_value(key, default):
+            value = os.getenv(key, default)
+            # Если значение содержит пробел или табуляцию, обрезаем по первому пробелу или табуляции
+            if " " in value or "\t" in value:
+                value = value.split(" ")[0].split("\t")[0]
+            return value
+        
         # Базовые настройки приложения
-        self.language = os.getenv("APP_LANGUAGE", "en")
-        self.max_iterations = int(os.getenv("APP_MAX_ITERATIONS", "10"))
-        self.output_dir = Path(os.getenv("APP_OUTPUT_DIR", "./output"))
+        self.language = clean_env_value("APP_LANGUAGE", "en")
+        self.max_iterations = int(clean_env_value("APP_MAX_ITERATIONS", "10"))
+        self.output_dir = Path(clean_env_value("APP_OUTPUT_DIR", "./output"))
         
         # Настройки логирования
-        self.log_level = os.getenv("LOG_LEVEL", "INFO")
-        self.log_file = os.getenv("LOG_FILE", "app.log")
+        self.log_level = clean_env_value("LOG_LEVEL", "INFO")
+        self.log_file = clean_env_value("LOG_FILE", "app.log")
         
         # Настройки производительности
-        self.cache_enabled = os.getenv("CACHE_ENABLED", "true").lower() == "true"
-        self.cache_max_size = int(os.getenv("CACHE_MAX_SIZE", "100"))
-        self.batch_size = int(os.getenv("BATCH_SIZE", "5"))
+        self.cache_enabled = clean_env_value("CACHE_ENABLED", "true").lower() == "true"
+        self.cache_max_size = int(clean_env_value("CACHE_MAX_SIZE", "100"))
+        self.batch_size = int(clean_env_value("BATCH_SIZE", "5"))
         
         # Создание выходной директории, если она не существует
-        if not self.output_dir.exists():
-            logger.info(f"Создание директории для вывода: {self.output_dir}")
-            self.output_dir.mkdir(parents=True, exist_ok=True)
+        self.output_dir.mkdir(parents=True, exist_ok=True)
         
         self._initialized = True
         logger.debug("Конфигурация приложения загружена успешно")

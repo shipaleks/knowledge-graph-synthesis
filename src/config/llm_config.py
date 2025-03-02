@@ -45,18 +45,26 @@ class LLMConfig:
         # Загрузка переменных окружения из .env файла
         load_dotenv()
         
+        # Функция для очистки значений переменных окружения от комментариев
+        def clean_env_value(key, default):
+            value = os.getenv(key, default)
+            # Если значение содержит пробел или табуляцию, обрезаем по первому пробелу или табуляции
+            if " " in value or "\t" in value:
+                value = value.split(" ")[0].split("\t")[0]
+            return value
+        
         # Основные настройки LLM
-        self.provider = os.getenv("LLM_PROVIDER", "claude")
-        self.model = os.getenv("LLM_MODEL", "claude-3-7-sonnet-latest")
-        self.max_tokens = int(os.getenv("LLM_MAX_TOKENS", "4000"))
-        self.temperature = float(os.getenv("LLM_TEMPERATURE", "0.3"))
+        self.provider = clean_env_value("LLM_PROVIDER", "claude")
+        self.model = clean_env_value("LLM_MODEL", "claude-3-7-sonnet-latest")
+        self.max_tokens = int(clean_env_value("LLM_MAX_TOKENS", "4000"))
+        self.temperature = float(clean_env_value("LLM_TEMPERATURE", "0.3"))
         
         # API ключи для разных провайдеров
         self.api_keys = {
-            "claude": os.getenv("CLAUDE_API_KEY", ""),
-            "gpt": os.getenv("GPT_API_KEY", ""),
-            "gemini": os.getenv("GEMINI_API_KEY", ""),
-            "deepseek": os.getenv("DEEPSEEK_API_KEY", "")
+            "claude": clean_env_value("CLAUDE_API_KEY", ""),
+            "gpt": clean_env_value("GPT_API_KEY", ""),
+            "gemini": clean_env_value("GEMINI_API_KEY", ""),
+            "deepseek": clean_env_value("DEEPSEEK_API_KEY", "")
             # Ollama не требует API ключа
         }
         

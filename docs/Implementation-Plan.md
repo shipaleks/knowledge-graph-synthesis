@@ -60,7 +60,7 @@ This document outlines the step-by-step implementation plan for the Knowledge Gr
 - Integrate with LLM provider
 - Create summarization prompts (EN/RU)
 - Implement caching for summaries
-- Status: TO-DO
+- Status: DONE
 
 ### Step 9: Complete Text Processing Pipeline
 - Integrate loader, segmenter, and summarizer

@@ -1,0 +1,153 @@
+{
+  "segments": [
+    {
+      "id": "ff7148bc-9c0c-4585-a7c8-cd17540753a5",
+      "text": "# Knowledge Graphs: A Comprehensive Overview",
+      "segment_type": "title",
+      "level": 0,
+      "title": null,
+      "parent_id": null,
+      "children_ids": [],
+      "metadata": {
+        "position": {
+          "start": 0,
+          "end": 45
+        }
+      }
+    },
+    {
+      "id": "70f7755b-744c-452c-aaf5-32b8bdde1640",
+      "text": "## Introduction",
+      "segment_type": "section",
+      "level": 0,
+      "title": null,
+      "parent_id": null,
+      "children_ids": [
+        "c8ae2e12-5e5a-4ad3-914b-cafac841fd8b"
+      ],
+      "metadata": {
+        "position": {
+          "start": 46,
+          "end": 62
+        }
+      },
+      "children": [
+        {
+          "id": "c8ae2e12-5e5a-4ad3-914b-cafac841fd8b",
+          "text": "Knowledge graphs represent a powerful way to organize and interconnect information, providing a structured representation of knowledge that combines the flexibility of graphs with the expressiveness of semantics. They are essential tools in modern information systems, enabling advanced data integration, reasoning, and discovery.",
+          "segment_type": "paragraph",
+          "level": 1,
+          "title": null,
+          "parent_id": "70f7755b-744c-452c-aaf5-32b8bdde1640",
+          "children_ids": [],
+          "metadata": {
+            "position": {
+              "start": 63,
+              "end": 360
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "c41f28fa-c508-4b15-93eb-e09fa02c57af",
+      "text": "## Core Components",
+      "segment_type": "section",
+      "level": 0,
+      "title": null,
+      "parent_id": null,
+      "children_ids": [
+        "d81851f0-71ec-4d59-9f9e-293ab335a3f3",
+        "7592abaa-d940-4c19-b8e0-5c70034ca371"
+      ],
+      "metadata": {
+        "position": {
+          "start": 361,
+          "end": 380
+        }
+      },
+      "children": [
+        {
+          "id": "d81851f0-71ec-4d59-9f9e-293ab335a3f3",
+          "text": "The fundamental building blocks of knowledge graphs include:",
+          "segment_type": "paragraph",
+          "level": 1,
+          "title": null,
+          "parent_id": "c41f28fa-c508-4b15-93eb-e09fa02c57af",
+          "children_ids": [],
+          "metadata": {
+            "position": {
+              "start": 381,
+              "end": 442
+            }
+          }
+        },
+        {
+          "id": "7592abaa-d940-4c19-b8e0-5c70034ca371",
+          "text": "1. **Entities** - Representing real-world objects, concepts, or events (nodes in the graph)\n2. **Relationships** - Expressing how entities are connected to each other (edges)\n3. **Attributes** - Properties that describe entities and relationships in more detail\n4. **Ontologies** - Formal specifications of conceptualizations that define entity types and relationship semantics",
+          "segment_type": "list",
+          "level": 1,
+          "title": null,
+          "parent_id": "c41f28fa-c508-4b15-93eb-e09fa02c57af",
+          "children_ids": [],
+          "metadata": {
+            "position": {
+              "start": 443,
+              "end": 771
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "da41d42c-c7c8-4c26-8877-ba8d5d8ddedd",
+      "text": "## Applications",
+      "segment_type": "section",
+      "level": 0,
+      "title": null,
+      "parent_id": null,
+      "children_ids": [
+        "ebb56a4e-87c1-4b82-b09c-33f3b94a5e8f",
+        "1212951a-6f8c-4e9a-b6e3-23f9cf2b0fe4"
+      ],
+      "metadata": {
+        "position": {
+          "start": 772,
+          "end": 788
+        }
+      },
+      "children": [
+        {
+          "id": "ebb56a4e-87c1-4b82-b09c-33f3b94a5e8f",
+          "text": "Knowledge graphs find applications across numerous domains:",
+          "segment_type": "paragraph",
+          "level": 1,
+          "title": null,
+          "parent_id": "da41d42c-c7c8-4c26-8877-ba8d5d8ddedd",
+          "children_ids": [],
+          "metadata": {
+            "position": {
+              "start": 789,
+              "end": 847
+            }
+          }
+        },
+        {
+          "id": "1212951a-6f8c-4e9a-b6e3-23f9cf2b0fe4",
+          "text": "- **Search engines** use them to understand query semantics and enhance results with structured information\n- **Recommendation systems** leverage knowledge graphs to model complex user preferences and item relationships\n- **Scientific research** employs them to integrate heterogeneous data sources and discover new connections\n- **Enterprise information systems** utilize knowledge graphs to create unified views of organizational knowledge",
+          "segment_type": "list",
+          "level": 1,
+          "title": null,
+          "parent_id": "da41d42c-c7c8-4c26-8877-ba8d5d8ddedd",
+          "children_ids": [],
+          "metadata": {
+            "position": {
+              "start": 848,
+              "end": 1259
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
