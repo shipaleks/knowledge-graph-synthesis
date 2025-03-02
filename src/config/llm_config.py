@@ -47,7 +47,7 @@ class LLMConfig:
         
         # Основные настройки LLM
         self.provider = os.getenv("LLM_PROVIDER", "claude")
-        self.model = os.getenv("LLM_MODEL", "claude-3-sonnet-20240229")
+        self.model = os.getenv("LLM_MODEL", "claude-3-7-sonnet-latest")
         self.max_tokens = int(os.getenv("LLM_MAX_TOKENS", "4000"))
         self.temperature = float(os.getenv("LLM_TEMPERATURE", "0.3"))
         
@@ -62,7 +62,7 @@ class LLMConfig:
         
         # Доступные модели для каждого провайдера
         self.available_models = {
-            "claude": ["claude-3-opus-20240229", "claude-3-sonnet-20240229", "claude-3-haiku-20240307"],
+            "claude": ["claude-3-7-sonnet-latest", "claude-3-opus-20240229", "claude-3-sonnet-20240229", "claude-3-haiku-20240307"],
             "gpt": ["gpt-4o", "gpt-4-turbo", "gpt-4", "gpt-3.5-turbo"],
             "gemini": ["gemini-1.5-pro", "gemini-1.5-flash", "gemini-1.0-pro"],
             "deepseek": ["deepseek-chat", "deepseek-coder"],
