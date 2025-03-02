@@ -143,7 +143,7 @@ def parse_segment_json(json_data: Dict[str, Any]) -> Result[List[Dict[str, Any]]
         return Result.fail(f"Failed to parse segment JSON: {str(e)}")
 
 
-def build_segment_hierarchy(segments_data: List[Dict[str, Any]]) -> Result[Segment]:
+def build_segment_hierarchy(segments_data: List[Dict[str, Any]]) -> Result[SegmentationResult]:
     """
     Build a segment hierarchy from flat segment data.
     
@@ -151,45 +151,51 @@ def build_segment_hierarchy(segments_data: List[Dict[str, Any]]) -> Result[Segme
         segments_data: List of segment dictionaries
         
     Returns:
-        Result[Segment]: Root segment or error
+        Result[SegmentationResult]: Segmentation result or error
     """
     try:
         if not segments_data:
             return Result.fail("No segments provided")
         
-        # Create root segment
-        root_data = segments_data[0].copy()
-        children_data = root_data.pop("children", [])
+        # Create segmentation result
+        result = SegmentationResult()
         
-        root_segment = Segment(
-            text=root_data["text"],
-            segment_type=root_data["segment_type"],
-            id=root_data.get("id", str(uuid.uuid4())),
-            position=root_data["position"],
-            level=0
-        )
+        # Maps original segment IDs to our segment IDs
+        id_map = {}
         
-        # Process function to recursively build the hierarchy
-        def process_children(parent_segment: Segment, children: List[Dict[str, Any]]) -> None:
+        # Process function to recursively build the segments
+        def process_segment(segment_data: Dict[str, Any], parent_id: Optional[str] = None, level: int = 0) -> str:
+            segment_id = str(uuid.uuid4())
+            id_map[segment_data.get("id", "")] = segment_id
+            
+            # Create segment
+            segment = Segment(
+                id=segment_id,
+                text=segment_data["text"],
+                segment_type=segment_data["segment_type"],
+                level=level,
+                parent_id=parent_id,
+                # Store position in metadata if it exists
+                metadata={"position": segment_data.get("position", {"start": 0, "end": 0})}
+            )
+            
+            # Add to result
+            result.add_segment(segment)
+            
+            # Process children
+            children = segment_data.get("children", [])
             for child_data in children:
-                child_children = child_data.pop("children", [])
-                
-                child_segment = Segment(
-                    text=child_data["text"],
-                    segment_type=child_data["segment_type"],
-                    id=child_data.get("id", str(uuid.uuid4())),
-                    position=child_data["position"],
-                )
-                
-                parent_segment.add_child(child_segment)
-                
-                # Process child's children
-                process_children(child_segment, child_children)
+                child_id = process_segment(child_data, segment_id, level + 1)
+                segment.add_child(child_id)
+            
+            return segment_id
         
-        # Process root's children
-        process_children(root_segment, children_data)
+        # Process all top-level segments
+        for segment_data in segments_data:
+            process_segment(segment_data)
         
-        return Result.ok(root_segment)
+        return Result.ok(result)
+        
     except Exception as e:
         logger.error(f"Failed to build segment hierarchy: {str(e)}")
         return Result.fail(f"Failed to build segment hierarchy: {str(e)}")
@@ -197,9 +203,9 @@ def build_segment_hierarchy(segments_data: List[Dict[str, Any]]) -> Result[Segme
 
 class TextSegmenter:
     """
-    Class for segmenting text into hierarchical structures.
+    Class for segmenting text into a hierarchical structure.
     
-    Provides methods for LLM-based segmentation and rule-based fallbacks.
+    Provides methods for both LLM-based and rule-based segmentation.
     """
     
     def __init__(self, config: Optional[AppConfig] = None):
@@ -211,6 +217,9 @@ class TextSegmenter:
         """
         self.config = config or AppConfig()
         self.llm_provider = None
+        self.save_segments = True
+        self.output_dir = Path("./output")
+        self.output_dir.mkdir(exist_ok=True)
     
     def segment_text(self, 
                      text_data: Union[str, Dict[str, Any]], 
@@ -273,10 +282,10 @@ class TextSegmenter:
                 return Result.fail(f"Failed to initialize LLM provider: {provider_result.error}")
             self.llm_provider = provider_result.value
         
-        # Get appropriate prompt for language
+        # Get appropriate prompt template
         prompt_template = SEGMENTATION_PROMPTS.get(language, SEGMENTATION_PROMPTS["en"])
         
-        # For very long texts, we would need chunking, but for simplicity, we'll assume text fits in context
+        # Format prompt with text
         prompt = prompt_template.format(text=text)
         
         # Call LLM to get segmentation
@@ -286,52 +295,37 @@ class TextSegmenter:
             # Generate structured JSON response
             response = self.llm_provider.generate_json(
                 prompt=prompt,
-                json_schema=SEGMENTATION_RESPONSE_SCHEMA,
-                temperature=0.2
+                json_schema=SEGMENTATION_RESPONSE_SCHEMA
             )
             
             if not response.success:
                 logger.error(f"LLM segmentation failed: {response.error}")
-                # Fall back to rule-based segmentation
-                logger.info("Falling back to rule-based segmentation")
-                return self._segment_with_rules(text, language)
+                return Result.fail(f"Failed to segment text: {response.error}")
             
-            json_data = response.value
+            # Parse segments from JSON
+            parse_result = parse_segment_json(response.value)
+            if not parse_result.success:
+                return Result.fail(parse_result.error)
             
-            # Parse segment data
-            segments_result = parse_segment_json(json_data)
-            if not segments_result.success:
-                return Result.fail(segments_result.error)
+            segments_data = parse_result.value
             
-            segments_data = segments_result.value
+            # Build hierarchy from segments
+            hierarchy_result = build_segment_hierarchy(segments_data)
+            if not hierarchy_result.success:
+                return Result.fail(hierarchy_result.error)
             
-            # Build segment hierarchy
-            root_result = build_segment_hierarchy(segments_data)
-            if not root_result.success:
-                return Result.fail(root_result.error)
+            segmentation_result = hierarchy_result.value
             
-            root_segment = root_result.value
-            
-            # Create segmentation result
-            segmentation_result = SegmentationResult(
-                root=root_segment,
-                metadata={
-                    "method": "llm",
-                    "language": language,
-                    "text_length": len(text),
-                    "provider": self.llm_provider.provider_name,
-                    "model": self.llm_provider.model_name
-                }
-            )
+            # Save segments to file if enabled
+            if self.save_segments:
+                self._save_segments_to_file(segmentation_result)
             
             logger.info(f"Segmentation complete: {len(segmentation_result.segments)} segments created")
             return Result.ok(segmentation_result)
             
         except Exception as e:
             logger.error(f"Error during LLM segmentation: {str(e)}")
-            # Fall back to rule-based segmentation
-            logger.info("Falling back to rule-based segmentation due to error")
-            return self._segment_with_rules(text, language)
+            return Result.fail(f"Failed to segment text: {str(e)}")
     
     def _segment_with_rules(self, text: str, language: str) -> Result[SegmentationResult]:
         """
@@ -439,6 +433,30 @@ class TextSegmenter:
         except Exception as e:
             logger.error(f"Error during rule-based segmentation: {str(e)}")
             return Result.fail(f"Failed to segment text with rules: {str(e)}")
+
+    def _save_segments_to_file(self, segmentation_result: SegmentationResult) -> None:
+        """
+        Save segmentation result to a JSON file.
+        
+        Args:
+            segmentation_result: Segmentation result to save
+        """
+        try:
+            # Ensure output directory exists
+            self.output_dir.mkdir(parents=True, exist_ok=True)
+            
+            # Generate JSON from segmentation result
+            segments_json = segmentation_result.to_json(pretty=True)
+            
+            # Save to file
+            output_file = self.output_dir / "segments.json"
+            with open(output_file, "w", encoding="utf-8") as f:
+                f.write(segments_json)
+            
+            logger.debug(f"Saved segments to {output_file} ({len(segments_json)} chars)")
+            
+        except Exception as e:
+            logger.warning(f"Failed to save segments to file: {str(e)}")
 
 
 def segment_text(text_data: Union[str, Dict[str, Any]], 

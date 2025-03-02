@@ -1,0 +1,22 @@
+{
+  "summary": "This list outlines five advanced knowledge graph technologies and applications that represent cutting-edge developments in the field, including neural-symbolic approaches, temporal and multimodal knowledge graphs, federated knowledge graphs, and explainable AI.",
+  "key_points": [
+    "Neural-symbolic approaches integrate knowledge graphs with deep learning for enhanced capabilities",
+    "Temporal knowledge graphs capture how information changes over time",
+    "Multimodal and federated knowledge graphs expand beyond text and distribute knowledge across sources",
+    "Knowledge graphs are being used to provide transparency in AI reasoning",
+    "These technologies represent emerging trends in knowledge representation and AI"
+  ],
+  "role": "enumeration",
+  "keywords": [
+    "neural-symbolic",
+    "temporal knowledge graphs",
+    "multimodal",
+    "federated",
+    "explainable AI"
+  ],
+  "segment_id": "a40a6f1a-ad5a-4972-a3ce-59063ed10f42",
+  "segment_type": "list",
+  "language": "en",
+  "timestamp": 1740956941.609515
+}

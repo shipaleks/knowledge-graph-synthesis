@@ -1,0 +1,21 @@
+{
+  "summary": "Knowledge graphs are versatile tools used across various domains to organize, connect, and leverage information in meaningful ways.",
+  "key_points": [
+    "Search engines use knowledge graphs to understand query semantics and provide structured information in results",
+    "Recommendation systems model complex user preferences and item relationships through knowledge graphs",
+    "Scientific research integrates heterogeneous data sources and discovers new connections using knowledge graphs",
+    "Enterprise information systems create unified views of organizational knowledge with knowledge graphs"
+  ],
+  "role": "examples",
+  "keywords": [
+    "knowledge graphs",
+    "search engines",
+    "recommendation systems",
+    "data integration",
+    "information systems"
+  ],
+  "segment_id": "26a848e9-5879-4433-91a0-d8140361715b",
+  "segment_type": "list",
+  "language": "en",
+  "timestamp": 1740956907.346997
+}

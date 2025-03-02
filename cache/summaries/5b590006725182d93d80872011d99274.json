@@ -1,0 +1,21 @@
+{
+  "summary": "This list outlines the four fundamental components of a knowledge graph structure: entities, relationships, attributes, and ontologies.",
+  "key_points": [
+    "Entities function as nodes in the graph, representing real-world objects, concepts, or events",
+    "Relationships serve as edges that connect entities and show how they relate to each other",
+    "Attributes provide detailed properties that describe both entities and relationships",
+    "Ontologies establish formal specifications that define entity types and relationship semantics"
+  ],
+  "role": "definition list",
+  "keywords": [
+    "knowledge graph",
+    "entities",
+    "relationships",
+    "ontologies",
+    "graph structure"
+  ],
+  "segment_id": "fdcc1c54-2e71-47ed-8586-03763b5a7b96",
+  "segment_type": "list",
+  "language": "en",
+  "timestamp": 1740956898.634933
+}

@@ -7,115 +7,22 @@
     "parent_id": null,
     "position": {
       "start": 0,
-      "end": 135
+      "end": 157
     },
     "metadata": {},
     "children": [
       {
         "id": "1.1",
-        "text": "## Key Components The main components of knowledge graphs include: 1. Entities (nodes): Representing concepts, objects, or things. 2. Relationships (edges): Connecting entities and showing how they relate. 3. Attributes: Properties that describe entities.",
-        "segment_type": "subsection",
+        "text": "Knowledge graphs represent a powerful way to organize information. They consist of entities, relationships, and attributes.",
+        "segment_type": "paragraph",
         "level": 1,
         "parent_id": "1",
         "position": {
-          "start": 137,
-          "end": 349
+          "start": 33,
+          "end": 157
         },
         "metadata": {},
-        "children": [
-          {
-            "id": "1.1.1",
-            "text": "1. Entities (nodes): Representing concepts, objects, or things.",
-            "segment_type": "block",
-            "level": 2,
-            "parent_id": "1.1",
-            "position": {
-              "start": 200,
-              "end": 254
-            },
-            "metadata": {},
-            "children": []
-          },
-          {
-            "id": "1.1.2",
-            "text": "2. Relationships (edges): Connecting entities and showing how they relate.",
-            "segment_type": "block",
-            "level": 2,
-            "parent_id": "1.1",
-            "position": {
-              "start": 256,
-              "end": 318
-            },
-            "metadata": {},
-            "children": []
-          },
-          {
-            "id": "1.1.3",
-            "text": "3. Attributes: Properties that describe entities.",
-            "segment_type": "block",
-            "level": 2,
-            "parent_id": "1.1",
-            "position": {
-              "start": 320,
-              "end": 361
-            },
-            "metadata": {},
-            "children": []
-          }
-        ]
-      },
-      {
-        "id": "1.2",
-        "text": "## Applications Knowledge graphs are used in various domains: * Search engines for semantic understanding * Recommendation systems for personalization * Scientific research for data integration",
-        "segment_type": "subsection",
-        "level": 1,
-        "parent_id": "1",
-        "position": {
-          "start": 351,
-          "end": 524
-        },
-        "metadata": {},
-        "children": [
-          {
-            "id": "1.2.1",
-            "text": "* Search engines for semantic understanding",
-            "segment_type": "paragraph",
-            "level": 2,
-            "parent_id": "1.2",
-            "position": {
-              "start": 425,
-              "end": 467
-            },
-            "metadata": {},
-            "children": []
-          },
-          {
-            "id": "1.2.2",
-            "text": "* Recommendation systems for personalization",
-            "segment_type": "paragraph",
-            "level": 2,
-            "parent_id": "1.2",
-            "position": {
-              "start": 469,
-              "end": 511
-            },
-            "metadata": {},
-            "children": []
-          },
-          {
-            "id": "1.2.3",
-            "text": "* Scientific research for data integration",
-            "segment_type": "paragraph",
-            "level": 2,
-            "parent_id": "1.2",
-            "position": {
-              "start": 513,
-              "end": 552
-            },
-            "metadata": {},
-            "children": []
-          }
-        ]
+        "children": []
       }
     ]
   },
@@ -124,7 +31,7 @@
     "language": "en",
     "text_length": 608,
     "provider": "claude",
-    "model": "claude-3-sonnet-20240229"
+    "model": "claude-3-7-sonnet-latest"
   },
-  "segment_count": 9
+  "segment_count": 2
 }

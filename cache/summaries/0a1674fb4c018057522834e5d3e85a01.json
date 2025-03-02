@@ -1,0 +1,22 @@
+{
+  "summary": "Knowledge graphs are structured representations that combine graph flexibility with semantic expressiveness, serving as essential tools in modern information systems for data integration, reasoning, and discovery.",
+  "key_points": [
+    "Knowledge graphs organize and interconnect information in a structured way",
+    "They combine the flexibility of graphs with semantic expressiveness",
+    "They enable advanced data integration across information systems",
+    "Knowledge graphs facilitate reasoning and discovery processes",
+    "They are considered essential tools in modern information management"
+  ],
+  "role": "introduction",
+  "keywords": [
+    "knowledge graphs",
+    "structured representation",
+    "data integration",
+    "semantic expressiveness",
+    "information systems"
+  ],
+  "segment_id": "test-segment-1",
+  "segment_type": "section",
+  "language": "ru",
+  "timestamp": 1740956537.1673658
+}

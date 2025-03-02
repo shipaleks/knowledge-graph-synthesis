@@ -1,0 +1,22 @@
+{
+  "summary": "This list outlines five primary methods for knowledge base construction, ranging from human-driven approaches like manual curation and crowd-sourcing to automated techniques including information extraction and machine learning.",
+  "key_points": [
+    "Knowledge bases can be built through expert manual curation or collaborative crowd-sourcing",
+    "Automated methods include extracting information from unstructured text and applying machine learning",
+    "Integration of existing structured data sources represents a hybrid approach",
+    "The methods range from fully human-dependent to increasingly automated approaches",
+    "Each method has different implications for accuracy, scalability, and resource requirements"
+  ],
+  "role": "enumeration",
+  "keywords": [
+    "knowledge acquisition",
+    "information extraction",
+    "manual curation",
+    "machine learning",
+    "data integration"
+  ],
+  "segment_id": "115aeebc-0451-433f-9e40-1a278a7bf710",
+  "segment_type": "list",
+  "language": "en",
+  "timestamp": 1740956918.8873758
+}

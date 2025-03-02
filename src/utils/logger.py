@@ -156,4 +156,18 @@ def configure_logging(log_level: str = None, log_file: str = None) -> None:
     # Инициализация логгера с новыми настройками
     initialize_logger()
     
-    logging.info("Логирование настроено: уровень=%s, файл=%s", _LOG_LEVEL, _LOG_FILE) 
+    logging.info("Логирование настроено: уровень=%s, файл=%s", _LOG_LEVEL, _LOG_FILE)
+
+
+def setup_logging(level: str = "INFO", log_file: str = "app.log") -> None:
+    """
+    Настраивает логирование для приложения.
+    
+    Эта функция является псевдонимом для configure_logging, 
+    с более интуитивно понятным именем для использования в тестовых скриптах.
+    
+    Args:
+        level: Уровень логирования (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+        log_file: Путь к файлу логирования
+    """
+    configure_logging(log_level=level, log_file=log_file) 
