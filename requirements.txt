@@ -1,0 +1,36 @@
+# Core dependencies
+python-dotenv==1.0.0
+networkx==3.2.1
+spacy==3.7.2
+nltk==3.8.1
+langdetect==1.0.9
+pyvis==0.3.2
+
+# LLM Providers
+anthropic==0.18.0
+openai==1.12.0
+google-generativeai==0.3.2
+ollama==0.1.5
+
+# Storage and data handling
+pydantic==2.5.2
+jsonlines==4.0.0
+
+# Frontend
+streamlit==1.30.0
+
+# Utilities
+tqdm==4.66.1
+colorlog==6.7.0
+pyyaml==6.0.1
+
+# Development dependencies
+pytest==7.4.3
+black==23.11.0
+flake8==6.1.0
+mypy==1.7.1
+
+# Install spaCy language models
+# Run after installing requirements:
+# python -m spacy download en_core_web_sm
+# python -m spacy download ru_core_news_sm
