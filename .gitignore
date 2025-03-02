@@ -67,3 +67,7 @@ temp/
 
 # But keep structure.mdc
 !.cursor/rules/structure.mdc
+
+# Project description
+full_project_description.txt
+@full_project_description.txt
