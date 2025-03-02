@@ -130,4 +130,30 @@ def set_log_level(level: str) -> None:
     for handler in root_logger.handlers:
         handler.setLevel(log_level)
     
-    logging.info("Уровень логирования изменен на %s", level.upper()) 
+    logging.info("Уровень логирования изменен на %s", level.upper())
+
+
+def configure_logging(log_level: str = None, log_file: str = None) -> None:
+    """
+    Настраивает логирование с заданными параметрами.
+    
+    Args:
+        log_level: Уровень логирования ("DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL")
+        log_file: Путь к файлу логов
+    """
+    global _LOG_LEVEL, _LOG_FILE, _INITIALIZED
+    
+    # Обновление глобальных переменных
+    if log_level:
+        _LOG_LEVEL = log_level.upper()
+    
+    if log_file:
+        _LOG_FILE = log_file
+    
+    # Сброс статуса инициализации
+    _INITIALIZED = False
+    
+    # Инициализация логгера с новыми настройками
+    initialize_logger()
+    
+    logging.info("Логирование настроено: уровень=%s, файл=%s", _LOG_LEVEL, _LOG_FILE) 

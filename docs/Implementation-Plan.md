@@ -9,35 +9,35 @@ This document outlines the step-by-step implementation plan for the Knowledge Gr
 - Set up virtual environment (Poetry or venv)
 - Initialize Git repository
 - Create basic README.md
-- Status: TO-DO
+- Status: DONE
 
 ### Step 2: Configure Development Environment
 - Create requirements.txt or pyproject.toml
 - Add core dependencies
 - Set up linting and formatting tools
 - Create .env.example file for environment variables
-- Status: TO-DO
+- Status: DONE
 
 ### Step 3: Implement Basic Configuration
 - Create config module
 - Implement AppConfig class
 - Implement LLMConfig class
 - Add configuration loading from files and environment
-- Status: TO-DO
+- Status: DONE
 
 ### Step 4: Create Utility Components
 - Implement logging utility
 - Create Result wrapper for error handling
 - Implement language detection utility
 - Add text processing helper functions
-- Status: TO-DO
+- Status: DONE
 
 ### Step 5: Create LLM Provider Interface
 - Define LLMProvider abstract base class
 - Implement provider factory function
 - Create first provider implementation (Claude)
 - Add basic testing for provider
-- Status: TO-DO
+- Status: DONE
 
 ## Phase 2: Core Text Processing
 
@@ -46,7 +46,7 @@ This document outlines the step-by-step implementation plan for the Knowledge Gr
 - Support plain text input
 - Add language detection
 - Implement basic text normalization
-- Status: TO-DO
+- Status: DONE
 
 ### Step 7: Implement Text Segmentation
 - Create text segmentation module

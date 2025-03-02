@@ -4,7 +4,7 @@
 Содержит вспомогательные функции и классы, используемые во всем приложении.
 """
 
-from .logger import get_logger, set_log_level, initialize_logger
+from .logger import get_logger, set_log_level, initialize_logger, configure_logging
 from .result import Result, collect_results
 from .language import (
     detect_language, get_language_name, is_supported_language,
@@ -19,7 +19,7 @@ from .timer import Timer, timed
 
 __all__ = [
     # Логирование
-    'get_logger', 'set_log_level', 'initialize_logger',
+    'get_logger', 'set_log_level', 'initialize_logger', 'configure_logging',
     
     # Обработка результатов
     'Result', 'collect_results',
