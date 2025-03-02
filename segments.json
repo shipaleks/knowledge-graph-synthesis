@@ -7,19 +7,19 @@
     "parent_id": null,
     "position": {
       "start": 0,
-      "end": 137
+      "end": 135
     },
     "metadata": {},
     "children": [
       {
         "id": "1.1",
-        "text": "## Key Components The main components of knowledge graphs include:",
+        "text": "## Key Components The main components of knowledge graphs include: 1. Entities (nodes): Representing concepts, objects, or things. 2. Relationships (edges): Connecting entities and showing how they relate. 3. Attributes: Properties that describe entities.",
         "segment_type": "subsection",
         "level": 1,
         "parent_id": "1",
         "position": {
-          "start": 138,
-          "end": 198
+          "start": 137,
+          "end": 349
         },
         "metadata": {},
         "children": [
@@ -30,8 +30,8 @@
             "level": 2,
             "parent_id": "1.1",
             "position": {
-              "start": 199,
-              "end": 259
+              "start": 200,
+              "end": 254
             },
             "metadata": {},
             "children": []
@@ -43,8 +43,8 @@
             "level": 2,
             "parent_id": "1.1",
             "position": {
-              "start": 260,
-              "end": 328
+              "start": 256,
+              "end": 318
             },
             "metadata": {},
             "children": []
@@ -56,8 +56,8 @@
             "level": 2,
             "parent_id": "1.1",
             "position": {
-              "start": 329,
-              "end": 375
+              "start": 320,
+              "end": 361
             },
             "metadata": {},
             "children": []
@@ -66,25 +66,25 @@
       },
       {
         "id": "1.2",
-        "text": "## Applications Knowledge graphs are used in various domains:",
+        "text": "## Applications Knowledge graphs are used in various domains: * Search engines for semantic understanding * Recommendation systems for personalization * Scientific research for data integration",
         "segment_type": "subsection",
         "level": 1,
         "parent_id": "1",
         "position": {
-          "start": 376,
-          "end": 434
+          "start": 351,
+          "end": 524
         },
         "metadata": {},
         "children": [
           {
             "id": "1.2.1",
             "text": "* Search engines for semantic understanding",
-            "segment_type": "block",
+            "segment_type": "paragraph",
             "level": 2,
             "parent_id": "1.2",
             "position": {
-              "start": 435,
-              "end": 477
+              "start": 425,
+              "end": 467
             },
             "metadata": {},
             "children": []
@@ -92,12 +92,12 @@
           {
             "id": "1.2.2",
             "text": "* Recommendation systems for personalization",
-            "segment_type": "block",
+            "segment_type": "paragraph",
             "level": 2,
             "parent_id": "1.2",
             "position": {
-              "start": 478,
-              "end": 522
+              "start": 469,
+              "end": 511
             },
             "metadata": {},
             "children": []
@@ -105,12 +105,12 @@
           {
             "id": "1.2.3",
             "text": "* Scientific research for data integration",
-            "segment_type": "block",
+            "segment_type": "paragraph",
             "level": 2,
             "parent_id": "1.2",
             "position": {
-              "start": 523,
-              "end": 565
+              "start": 513,
+              "end": 552
             },
             "metadata": {},
             "children": []

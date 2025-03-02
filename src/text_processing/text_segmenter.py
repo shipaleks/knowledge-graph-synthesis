@@ -262,11 +262,13 @@ class TextSegmenter:
         """
         # Initialize LLM provider if needed
         if not self.llm_provider:
-            # Get LLM provider from config
-            llm_provider = self.config.get("LLM_PROVIDER", "claude")
-            llm_model = self.config.get("LLM_MODEL", "claude-3-sonnet-20240229")
+            # Get LLM provider from LLMConfig
+            from src.config.llm_config import LLMConfig
+            llm_config = LLMConfig()
+            provider_name = llm_config.provider
+            model_name = llm_config.model
             
-            provider_result = get_provider(llm_provider, llm_model)
+            provider_result = get_provider(provider_name, model_name)
             if not provider_result.success:
                 return Result.fail(f"Failed to initialize LLM provider: {provider_result.error}")
             self.llm_provider = provider_result.value

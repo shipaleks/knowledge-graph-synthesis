@@ -29,7 +29,7 @@ def test_text_generation(provider_name, model_name=None):
     # Get provider instance
     provider_result = get_provider(provider_name, model_name)
     
-    if provider_result.is_error:
+    if not provider_result.success:
         print(f"Error: {provider_result.error}")
         return
         
@@ -38,7 +38,7 @@ def test_text_generation(provider_name, model_name=None):
     # Initialize provider
     init_result = provider.initialize()
     
-    if init_result.is_error:
+    if not init_result.success:
         print(f"Error initializing provider: {init_result.error}")
         return
         
@@ -57,7 +57,7 @@ def test_text_generation(provider_name, model_name=None):
         max_tokens=1024
     )
     
-    if result.is_error:
+    if not result.success:
         print(f"Error generating text: {result.error}")
         return
         
@@ -69,7 +69,7 @@ def test_text_generation(provider_name, model_name=None):
     # Test token counting
     token_result = provider.count_tokens(prompt)
     
-    if token_result.is_error:
+    if not token_result.success:
         print(f"Error counting tokens: {token_result.error}")
     else:
         print(f"\nPrompt token count: {token_result.value}")
@@ -86,7 +86,7 @@ def test_json_generation(provider_name, model_name=None):
     # Get provider instance
     provider_result = get_provider(provider_name, model_name)
     
-    if provider_result.is_error:
+    if not provider_result.success:
         print(f"Error: {provider_result.error}")
         return
         
@@ -95,7 +95,7 @@ def test_json_generation(provider_name, model_name=None):
     # Initialize provider
     init_result = provider.initialize()
     
-    if init_result.is_error:
+    if not init_result.success:
         print(f"Error initializing provider: {init_result.error}")
         return
     
@@ -145,7 +145,7 @@ def test_json_generation(provider_name, model_name=None):
         temperature=0.7
     )
     
-    if result.is_error:
+    if not result.success:
         print(f"Error generating JSON: {result.error}")
         return
         
