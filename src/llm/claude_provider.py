@@ -69,8 +69,8 @@ class ClaudeProvider(LLMProvider):
             config = LLMConfig()
             api_key_result = config.get_api_key("claude") 
             
-            if api_key_result.is_error:
-                return Result.failure(f"Failed to get Claude API key: {api_key_result.error}")
+            if not api_key_result.success:
+                return Result.fail(f"Failed to get Claude API key: {api_key_result.error}")
             
             api_key = api_key_result.value
             
@@ -79,11 +79,11 @@ class ClaudeProvider(LLMProvider):
             self._initialized = True
             
             logger.info(f"Claude provider initialized with model: {self._model_name}")
-            return Result.success(True)
+            return Result.ok(True)
             
         except Exception as e:
             logger.error(f"Failed to initialize Claude provider: {str(e)}")
-            return Result.failure(f"Failed to initialize Claude provider: {str(e)}")
+            return Result.fail(f"Failed to initialize Claude provider: {str(e)}")
     
     @retry(
         retry=retry_if_exception_type(
@@ -118,8 +118,8 @@ class ClaudeProvider(LLMProvider):
         """
         if not self._initialized:
             init_result = self.initialize()
-            if init_result.is_error:
-                return Result.failure(f"Provider not initialized: {init_result.error}")
+            if not init_result.success:
+                return Result.fail(f"Provider not initialized: {init_result.error}")
         
         try:
             # Set default max tokens if not provided
@@ -159,23 +159,23 @@ class ClaudeProvider(LLMProvider):
             generated_text = response.content[0].text
             
             logger.debug(f"Received response from Claude API: {len(generated_text)} characters")
-            return Result.success(generated_text)
+            return Result.ok(generated_text)
             
         except anthropic.APIError as e:
             logger.error(f"Claude API error: {str(e)}")
-            return Result.failure(f"Claude API error: {str(e)}")
+            return Result.fail(f"Claude API error: {str(e)}")
             
         except anthropic.RateLimitError as e:
             logger.error(f"Claude API rate limit exceeded: {str(e)}")
-            return Result.failure(f"Rate limit exceeded: {str(e)}")
+            return Result.fail(f"Rate limit exceeded: {str(e)}")
             
         except anthropic.APIConnectionError as e:
             logger.error(f"Claude API connection error: {str(e)}")
-            return Result.failure(f"Connection error: {str(e)}")
+            return Result.fail(f"Connection error: {str(e)}")
             
         except Exception as e:
             logger.error(f"Unexpected error during Claude text generation: {str(e)}")
-            return Result.failure(f"Text generation failed: {str(e)}")
+            return Result.fail(f"Text generation failed: {str(e)}")
     
     @retry(
         retry=retry_if_exception_type(
@@ -206,8 +206,8 @@ class ClaudeProvider(LLMProvider):
         """
         if not self._initialized:
             init_result = self.initialize()
-            if init_result.is_error:
-                return Result.failure(f"Provider not initialized: {init_result.error}")
+            if not init_result.success:
+                return Result.fail(f"Provider not initialized: {init_result.error}")
         
         try:
             # Create a system prompt that includes the JSON schema if not provided
@@ -222,9 +222,6 @@ class ClaudeProvider(LLMProvider):
                 "Do not include any explanations, markdown formatting, or text outside of the JSON structure."
             )
             
-            # Set response format to JSON
-            response_format = {"type": "json_object"}
-            
             # Create message parameters
             messages = [
                 {"role": "user", "content": prompt}
@@ -237,7 +234,6 @@ class ClaudeProvider(LLMProvider):
                 "temperature": temperature,
                 "messages": messages,
                 "system": enhanced_system_prompt,
-                "response_format": response_format
             }
             
             # Make the API call
@@ -251,31 +247,31 @@ class ClaudeProvider(LLMProvider):
             try:
                 json_data = json.loads(json_text)
                 logger.debug(f"Successfully parsed JSON response: {len(json_text)} characters")
-                return Result.success(json_data)
+                return Result.ok(json_data)
                 
             except json.JSONDecodeError as e:
                 logger.error(f"Failed to parse JSON response: {str(e)}")
-                return Result.failure(f"Failed to parse JSON response: {str(e)}, Response text: {json_text[:100]}...")
+                return Result.fail(f"Failed to parse JSON response: {str(e)}, Response text: {json_text[:100]}...")
             
         except anthropic.BadRequestError as e:
             logger.error(f"Claude API bad request: {str(e)}")
-            return Result.failure(f"Bad request: {str(e)}")
+            return Result.fail(f"Bad request: {str(e)}")
             
         except anthropic.APIError as e:
             logger.error(f"Claude API error: {str(e)}")
-            return Result.failure(f"Claude API error: {str(e)}")
+            return Result.fail(f"Claude API error: {str(e)}")
             
         except anthropic.RateLimitError as e:
             logger.error(f"Claude API rate limit exceeded: {str(e)}")
-            return Result.failure(f"Rate limit exceeded: {str(e)}")
+            return Result.fail(f"Rate limit exceeded: {str(e)}")
             
         except anthropic.APIConnectionError as e:
             logger.error(f"Claude API connection error: {str(e)}")
-            return Result.failure(f"Connection error: {str(e)}")
+            return Result.fail(f"Connection error: {str(e)}")
             
         except Exception as e:
             logger.error(f"Unexpected error during Claude JSON generation: {str(e)}")
-            return Result.failure(f"JSON generation failed: {str(e)}")
+            return Result.fail(f"JSON generation failed: {str(e)}")
     
     def get_embeddings(self, texts: List[str]) -> Result[List[List[float]]]:
         """
@@ -295,7 +291,7 @@ class ClaudeProvider(LLMProvider):
         # This method will return an error until the API is available
         
         logger.warning("Claude embeddings API is not yet implemented")
-        return Result.failure("Claude embeddings API is not yet implemented or available")
+        return Result.fail("Claude embeddings API is not yet implemented or available")
     
     @retry(
         retry=retry_if_exception_type(
@@ -317,17 +313,17 @@ class ClaudeProvider(LLMProvider):
         """
         if not self._initialized:
             init_result = self.initialize()
-            if init_result.is_error:
-                return Result.failure(f"Provider not initialized: {init_result.error}")
+            if not init_result.success:
+                return Result.fail(f"Provider not initialized: {init_result.error}")
         
         try:
             # Use Anthropic's token counting method
             token_count = self._client.count_tokens(text)
-            return Result.success(token_count)
+            return Result.ok(token_count)
             
         except Exception as e:
             logger.error(f"Failed to count tokens: {str(e)}")
-            return Result.failure(f"Token counting failed: {str(e)}")
+            return Result.fail(f"Token counting failed: {str(e)}")
     
     @property
     def max_context_length(self) -> int:

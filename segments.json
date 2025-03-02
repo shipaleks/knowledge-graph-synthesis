@@ -1,0 +1,130 @@
+{
+  "root": {
+    "id": "1",
+    "text": "# Introduction to Knowledge Graphs Knowledge graphs represent a powerful way to organize information. They consist of entities, relationships, and attributes.",
+    "segment_type": "section",
+    "level": 0,
+    "parent_id": null,
+    "position": {
+      "start": 0,
+      "end": 137
+    },
+    "metadata": {},
+    "children": [
+      {
+        "id": "1.1",
+        "text": "## Key Components The main components of knowledge graphs include:",
+        "segment_type": "subsection",
+        "level": 1,
+        "parent_id": "1",
+        "position": {
+          "start": 138,
+          "end": 198
+        },
+        "metadata": {},
+        "children": [
+          {
+            "id": "1.1.1",
+            "text": "1. Entities (nodes): Representing concepts, objects, or things.",
+            "segment_type": "block",
+            "level": 2,
+            "parent_id": "1.1",
+            "position": {
+              "start": 199,
+              "end": 259
+            },
+            "metadata": {},
+            "children": []
+          },
+          {
+            "id": "1.1.2",
+            "text": "2. Relationships (edges): Connecting entities and showing how they relate.",
+            "segment_type": "block",
+            "level": 2,
+            "parent_id": "1.1",
+            "position": {
+              "start": 260,
+              "end": 328
+            },
+            "metadata": {},
+            "children": []
+          },
+          {
+            "id": "1.1.3",
+            "text": "3. Attributes: Properties that describe entities.",
+            "segment_type": "block",
+            "level": 2,
+            "parent_id": "1.1",
+            "position": {
+              "start": 329,
+              "end": 375
+            },
+            "metadata": {},
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "1.2",
+        "text": "## Applications Knowledge graphs are used in various domains:",
+        "segment_type": "subsection",
+        "level": 1,
+        "parent_id": "1",
+        "position": {
+          "start": 376,
+          "end": 434
+        },
+        "metadata": {},
+        "children": [
+          {
+            "id": "1.2.1",
+            "text": "* Search engines for semantic understanding",
+            "segment_type": "block",
+            "level": 2,
+            "parent_id": "1.2",
+            "position": {
+              "start": 435,
+              "end": 477
+            },
+            "metadata": {},
+            "children": []
+          },
+          {
+            "id": "1.2.2",
+            "text": "* Recommendation systems for personalization",
+            "segment_type": "block",
+            "level": 2,
+            "parent_id": "1.2",
+            "position": {
+              "start": 478,
+              "end": 522
+            },
+            "metadata": {},
+            "children": []
+          },
+          {
+            "id": "1.2.3",
+            "text": "* Scientific research for data integration",
+            "segment_type": "block",
+            "level": 2,
+            "parent_id": "1.2",
+            "position": {
+              "start": 523,
+              "end": 565
+            },
+            "metadata": {},
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "method": "llm",
+    "language": "en",
+    "text_length": 608,
+    "provider": "claude",
+    "model": "claude-3-sonnet-20240229"
+  },
+  "segment_count": 9
+}

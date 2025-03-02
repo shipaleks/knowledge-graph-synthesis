@@ -169,18 +169,18 @@ def get_provider(provider_name: str, model_name: Optional[str] = None) -> Result
     if not model_name:
         config = LLMConfig()
         default_provider_config = config.get_provider_config(provider_name)
-        if default_provider_config.is_error:
-            return Result.failure(f"Failed to get default provider config: {default_provider_config.error}")
+        if not default_provider_config.success:
+            return Result.fail(f"Failed to get default provider config: {default_provider_config.error}")
         model_name = default_provider_config.value.get("default_model")
     
     # Initialize the appropriate provider
     if provider_name.lower() == "claude":
         from src.llm.claude_provider import ClaudeProvider
-        return Result.success(ClaudeProvider(model_name))
+        return Result.ok(ClaudeProvider(model_name))
     
     # Add more providers as they are implemented
     # elif provider_name.lower() == "openai":
     #     from src.llm.openai_provider import OpenAIProvider
-    #     return Result.success(OpenAIProvider(model_name))
+    #     return Result.ok(OpenAIProvider(model_name))
     
-    return Result.failure(f"Unknown provider: {provider_name}") 
+    return Result.fail(f"Unknown provider: {provider_name}") 

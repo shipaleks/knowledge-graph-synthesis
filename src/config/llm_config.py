@@ -97,7 +97,7 @@ class LLMConfig:
             "temperature": self.temperature
         }
     
-    def get_api_key(self, provider: Optional[str] = None) -> str:
+    def get_api_key(self, provider: Optional[str] = None) -> 'Result[str]':
         """
         Получение API ключа для указанного провайдера.
         
@@ -106,10 +106,22 @@ class LLMConfig:
                 Если не указано, используется текущий провайдер.
             
         Returns:
-            str: API ключ или пустая строка, если ключ не найден
+            Result[str]: API ключ или ошибка, если ключ не найден
         """
+        from src.utils.result import Result
+        
         provider = provider or self.provider
-        return self.api_keys.get(provider, "")
+        
+        # Ollama не требует API ключа
+        if provider == "ollama":
+            return Result.ok("")
+        
+        api_key = self.api_keys.get(provider, "")
+        
+        if not api_key:
+            return Result.fail(f"API ключ для провайдера {provider} не найден")
+        
+        return Result.ok(api_key)
     
     def get_models(self, provider: Optional[str] = None) -> List[str]:
         """
@@ -184,8 +196,34 @@ class LLMConfig:
         if provider == "ollama":
             return True
         
-        api_key = self.get_api_key(provider)
-        return bool(api_key)
+        api_key_result = self.get_api_key(provider)
+        return api_key_result.success
+    
+    def get_provider_config(self, provider: str) -> 'Result[Dict[str, Any]]':
+        """
+        Получение конфигурации для указанного провайдера.
+        
+        Args:
+            provider (str): Название провайдера
+            
+        Returns:
+            Result[Dict[str, Any]]: Конфигурация провайдера или ошибка
+        """
+        from src.utils.result import Result
+        
+        if provider not in self.SUPPORTED_PROVIDERS:
+            return Result.fail(f"Неподдерживаемый провайдер: {provider}")
+        
+        # Формируем конфигурацию провайдера
+        config = {
+            "provider": provider,
+            "default_model": self.available_models[provider][0] if provider in self.available_models else None,
+            "available_models": self.available_models.get(provider, []),
+            "api_key": self.api_keys.get(provider, ""),
+            "api_key_available": self.validate_api_key(provider)
+        }
+        
+        return Result.ok(config)
     
     @staticmethod
     def get_instance() -> 'LLMConfig':

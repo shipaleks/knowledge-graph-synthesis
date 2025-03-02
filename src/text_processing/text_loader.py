@@ -241,14 +241,27 @@ def load_text(source: Union[str, Path],
     """
     loader = TextLoader(config)
     
-    # If source is a string path to a file
-    if isinstance(source, (str, Path)):
-        path = Path(source)
-        if path.exists() and path.is_file():
-            return loader.load_from_file(path, encoding)
-        elif str(path).endswith(('.txt', '.md', '.csv', '.json', '.xml', '.html', '.htm')):
-            # Source looks like a file path but file doesn't exist
-            return Result.fail(f"File not found: {path}")
+    # Check if source is a file path
+    if isinstance(source, Path) or (
+        isinstance(source, str) and 
+        len(source) < 1000 and  # Not too long to be a path
+        not source.startswith('\n') and  # Not a multiline string
+        '\n' not in source[:100] and  # Not containing newlines at the beginning
+        not source.isspace()  # Not just whitespace
+    ):
+        # Try to interpret as file path
+        try:
+            path = Path(source)
+            if path.exists() and path.is_file():
+                return loader.load_from_file(path, encoding)
+                
+            # If it looks like a file path but doesn't exist
+            if isinstance(source, str) and any(source.endswith(ext) for ext in 
+                                              ('.txt', '.md', '.csv', '.json', '.xml', '.html', '.htm')):
+                return Result.fail(f"File not found: {source}")
+        except (OSError, ValueError):
+            # If we get an error trying to create path, treat as text
+            pass
     
-    # Otherwise, treat as direct text input
+    # If we get here, treat as direct text input
     return loader.load_from_text(str(source)) 
