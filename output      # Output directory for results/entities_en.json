@@ -1,90 +1,136 @@
 {
   "entities": {
-    "2085e0f0-7c5f-4f18-a6a5-b11afdce5bc5": {
-      "id": "2085e0f0-7c5f-4f18-a6a5-b11afdce5bc5",
-      "name": "Knowledge Graph",
+    "1c9040ba-9ebe-4a72-9b56-4d5ae6b3076d": {
+      "id": "1c9040ba-9ebe-4a72-9b56-4d5ae6b3076d",
+      "name": "Knowledge graphs",
       "entity_type": "Concept",
-      "context": "Knowledge Graph Construction\nKnowledge graphs represent structured information about entities and their relationships.",
+      "context": "Knowledge graphs represent structured information about entities and their relationships.",
       "attributes": {
-        "related_process": "construction",
-        "role": "main topic",
-        "purpose": "represent structured information",
+        "function": "represent structured information",
         "components": [
           "entities",
           "relationships"
+        ],
+        "role": "main topic"
+      },
+      "metadata": {
+        "extraction_time": 1740998858.222572,
+        "language": "en",
+        "domain_type": "Knowledge Graph Construction",
+        "segment_id": "d1b7ec57-5fe8-4123-b241-e5dafa049067",
+        "segment_type": "paragraph",
+        "segment_level": 0
+      },
+      "confidence": 0.95
+    },
+    "4f296f99-731e-4eb2-a30f-34e5d758fef4": {
+      "id": "4f296f99-731e-4eb2-a30f-34e5d758fef4",
+      "name": "Structured information",
+      "entity_type": "Concept",
+      "context": "Knowledge graphs represent structured information about entities and their relationships.",
+      "attributes": {
+        "about": [
+          "entities",
+          "relationships"
+        ],
+        "role": "definition"
+      },
+      "metadata": {
+        "extraction_time": 1740998858.22262,
+        "language": "en",
+        "domain_type": "Knowledge Graph Construction",
+        "segment_id": "d1b7ec57-5fe8-4123-b241-e5dafa049067",
+        "segment_type": "paragraph",
+        "segment_level": 0
+      },
+      "confidence": 0.8
+    },
+    "341ce8b9-326a-4d21-8791-a0de73da7b2c": {
+      "id": "341ce8b9-326a-4d21-8791-a0de73da7b2c",
+      "name": "Entities",
+      "entity_type": "Concept",
+      "context": "Knowledge graphs represent structured information about entities and their relationships.",
+      "attributes": {
+        "part_of": "knowledge graphs",
+        "role": "component"
+      },
+      "metadata": {
+        "extraction_time": 1740998858.222629,
+        "language": "en",
+        "domain_type": "Knowledge Graph Construction",
+        "segment_id": "d1b7ec57-5fe8-4123-b241-e5dafa049067",
+        "segment_type": "paragraph",
+        "segment_level": 0
+      },
+      "confidence": 0.85
+    },
+    "324ae386-0847-4919-928f-df1baaf0ac23": {
+      "id": "324ae386-0847-4919-928f-df1baaf0ac23",
+      "name": "Relationships",
+      "entity_type": "Concept",
+      "context": "Knowledge graphs represent structured information about entities and their relationships.",
+      "attributes": {
+        "part_of": "knowledge graphs",
+        "connect": "entities",
+        "role": "component"
+      },
+      "metadata": {
+        "extraction_time": 1740998858.222635,
+        "language": "en",
+        "domain_type": "Knowledge Graph Construction",
+        "segment_id": "d1b7ec57-5fe8-4123-b241-e5dafa049067",
+        "segment_type": "paragraph",
+        "segment_level": 0
+      },
+      "confidence": 0.85
+    },
+    "fd27e0da-bbfc-495f-9d7a-a90b98ab85a6": {
+      "id": "fd27e0da-bbfc-495f-9d7a-a90b98ab85a6",
+      "name": "Knowledge Graph",
+      "entity_type": "Concept",
+      "context": "The process of building a knowledge graph involves several key steps\ncreate a comprehensive and consistent graph",
+      "attributes": {
+        "requires": "building process",
+        "role": [
+          "main topic",
+          "output artifact"
+        ],
+        "qualities": [
+          "comprehensive",
+          "consistent"
         ]
       },
       "metadata": {
-        "extraction_time": 1740996136.346297,
+        "extraction_time": 1740998860.93137,
         "language": "en",
         "domain_type": "Knowledge Graph Construction",
-        "segment_id": "4ba311cd-ddd0-4054-8d26-836382890976",
+        "segment_id": "e8d4ea94-1be6-41ff-9fe4-cb38a65752dc",
         "segment_type": "section",
         "segment_level": 0
       },
       "confidence": 1.0
     },
-    "9cf99944-a721-487d-9ad8-5bc2bb2ead67": {
-      "id": "9cf99944-a721-487d-9ad8-5bc2bb2ead67",
+    "d7ad1383-e2e8-42f3-842d-abc350936593": {
+      "id": "d7ad1383-e2e8-42f3-842d-abc350936593",
       "name": "Knowledge Graph Construction",
       "entity_type": "Process",
-      "context": "Knowledge Graph Construction\nThe process of building a knowledge graph involves several key steps",
+      "context": "The process of building a knowledge graph involves several key steps",
       "attributes": {
-        "domain": "Knowledge Graph",
-        "role": "main topic",
-        "description": "building a knowledge graph",
-        "complexity": "involves several key steps"
+        "has_steps": true,
+        "role": "main topic"
       },
       "metadata": {
-        "extraction_time": 1740996136.346336,
+        "extraction_time": 1740998860.931412,
         "language": "en",
         "domain_type": "Knowledge Graph Construction",
-        "segment_id": "4ba311cd-ddd0-4054-8d26-836382890976",
+        "segment_id": "e8d4ea94-1be6-41ff-9fe4-cb38a65752dc",
         "segment_type": "section",
         "segment_level": 0
       },
-      "confidence": 1.0
+      "confidence": 0.9
     },
-    "aad66c63-5c07-4146-a483-525c2b77194c": {
-      "id": "aad66c63-5c07-4146-a483-525c2b77194c",
-      "name": "Entity",
-      "entity_type": "Concept",
-      "context": "Knowledge graphs represent structured information about entities and their relationships.",
-      "attributes": {
-        "function": "component of knowledge graphs",
-        "role": "definition"
-      },
-      "metadata": {
-        "extraction_time": 1740996141.0156329,
-        "language": "en",
-        "domain_type": "Knowledge Graph Construction",
-        "segment_id": "d9e7cf2c-eb27-44da-8b0f-e731d00c8f36",
-        "segment_type": "paragraph",
-        "segment_level": 1
-      },
-      "confidence": 0.8
-    },
-    "566b8c43-d255-4ab3-a8de-b4512fe2f3ba": {
-      "id": "566b8c43-d255-4ab3-a8de-b4512fe2f3ba",
-      "name": "Relationship",
-      "entity_type": "Concept",
-      "context": "Knowledge graphs represent structured information about entities and their relationships.",
-      "attributes": {
-        "function": "connects entities in knowledge graphs",
-        "role": "definition"
-      },
-      "metadata": {
-        "extraction_time": 1740996141.015638,
-        "language": "en",
-        "domain_type": "Knowledge Graph Construction",
-        "segment_id": "d9e7cf2c-eb27-44da-8b0f-e731d00c8f36",
-        "segment_type": "paragraph",
-        "segment_level": 1
-      },
-      "confidence": 0.8
-    },
-    "5019bb87-3294-4ee5-bd17-023c2a3f7485": {
-      "id": "5019bb87-3294-4ee5-bd17-023c2a3f7485",
+    "2c7ed6d1-507b-49d1-8ccc-10cac7693699": {
+      "id": "2c7ed6d1-507b-49d1-8ccc-10cac7693699",
       "name": "entity extraction",
       "entity_type": "Process",
       "context": "First, entity extraction identifies important concepts, objects, or individuals mentioned in the text.",
@@ -93,105 +139,78 @@
         "role": "main topic"
       },
       "metadata": {
-        "extraction_time": 1740996147.00852,
+        "extraction_time": 1740998865.99922,
         "language": "en",
         "domain_type": "Knowledge Graph Construction",
-        "segment_id": "5bd949d8-c609-4a22-99b3-a7e32b61b108",
-        "segment_type": "block",
+        "segment_id": "c7c433f8-1f30-4251-b292-4f6ab668c74c",
+        "segment_type": "subsection",
         "segment_level": 1
       },
       "confidence": 0.95
     },
-    "8d55b4c3-2a02-446f-9e63-b2ebb24cf39b": {
-      "id": "8d55b4c3-2a02-446f-9e63-b2ebb24cf39b",
-      "name": "machine learning",
-      "entity_type": "Technology",
-      "context": "in a document about artificial intelligence, entities might include \"machine learning\"",
+    "840f9934-2d79-44d1-9c8e-6425b8c9eb87": {
+      "id": "840f9934-2d79-44d1-9c8e-6425b8c9eb87",
+      "name": "artificial intelligence",
+      "entity_type": "Concept",
+      "context": "For example, in AI literature, entities might include \"artificial intelligence,\" \"machine learning,\" and \"neural networks.\"",
       "attributes": {
-        "domain": "artificial intelligence",
+        "domain": "AI literature",
         "role": "supporting example"
       },
       "metadata": {
-        "extraction_time": 1740996147.008539,
+        "extraction_time": 1740998865.999252,
         "language": "en",
         "domain_type": "Knowledge Graph Construction",
-        "segment_id": "5bd949d8-c609-4a22-99b3-a7e32b61b108",
-        "segment_type": "block",
+        "segment_id": "c7c433f8-1f30-4251-b292-4f6ab668c74c",
+        "segment_type": "subsection",
         "segment_level": 1
       },
       "confidence": 0.9
     },
-    "f661b47a-8923-49be-86b6-9a562b9501c7": {
-      "id": "f661b47a-8923-49be-86b6-9a562b9501c7",
+    "4a75f2ee-e179-4ca1-8782-b13c5b6b33af": {
+      "id": "4a75f2ee-e179-4ca1-8782-b13c5b6b33af",
+      "name": "machine learning",
+      "entity_type": "Technology",
+      "context": "For example, in AI literature, entities might include \"artificial intelligence,\" \"machine learning,\" and \"neural networks.\"",
+      "attributes": {
+        "domain": "AI literature",
+        "role": "supporting example"
+      },
+      "metadata": {
+        "extraction_time": 1740998865.999259,
+        "language": "en",
+        "domain_type": "Knowledge Graph Construction",
+        "segment_id": "c7c433f8-1f30-4251-b292-4f6ab668c74c",
+        "segment_type": "subsection",
+        "segment_level": 1
+      },
+      "confidence": 0.9
+    },
+    "0ae68c4f-8d5c-4c1f-badc-9c639572e424": {
+      "id": "0ae68c4f-8d5c-4c1f-badc-9c639572e424",
       "name": "neural networks",
       "entity_type": "Technology",
-      "context": "in a document about artificial intelligence, entities might include \"machine learning\", \"neural networks\"\n\"neural networks\" are a \"subset of\" machine learning techniques",
+      "context": "For example, in AI literature, entities might include \"artificial intelligence,\" \"machine learning,\" and \"neural networks.\"\n\"neural networks\" are a \"subset of\" machine learning techniques",
       "attributes": {
-        "domain": "artificial intelligence",
-        "role": "supporting example",
+        "domain": "AI literature",
+        "role": [
+          "supporting example",
+          "example entity"
+        ],
         "relationship": "subset of machine learning techniques"
       },
       "metadata": {
-        "extraction_time": 1740996147.008544,
+        "extraction_time": 1740998865.999265,
         "language": "en",
         "domain_type": "Knowledge Graph Construction",
-        "segment_id": "5bd949d8-c609-4a22-99b3-a7e32b61b108",
-        "segment_type": "block",
+        "segment_id": "c7c433f8-1f30-4251-b292-4f6ab668c74c",
+        "segment_type": "subsection",
         "segment_level": 1
       },
       "confidence": 0.9
     },
-    "88a7151a-c0cb-4f62-848a-226865a6f9b1": {
-      "id": "88a7151a-c0cb-4f62-848a-226865a6f9b1",
-      "name": "Turing test",
-      "entity_type": "Concept",
-      "context": "in a document about artificial intelligence, entities might include \"machine learning\", \"neural networks\", and \"Turing test\"",
-      "attributes": {
-        "domain": "artificial intelligence",
-        "role": "supporting example"
-      },
-      "metadata": {
-        "extraction_time": 1740996147.008548,
-        "language": "en",
-        "domain_type": "Knowledge Graph Construction",
-        "segment_id": "5bd949d8-c609-4a22-99b3-a7e32b61b108",
-        "segment_type": "block",
-        "segment_level": 1
-      },
-      "confidence": 0.9
-    },
-    "f9222c0e-45d2-4dba-b0dc-452d35eacabb": {
-      "id": "f9222c0e-45d2-4dba-b0dc-452d35eacabb",
-      "name": "artificial intelligence",
-      "entity_type": "Concept",
-      "context": "in a document about artificial intelligence\nrecognizing that \"AI\", \"artificial intelligence\", and \"machine intelligence\" all refer to the same concept",
-      "attributes": {
-        "related_entities": [
-          "machine learning",
-          "neural networks",
-          "Turing test"
-        ],
-        "role": [
-          "domain context",
-          "supporting example"
-        ],
-        "aliases": [
-          "AI",
-          "machine intelligence"
-        ]
-      },
-      "metadata": {
-        "extraction_time": 1740996147.0085518,
-        "language": "en",
-        "domain_type": "Knowledge Graph Construction",
-        "segment_id": "5bd949d8-c609-4a22-99b3-a7e32b61b108",
-        "segment_type": "block",
-        "segment_level": 1
-      },
-      "confidence": 0.85
-    },
-    "dc8d37fd-4bd4-480c-bbc6-4a9f65167df5": {
-      "id": "dc8d37fd-4bd4-480c-bbc6-4a9f65167df5",
+    "c63ea591-a65d-4c97-9625-31d70e2c8796": {
+      "id": "c63ea591-a65d-4c97-9625-31d70e2c8796",
       "name": "relationship extraction",
       "entity_type": "Process",
       "context": "Second, relationship extraction determines how these entities are connected.",
@@ -200,17 +219,17 @@
         "role": "main topic"
       },
       "metadata": {
-        "extraction_time": 1740996154.21366,
+        "extraction_time": 1740998873.24159,
         "language": "en",
         "domain_type": "Knowledge Graph Construction",
-        "segment_id": "dfdb2a89-8333-4a2d-b8a7-42b9427c42ec",
-        "segment_type": "block",
+        "segment_id": "722db564-a729-421b-9e34-1e2c652f6594",
+        "segment_type": "subsection",
         "segment_level": 1
       },
       "confidence": 0.95
     },
-    "14d5ab88-56bc-412b-993e-696f57452a85": {
-      "id": "14d5ab88-56bc-412b-993e-696f57452a85",
+    "c2141869-e061-4243-a1b7-f9feac6d63f5": {
+      "id": "c2141869-e061-4243-a1b7-f9feac6d63f5",
       "name": "hierarchical connection",
       "entity_type": "Concept",
       "context": "These connections might be hierarchical (e.g., \"neural networks\" are a \"subset of\" machine learning techniques)",
@@ -219,331 +238,272 @@
         "role": "supporting example"
       },
       "metadata": {
-        "extraction_time": 1740996154.213679,
+        "extraction_time": 1740998873.2416341,
         "language": "en",
         "domain_type": "Knowledge Graph Construction",
-        "segment_id": "dfdb2a89-8333-4a2d-b8a7-42b9427c42ec",
-        "segment_type": "block",
+        "segment_id": "722db564-a729-421b-9e34-1e2c652f6594",
+        "segment_type": "subsection",
         "segment_level": 1
       },
-      "confidence": 0.85
+      "confidence": 0.9
     },
-    "42957607-03a3-4377-b0cd-2da2590073b4": {
-      "id": "42957607-03a3-4377-b0cd-2da2590073b4",
+    "5fdddc0e-6200-4bb9-afc2-79ceb7510071": {
+      "id": "5fdddc0e-6200-4bb9-afc2-79ceb7510071",
       "name": "causal connection",
       "entity_type": "Concept",
-      "context": "or causal (e.g., \"overfitting\" leads to \"poor generalization\")",
+      "context": "or causal (e.g., \"overfitting\" causes \"poor generalization\")",
       "attributes": {
-        "example": "overfitting leads to poor generalization",
+        "example": "overfitting causes poor generalization",
         "role": "supporting example"
       },
       "metadata": {
-        "extraction_time": 1740996154.213684,
+        "extraction_time": 1740998873.241641,
         "language": "en",
         "domain_type": "Knowledge Graph Construction",
-        "segment_id": "dfdb2a89-8333-4a2d-b8a7-42b9427c42ec",
-        "segment_type": "block",
+        "segment_id": "722db564-a729-421b-9e34-1e2c652f6594",
+        "segment_type": "subsection",
         "segment_level": 1
       },
-      "confidence": 0.85
+      "confidence": 0.9
     },
-    "e757b360-975d-473b-8845-33817d160c2b": {
-      "id": "e757b360-975d-473b-8845-33817d160c2b",
+    "f0c7ea7a-0b5a-4689-8f5f-289f523b5ba7": {
+      "id": "f0c7ea7a-0b5a-4689-8f5f-289f523b5ba7",
       "name": "machine learning techniques",
       "entity_type": "Technology",
       "context": "\"neural networks\" are a \"subset of\" machine learning techniques",
       "attributes": {
-        "includes": "neural networks",
-        "role": "supporting example"
+        "relationship": "superset of neural networks",
+        "role": "example entity"
       },
       "metadata": {
-        "extraction_time": 1740996154.213693,
+        "extraction_time": 1740998873.241654,
         "language": "en",
         "domain_type": "Knowledge Graph Construction",
-        "segment_id": "dfdb2a89-8333-4a2d-b8a7-42b9427c42ec",
-        "segment_type": "block",
-        "segment_level": 1
-      },
-      "confidence": 0.8
-    },
-    "adb942a0-5300-4bc1-9e34-f9382b188217": {
-      "id": "adb942a0-5300-4bc1-9e34-f9382b188217",
-      "name": "overfitting",
-      "entity_type": "Problem",
-      "context": "\"overfitting\" leads to \"poor generalization\"",
-      "attributes": {
-        "consequence": "poor generalization",
-        "role": "supporting example"
-      },
-      "metadata": {
-        "extraction_time": 1740996154.213697,
-        "language": "en",
-        "domain_type": "Knowledge Graph Construction",
-        "segment_id": "dfdb2a89-8333-4a2d-b8a7-42b9427c42ec",
-        "segment_type": "block",
-        "segment_level": 1
-      },
-      "confidence": 0.8
-    },
-    "cc6d032c-fbb4-4d06-bdc1-d74cd060bfd2": {
-      "id": "cc6d032c-fbb4-4d06-bdc1-d74cd060bfd2",
-      "name": "poor generalization",
-      "entity_type": "Problem",
-      "context": "\"overfitting\" leads to \"poor generalization\"",
-      "attributes": {
-        "cause": "overfitting",
-        "role": "supporting example"
-      },
-      "metadata": {
-        "extraction_time": 1740996154.213702,
-        "language": "en",
-        "domain_type": "Knowledge Graph Construction",
-        "segment_id": "dfdb2a89-8333-4a2d-b8a7-42b9427c42ec",
-        "segment_type": "block",
-        "segment_level": 1
-      },
-      "confidence": 0.8
-    },
-    "6e2da2dc-b8a4-4c30-8eaa-54d99b25d4a3": {
-      "id": "6e2da2dc-b8a4-4c30-8eaa-54d99b25d4a3",
-      "name": "Entity Resolution",
-      "entity_type": "Process",
-      "context": "entity resolution or coreference resolution ensures that different mentions of the same entity are properly linked",
-      "attributes": {
-        "purpose": "ensures that different mentions of the same entity are properly linked",
-        "alternative_name": "coreference resolution",
-        "role": "main topic"
-      },
-      "metadata": {
-        "extraction_time": 1740996157.5353029,
-        "language": "en",
-        "domain_type": "Knowledge Graph Construction",
-        "segment_id": "656f51d5-c5b1-4790-ae34-35fa21685b24",
-        "segment_type": "block",
-        "segment_level": 1
-      },
-      "confidence": 0.95
-    },
-    "b5870bdd-9404-4155-86fe-28974e36a44c": {
-      "id": "b5870bdd-9404-4155-86fe-28974e36a44c",
-      "name": "Knowledge Integration",
-      "entity_type": "Process",
-      "context": "knowledge integration combines the extracted information with existing knowledge bases",
-      "attributes": {
-        "function": "combines extracted information with existing knowledge bases",
-        "purpose": "enhancing the overall graph structure and filling potential gaps",
-        "role": "main topic"
-      },
-      "metadata": {
-        "extraction_time": 1740996162.5537899,
-        "language": "en",
-        "domain_type": "Knowledge Graph Construction",
-        "segment_id": "9c3a4a42-eebf-4db4-a6d6-c53bd565dc4c",
-        "segment_type": "block",
-        "segment_level": 1
-      },
-      "confidence": 0.95
-    },
-    "81a6ea00-b4a7-4ae8-a4ee-f0d23bbf89ed": {
-      "id": "81a6ea00-b4a7-4ae8-a4ee-f0d23bbf89ed",
-      "name": "Knowledge Base",
-      "entity_type": "Technology",
-      "context": "combines the extracted information with existing knowledge bases",
-      "attributes": {
-        "state": "existing",
-        "purpose": "store knowledge",
-        "role": "supporting component"
-      },
-      "metadata": {
-        "extraction_time": 1740996162.553843,
-        "language": "en",
-        "domain_type": "Knowledge Graph Construction",
-        "segment_id": "9c3a4a42-eebf-4db4-a6d6-c53bd565dc4c",
-        "segment_type": "block",
+        "segment_id": "722db564-a729-421b-9e34-1e2c652f6594",
+        "segment_type": "subsection",
         "segment_level": 1
       },
       "confidence": 0.85
     },
-    "29db15e6-42f9-4a9a-a678-54d1608b7227": {
-      "id": "29db15e6-42f9-4a9a-a678-54d1608b7227",
-      "name": "Graph Structure",
-      "entity_type": "Concept",
-      "context": "enhancing the overall graph structure and filling potential gaps",
+    "5a619dc0-1aee-402c-93ef-5c69b4b5fada": {
+      "id": "5a619dc0-1aee-402c-93ef-5c69b4b5fada",
+      "name": "overfitting",
+      "entity_type": "Problem",
+      "context": "\"overfitting\" causes \"poor generalization\"",
       "attributes": {
-        "quality": "can be enhanced",
-        "completeness": "may have gaps",
-        "role": "target of improvement"
+        "effect": "causes poor generalization",
+        "role": "example entity"
       },
       "metadata": {
-        "extraction_time": 1740996162.553851,
+        "extraction_time": 1740998873.241659,
         "language": "en",
         "domain_type": "Knowledge Graph Construction",
-        "segment_id": "9c3a4a42-eebf-4db4-a6d6-c53bd565dc4c",
-        "segment_type": "block",
-        "segment_level": 1
-      },
-      "confidence": 0.9
-    },
-    "2890f6b7-bdaf-4720-80f4-8f9a07b74e2e": {
-      "id": "2890f6b7-bdaf-4720-80f4-8f9a07b74e2e",
-      "name": "Information Extraction",
-      "entity_type": "Process",
-      "context": "combines the extracted information with existing knowledge bases",
-      "attributes": {
-        "output": "information that can be integrated",
-        "role": "prerequisite process"
-      },
-      "metadata": {
-        "extraction_time": 1740996162.553857,
-        "language": "en",
-        "domain_type": "Knowledge Graph Construction",
-        "segment_id": "9c3a4a42-eebf-4db4-a6d6-c53bd565dc4c",
-        "segment_type": "block",
+        "segment_id": "722db564-a729-421b-9e34-1e2c652f6594",
+        "segment_type": "subsection",
         "segment_level": 1
       },
       "confidence": 0.8
     },
-    "b7698335-68cc-4493-9254-54c61f3e366f": {
-      "id": "b7698335-68cc-4493-9254-54c61f3e366f",
-      "name": "rule-based approaches",
-      "entity_type": "Method",
-      "context": "These steps can be performed using various techniques, from rule-based approaches to advanced deep learning models",
+    "63d13369-a1c7-4368-a326-06ff20135ba4": {
+      "id": "63d13369-a1c7-4368-a326-06ff20135ba4",
+      "name": "poor generalization",
+      "entity_type": "Problem",
+      "context": "\"overfitting\" causes \"poor generalization\"",
       "attributes": {
-        "category": "technique",
-        "complexity": "simpler",
-        "role": "example technique"
+        "cause": "overfitting",
+        "role": "example entity"
       },
       "metadata": {
-        "extraction_time": 1740996170.1929731,
+        "extraction_time": 1740998873.241667,
         "language": "en",
         "domain_type": "Knowledge Graph Construction",
-        "segment_id": "82d4a20d-1f72-415c-9856-2ec7fcc1dbae",
-        "segment_type": "paragraph",
+        "segment_id": "722db564-a729-421b-9e34-1e2c652f6594",
+        "segment_type": "subsection",
+        "segment_level": 1
+      },
+      "confidence": 0.8
+    },
+    "cdb74b10-a386-4b89-8aa8-e95bc9151aeb": {
+      "id": "cdb74b10-a386-4b89-8aa8-e95bc9151aeb",
+      "name": "Entity Resolution",
+      "entity_type": "Process",
+      "context": "entity resolution ensures that different mentions of the same entity are properly linked, even when they appear in different forms",
+      "attributes": {
+        "purpose": "linking different mentions of the same entity",
+        "handles": "different forms of entity mentions",
+        "role": "main topic"
+      },
+      "metadata": {
+        "extraction_time": 1740998876.831399,
+        "language": "en",
+        "domain_type": "Knowledge Graph Construction",
+        "segment_id": "974d2a13-78c5-4033-8626-8e5f23ffc949",
+        "segment_type": "subsection",
+        "segment_level": 1
+      },
+      "confidence": 0.95
+    },
+    "e0dcffa7-c6b7-40c7-be6b-f850684ca423": {
+      "id": "e0dcffa7-c6b7-40c7-be6b-f850684ca423",
+      "name": "Entity",
+      "entity_type": "Concept",
+      "context": "different mentions of the same entity are properly linked",
+      "attributes": {
+        "property": "can have multiple mentions",
+        "role": "supporting concept"
+      },
+      "metadata": {
+        "extraction_time": 1740998876.8314471,
+        "language": "en",
+        "domain_type": "Knowledge Graph Construction",
+        "segment_id": "974d2a13-78c5-4033-8626-8e5f23ffc949",
+        "segment_type": "subsection",
         "segment_level": 1
       },
       "confidence": 0.9
     },
-    "590f01d2-2f7b-4a6e-b404-4be706ce22b8": {
-      "id": "590f01d2-2f7b-4a6e-b404-4be706ce22b8",
+    "da044f7d-9a8a-4153-b0f0-786803a250cd": {
+      "id": "da044f7d-9a8a-4153-b0f0-786803a250cd",
+      "name": "Knowledge Integration",
+      "entity_type": "Process",
+      "context": "Fourth, knowledge integration combines the extracted information with existing knowledge bases to create a comprehensive and consistent graph.",
+      "attributes": {
+        "input": "extracted information",
+        "combines_with": "existing knowledge bases",
+        "output": "comprehensive and consistent graph",
+        "role": "main topic"
+      },
+      "metadata": {
+        "extraction_time": 1740998880.846179,
+        "language": "en",
+        "domain_type": "Knowledge Graph Construction",
+        "segment_id": "a76501cc-98ca-46ac-b20e-b0d3ab8d29ae",
+        "segment_type": "subsection",
+        "segment_level": 1
+      },
+      "confidence": 0.95
+    },
+    "e796ee0f-2202-4a31-b264-b2b6bf16e016": {
+      "id": "e796ee0f-2202-4a31-b264-b2b6bf16e016",
+      "name": "Knowledge Base",
+      "entity_type": "Concept",
+      "context": "knowledge integration combines the extracted information with existing knowledge bases",
+      "attributes": {
+        "state": "existing",
+        "purpose": "source for integration",
+        "role": "supporting concept"
+      },
+      "metadata": {
+        "extraction_time": 1740998880.8462772,
+        "language": "en",
+        "domain_type": "Knowledge Graph Construction",
+        "segment_id": "a76501cc-98ca-46ac-b20e-b0d3ab8d29ae",
+        "segment_type": "subsection",
+        "segment_level": 1
+      },
+      "confidence": 0.85
+    },
+    "eec1d218-c1b9-419a-9b30-591db8ba60cf": {
+      "id": "eec1d218-c1b9-419a-9b30-591db8ba60cf",
       "name": "BERT",
       "entity_type": "Technology",
-      "context": "advanced deep learning models like BERT or GPT",
+      "context": "Advanced techniques like BERT and GPT can significantly improve these steps by leveraging deep learning for more accurate extraction and linking.",
       "attributes": {
-        "category": "deep learning model",
-        "purpose": "natural language processing",
-        "role": "specific example"
+        "category": "deep learning",
+        "purpose": "extraction and linking",
+        "impact": "significantly improve",
+        "role": "supporting example"
       },
       "metadata": {
-        "extraction_time": 1740996170.1930208,
+        "extraction_time": 1740998887.31117,
         "language": "en",
         "domain_type": "Knowledge Graph Construction",
-        "segment_id": "82d4a20d-1f72-415c-9856-2ec7fcc1dbae",
+        "segment_id": "07f558c7-b184-4a0f-bed1-ba4e55fb266e",
         "segment_type": "paragraph",
-        "segment_level": 1
+        "segment_level": 0
       },
       "confidence": 0.95
     },
-    "571fe943-34fe-4b30-903a-96c65649f933": {
-      "id": "571fe943-34fe-4b30-903a-96c65649f933",
+    "47f20c43-5c7e-45cf-bda7-f258c7eaeb84": {
+      "id": "47f20c43-5c7e-45cf-bda7-f258c7eaeb84",
       "name": "GPT",
       "entity_type": "Technology",
-      "context": "advanced deep learning models like BERT or GPT",
+      "context": "Advanced techniques like BERT and GPT can significantly improve these steps by leveraging deep learning for more accurate extraction and linking.",
       "attributes": {
-        "category": "deep learning model",
-        "purpose": "natural language processing",
-        "role": "specific example"
+        "category": "deep learning",
+        "purpose": "extraction and linking",
+        "impact": "significantly improve",
+        "role": "supporting example"
       },
       "metadata": {
-        "extraction_time": 1740996170.193027,
+        "extraction_time": 1740998887.311223,
         "language": "en",
         "domain_type": "Knowledge Graph Construction",
-        "segment_id": "82d4a20d-1f72-415c-9856-2ec7fcc1dbae",
+        "segment_id": "07f558c7-b184-4a0f-bed1-ba4e55fb266e",
         "segment_type": "paragraph",
-        "segment_level": 1
+        "segment_level": 0
       },
       "confidence": 0.95
     },
-    "f497ff8e-d9b0-4098-af56-9caef985555c": {
-      "id": "f497ff8e-d9b0-4098-af56-9caef985555c",
-      "name": "deep learning models",
+    "9d17c73f-5863-4840-b45c-fab12a5fc73d": {
+      "id": "9d17c73f-5863-4840-b45c-fab12a5fc73d",
+      "name": "Deep Learning",
       "entity_type": "Method",
-      "context": "advanced deep learning models like BERT or GPT",
+      "context": "Advanced techniques like BERT and GPT can significantly improve these steps by leveraging deep learning for more accurate extraction and linking.",
       "attributes": {
-        "category": "technique",
-        "complexity": "advanced",
-        "role": "example technique"
+        "application": "extraction and linking",
+        "benefit": "more accurate",
+        "role": "supporting concept"
       },
       "metadata": {
-        "extraction_time": 1740996170.193033,
+        "extraction_time": 1740998887.31123,
         "language": "en",
         "domain_type": "Knowledge Graph Construction",
-        "segment_id": "82d4a20d-1f72-415c-9856-2ec7fcc1dbae",
+        "segment_id": "07f558c7-b184-4a0f-bed1-ba4e55fb266e",
         "segment_type": "paragraph",
-        "segment_level": 1
+        "segment_level": 0
       },
       "confidence": 0.9
     },
-    "e49046f9-ba23-4c2a-8f98-acf65be52093": {
-      "id": "e49046f9-ba23-4c2a-8f98-acf65be52093",
-      "name": "domain specificity",
-      "entity_type": "Concept",
-      "context": "The choice of technique depends on factors such as domain specificity",
+    "442da626-e9cf-42e9-aa7f-15500356d490": {
+      "id": "442da626-e9cf-42e9-aa7f-15500356d490",
+      "name": "Extraction",
+      "entity_type": "Process",
+      "context": "Advanced techniques like BERT and GPT can significantly improve these steps by leveraging deep learning for more accurate extraction and linking.",
       "attributes": {
-        "category": "selection factor",
-        "influence": "technique selection",
-        "role": "decision factor"
+        "improved_by": "deep learning",
+        "quality": "more accurate",
+        "role": "main topic"
       },
       "metadata": {
-        "extraction_time": 1740996170.193037,
+        "extraction_time": 1740998887.3112361,
         "language": "en",
         "domain_type": "Knowledge Graph Construction",
-        "segment_id": "82d4a20d-1f72-415c-9856-2ec7fcc1dbae",
+        "segment_id": "07f558c7-b184-4a0f-bed1-ba4e55fb266e",
         "segment_type": "paragraph",
-        "segment_level": 1
+        "segment_level": 0
       },
-      "confidence": 0.8
+      "confidence": 0.85
     },
-    "f3dff034-bcb9-467c-8d19-e46b60e7aeff": {
-      "id": "f3dff034-bcb9-467c-8d19-e46b60e7aeff",
-      "name": "training data",
-      "entity_type": "Concept",
-      "context": "factors such as domain specificity, available training data",
+    "09f19485-5c36-4daa-9943-4935265fa9fe": {
+      "id": "09f19485-5c36-4daa-9943-4935265fa9fe",
+      "name": "Linking",
+      "entity_type": "Process",
+      "context": "Advanced techniques like BERT and GPT can significantly improve these steps by leveraging deep learning for more accurate extraction and linking.",
       "attributes": {
-        "category": "selection factor",
-        "qualifier": "available",
-        "influence": "technique selection",
-        "role": "decision factor"
+        "improved_by": "deep learning",
+        "quality": "more accurate",
+        "role": "main topic"
       },
       "metadata": {
-        "extraction_time": 1740996170.1930418,
+        "extraction_time": 1740998887.311241,
         "language": "en",
         "domain_type": "Knowledge Graph Construction",
-        "segment_id": "82d4a20d-1f72-415c-9856-2ec7fcc1dbae",
+        "segment_id": "07f558c7-b184-4a0f-bed1-ba4e55fb266e",
         "segment_type": "paragraph",
-        "segment_level": 1
+        "segment_level": 0
       },
-      "confidence": 0.8
-    },
-    "f49d1b04-d9f8-4857-bb4a-50ffc76384fb": {
-      "id": "f49d1b04-d9f8-4857-bb4a-50ffc76384fb",
-      "name": "accuracy",
-      "entity_type": "Concept",
-      "context": "available training data, and required accuracy",
-      "attributes": {
-        "category": "selection factor",
-        "qualifier": "required",
-        "influence": "technique selection",
-        "role": "decision factor"
-      },
-      "metadata": {
-        "extraction_time": 1740996170.193046,
-        "language": "en",
-        "domain_type": "Knowledge Graph Construction",
-        "segment_id": "82d4a20d-1f72-415c-9856-2ec7fcc1dbae",
-        "segment_type": "paragraph",
-        "segment_level": 1
-      },
-      "confidence": 0.8
+      "confidence": 0.85
     }
   }
 }

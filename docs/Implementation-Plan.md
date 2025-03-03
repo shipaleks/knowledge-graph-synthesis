@@ -76,7 +76,7 @@ This document outlines the step-by-step implementation plan for the Knowledge Gr
 - Design entity data model
 - Create entity extraction prompts (EN/RU)
 - Integrate with LLM provider
-- Status: TO-DO
+- Status: DONE
 
 ### Step 11: Implement Relationship Extraction
 - Create relationship extraction module

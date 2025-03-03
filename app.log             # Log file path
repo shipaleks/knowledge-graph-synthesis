@@ -1,0 +1,523 @@
+2025-03-03 11:22:54,741 - __main__ - INFO - Testing relationship extraction from text in en
+2025-03-03 11:22:54,742 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 1072)
+2025-03-03 11:22:54,754 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 11:23:11,256 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:23:11,260 - src.knowledge.entity_extractor - INFO - Extracted 13 entities from text
+2025-03-03 11:24:55,624 - __main__ - INFO - Testing relationship extraction from text in en
+2025-03-03 11:24:55,625 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 1072)
+2025-03-03 11:24:55,639 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 11:25:11,041 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:25:11,050 - src.knowledge.entity_extractor - INFO - Extracted 13 entities from text
+2025-03-03 11:25:11,050 - __main__ - INFO - Extracted 13 entities
+2025-03-03 11:25:11,050 - __main__ - INFO - Extracted entities:
+2025-03-03 11:25:11,050 - __main__ - INFO - 1. Knowledge Graph (Concept, Confidence: 1.00)
+2025-03-03 11:25:11,050 - __main__ - INFO - 2. Entity Extraction (Process, Confidence: 0.95)
+2025-03-03 11:25:11,052 - __main__ - INFO - 3. Relationship Extraction (Process, Confidence: 0.95)
+2025-03-03 11:25:11,052 - __main__ - INFO - 4. Entity Resolution (Process, Confidence: 0.95)
+2025-03-03 11:25:11,052 - __main__ - INFO - 5. Knowledge Integration (Process, Confidence: 0.95)
+2025-03-03 11:25:11,052 - __main__ - INFO - 6. BERT (Technology, Confidence: 0.90)
+2025-03-03 11:25:11,052 - __main__ - INFO - 7. GPT (Technology, Confidence: 0.90)
+2025-03-03 11:25:11,052 - __main__ - INFO - 8. Artificial Intelligence (Concept, Confidence: 0.80)
+2025-03-03 11:25:11,052 - __main__ - INFO - 9. Machine Learning (Concept, Confidence: 0.80)
+2025-03-03 11:25:11,052 - __main__ - INFO - 10. Neural Networks (Technology, Confidence: 0.80)
+2025-03-03 11:25:11,052 - __main__ - INFO - 11. Overfitting (Problem, Confidence: 0.70)
+2025-03-03 11:25:11,053 - __main__ - INFO - 12. Poor Generalization (Problem, Confidence: 0.70)
+2025-03-03 11:25:11,053 - __main__ - INFO - 13. Deep Learning (Method, Confidence: 0.85)
+2025-03-03 11:25:11,053 - src.knowledge.relationship_extractor - INFO - Extracting relationships from text of length 1072 in en
+2025-03-03 11:25:11,054 - src.knowledge.relationship_extractor - INFO - Initializing claude provider with model claude-3-7-sonnet-latest
+2025-03-03 11:25:11,054 - src.knowledge.relationship_extractor - ERROR - Error extracting relationships: 'Result' object has no attribute 'generate'
+2025-03-03 11:27:29,649 - __main__ - INFO - Testing relationship extraction from text in en
+2025-03-03 11:27:29,650 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 1072)
+2025-03-03 11:27:29,661 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 11:27:45,109 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:27:45,128 - src.knowledge.entity_extractor - INFO - Extracted 13 entities from text
+2025-03-03 11:27:45,128 - __main__ - INFO - Extracted 13 entities
+2025-03-03 11:27:45,128 - __main__ - INFO - Extracted entities:
+2025-03-03 11:27:45,128 - __main__ - INFO - 1. Knowledge Graph (Concept, Confidence: 1.00)
+2025-03-03 11:27:45,128 - __main__ - INFO - 2. Entity Extraction (Process, Confidence: 0.95)
+2025-03-03 11:27:45,128 - __main__ - INFO - 3. Relationship Extraction (Process, Confidence: 0.95)
+2025-03-03 11:27:45,128 - __main__ - INFO - 4. Entity Resolution (Process, Confidence: 0.95)
+2025-03-03 11:27:45,128 - __main__ - INFO - 5. Knowledge Integration (Process, Confidence: 0.95)
+2025-03-03 11:27:45,128 - __main__ - INFO - 6. BERT (Technology, Confidence: 0.90)
+2025-03-03 11:27:45,129 - __main__ - INFO - 7. GPT (Technology, Confidence: 0.90)
+2025-03-03 11:27:45,129 - __main__ - INFO - 8. Artificial Intelligence (Concept, Confidence: 0.80)
+2025-03-03 11:27:45,129 - __main__ - INFO - 9. Machine Learning (Concept, Confidence: 0.80)
+2025-03-03 11:27:45,129 - __main__ - INFO - 10. Neural Networks (Technology, Confidence: 0.80)
+2025-03-03 11:27:45,129 - __main__ - INFO - 11. Overfitting (Problem, Confidence: 0.70)
+2025-03-03 11:27:45,129 - __main__ - INFO - 12. Poor Generalization (Problem, Confidence: 0.70)
+2025-03-03 11:27:45,129 - __main__ - INFO - 13. Deep Learning (Method, Confidence: 0.85)
+2025-03-03 11:27:45,129 - src.knowledge.relationship_extractor - INFO - Extracting relationships from text of length 1072 in en
+2025-03-03 11:27:45,129 - src.knowledge.relationship_extractor - INFO - Initializing claude provider with model claude-3-7-sonnet-latest
+2025-03-03 11:27:45,129 - src.knowledge.relationship_extractor - ERROR - Error extracting relationships: 'ClaudeProvider' object has no attribute 'generate'
+2025-03-03 11:27:45,129 - src.utils.result - ERROR - Error extracting relationships: 'ClaudeProvider' object has no attribute 'generate' 
+2025-03-03 11:27:45,129 - __main__ - ERROR - Failed to extract relationships: Error extracting relationships: 'ClaudeProvider' object has no attribute 'generate'
+2025-03-03 11:33:11,819 - __main__ - INFO - Testing relationship extraction from text in en
+2025-03-03 11:33:11,819 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 1072)
+2025-03-03 11:33:11,832 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 11:33:27,055 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:33:27,062 - src.knowledge.entity_extractor - INFO - Extracted 13 entities from text
+2025-03-03 11:33:27,062 - __main__ - INFO - Extracted 13 entities
+2025-03-03 11:33:27,062 - __main__ - INFO - Extracted entities:
+2025-03-03 11:33:27,062 - __main__ - INFO - 1. Knowledge Graph (Concept, Confidence: 1.00)
+2025-03-03 11:33:27,063 - __main__ - INFO - 2. Entity Extraction (Process, Confidence: 0.95)
+2025-03-03 11:33:27,063 - __main__ - INFO - 3. Relationship Extraction (Process, Confidence: 0.95)
+2025-03-03 11:33:27,063 - __main__ - INFO - 4. Entity Resolution (Process, Confidence: 0.95)
+2025-03-03 11:33:27,063 - __main__ - INFO - 5. Knowledge Integration (Process, Confidence: 0.95)
+2025-03-03 11:33:27,063 - __main__ - INFO - 6. BERT (Technology, Confidence: 0.90)
+2025-03-03 11:33:27,063 - __main__ - INFO - 7. GPT (Technology, Confidence: 0.90)
+2025-03-03 11:33:27,063 - __main__ - INFO - 8. Artificial Intelligence (Concept, Confidence: 0.80)
+2025-03-03 11:33:27,063 - __main__ - INFO - 9. Machine Learning (Concept, Confidence: 0.80)
+2025-03-03 11:33:27,063 - __main__ - INFO - 10. Neural Networks (Technology, Confidence: 0.80)
+2025-03-03 11:33:27,063 - __main__ - INFO - 11. Overfitting (Problem, Confidence: 0.70)
+2025-03-03 11:33:27,063 - __main__ - INFO - 12. Poor Generalization (Problem, Confidence: 0.70)
+2025-03-03 11:33:27,063 - __main__ - INFO - 13. Deep Learning (Method, Confidence: 0.85)
+2025-03-03 11:33:27,063 - src.knowledge.relationship_extractor - INFO - Extracting relationships from text of length 1072 in en
+2025-03-03 11:33:27,064 - src.knowledge.relationship_extractor - INFO - Initializing claude provider with model claude-3-7-sonnet-latest
+2025-03-03 11:33:27,064 - src.knowledge.relationship_extractor - INFO - Calling LLM for relationship extraction (language: en, text length: 1072)
+2025-03-03 11:33:27,074 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 11:33:48,005 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:33:48,024 - src.knowledge.relationship_extractor - INFO - LLM response received successfully
+2025-03-03 11:33:48,025 - src.knowledge.relationship_extractor - INFO - Extracted 19 relationships
+2025-03-03 11:33:48,025 - __main__ - INFO - Extracted 19 relationships
+2025-03-03 11:33:48,025 - __main__ - INFO - Extracted relationships:
+2025-03-03 11:33:48,025 - __main__ - INFO - 1. Entity Extraction --[part_of]--> Knowledge Graph (Confidence: 0.95)
+2025-03-03 11:33:48,025 - __main__ - INFO -    Context: 'The process of building a knowledge graph involves several key steps: First, entity extraction identifies important concepts, objects, or individuals mentioned in the text.'
+2025-03-03 11:33:48,025 - __main__ - INFO - 2. Relationship Extraction --[part_of]--> Knowledge Graph (Confidence: 0.95)
+2025-03-03 11:33:48,026 - __main__ - INFO -    Context: 'The process of building a knowledge graph involves several key steps: Second, relationship extraction determines how these entities are connected.'
+2025-03-03 11:33:48,026 - __main__ - INFO - 3. Entity Resolution --[part_of]--> Knowledge Graph (Confidence: 0.95)
+2025-03-03 11:33:48,026 - __main__ - INFO -    Context: 'The process of building a knowledge graph involves several key steps: Third, entity resolution ensures that different mentions of the same entity are properly linked, even when they appear in different forms.'
+2025-03-03 11:33:48,026 - __main__ - INFO - 4. Knowledge Integration --[part_of]--> Knowledge Graph (Confidence: 0.95)
+2025-03-03 11:33:48,026 - __main__ - INFO -    Context: 'The process of building a knowledge graph involves several key steps: Fourth, knowledge integration combines the extracted information with existing knowledge bases to create a comprehensive and consistent graph.'
+2025-03-03 11:33:48,026 - __main__ - INFO - 5. Neural Networks --[is_a]--> Machine Learning (Confidence: 0.95)
+2025-03-03 11:33:48,026 - __main__ - INFO -    Context: 'These connections might be hierarchical (e.g., "neural networks" are a "subset of" machine learning techniques)'
+2025-03-03 11:33:48,026 - __main__ - INFO - 6. Overfitting --[causes]--> Poor Generalization (Confidence: 0.90)
+2025-03-03 11:33:48,026 - __main__ - INFO -    Context: 'These connections might be hierarchical (e.g., "neural networks" are a "subset of" machine learning techniques) or causal (e.g., "overfitting" causes "poor generalization").'
+2025-03-03 11:33:48,026 - __main__ - INFO - 7. BERT --[used_for]--> Entity Extraction (Confidence: 0.85)
+2025-03-03 11:33:48,027 - __main__ - INFO -    Context: 'Advanced techniques like BERT and GPT can significantly improve these steps by leveraging deep learning for more accurate extraction and linking.'
+2025-03-03 11:33:48,027 - __main__ - INFO - 8. GPT --[used_for]--> Entity Extraction (Confidence: 0.85)
+2025-03-03 11:33:48,027 - __main__ - INFO -    Context: 'Advanced techniques like BERT and GPT can significantly improve these steps by leveraging deep learning for more accurate extraction and linking.'
+2025-03-03 11:33:48,027 - __main__ - INFO - 9. BERT --[used_for]--> Relationship Extraction (Confidence: 0.85)
+2025-03-03 11:33:48,027 - __main__ - INFO -    Context: 'Advanced techniques like BERT and GPT can significantly improve these steps by leveraging deep learning for more accurate extraction and linking.'
+2025-03-03 11:33:48,027 - __main__ - INFO - 10. GPT --[used_for]--> Relationship Extraction (Confidence: 0.85)
+2025-03-03 11:33:48,027 - __main__ - INFO -    Context: 'Advanced techniques like BERT and GPT can significantly improve these steps by leveraging deep learning for more accurate extraction and linking.'
+2025-03-03 11:33:48,027 - __main__ - INFO - 11. BERT --[used_for]--> Entity Resolution (Confidence: 0.85)
+2025-03-03 11:33:48,027 - __main__ - INFO -    Context: 'Advanced techniques like BERT and GPT can significantly improve these steps by leveraging deep learning for more accurate extraction and linking.'
+2025-03-03 11:33:48,027 - __main__ - INFO - 12. GPT --[used_for]--> Entity Resolution (Confidence: 0.85)
+2025-03-03 11:33:48,027 - __main__ - INFO -    Context: 'Advanced techniques like BERT and GPT can significantly improve these steps by leveraging deep learning for more accurate extraction and linking.'
+2025-03-03 11:33:48,028 - __main__ - INFO - 13. Deep Learning --[used_by]--> BERT (Confidence: 0.90)
+2025-03-03 11:33:48,028 - __main__ - INFO -    Context: 'Advanced techniques like BERT and GPT can significantly improve these steps by leveraging deep learning for more accurate extraction and linking.'
+2025-03-03 11:33:48,028 - __main__ - INFO - 14. Deep Learning --[used_by]--> GPT (Confidence: 0.90)
+2025-03-03 11:33:48,028 - __main__ - INFO -    Context: 'Advanced techniques like BERT and GPT can significantly improve these steps by leveraging deep learning for more accurate extraction and linking.'
+2025-03-03 11:33:48,028 - __main__ - INFO - 15. Entity Extraction --[precedes]--> Relationship Extraction (Confidence: 0.80)
+2025-03-03 11:33:48,028 - __main__ - INFO -    Context: 'First, entity extraction identifies important concepts... Second, relationship extraction determines how these entities are connected.'
+2025-03-03 11:33:48,029 - __main__ - INFO - 16. Relationship Extraction --[precedes]--> Entity Resolution (Confidence: 0.80)
+2025-03-03 11:33:48,029 - __main__ - INFO -    Context: 'Second, relationship extraction determines how these entities are connected... Third, entity resolution ensures that different mentions of the same entity are properly linked'
+2025-03-03 11:33:48,029 - __main__ - INFO - 17. Entity Resolution --[precedes]--> Knowledge Integration (Confidence: 0.80)
+2025-03-03 11:33:48,029 - __main__ - INFO -    Context: 'Third, entity resolution ensures that different mentions of the same entity are properly linked... Fourth, knowledge integration combines the extracted information'
+2025-03-03 11:33:48,029 - __main__ - INFO - 18. Neural Networks --[is_a]--> Deep Learning (Confidence: 0.70)
+2025-03-03 11:33:48,029 - __main__ - INFO -    Context: 'Neural networks are mentioned in the context of AI and machine learning, which implies they are a type of deep learning technology'
+2025-03-03 11:33:48,029 - __main__ - INFO - 19. Machine Learning --[is_a]--> Artificial Intelligence (Confidence: 0.80)
+2025-03-03 11:33:48,029 - __main__ - INFO -    Context: 'In AI literature, entities might include "artificial intelligence," "machine learning," and "neural networks."'
+2025-03-03 11:33:48,032 - __main__ - INFO - Results saved to /Users/shipaleks/Documents/graph_reasoner/output/relationships_en.json
+2025-03-03 11:40:52,449 - __main__ - INFO - Testing relationship extraction from text in ru
+2025-03-03 11:40:52,450 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: ru, text length: 1135)
+2025-03-03 11:40:52,462 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 11:41:13,869 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:41:13,889 - src.knowledge.entity_extractor - INFO - Extracted 14 entities from text
+2025-03-03 11:41:13,890 - __main__ - INFO - Extracted 14 entities
+2025-03-03 11:41:13,890 - __main__ - INFO - Extracted entities:
+2025-03-03 11:41:13,890 - __main__ - INFO - 1. Граф знаний (Концепция, Confidence: 1.00)
+2025-03-03 11:41:13,890 - __main__ - INFO - 2. Построение графа знаний (Процесс, Confidence: 1.00)
+2025-03-03 11:41:13,890 - __main__ - INFO - 3. Извлечение сущностей (Процесс, Confidence: 0.95)
+2025-03-03 11:41:13,890 - __main__ - INFO - 4. Извлечение отношений (Процесс, Confidence: 0.95)
+2025-03-03 11:41:13,890 - __main__ - INFO - 5. Разрешение сущностей (Процесс, Confidence: 0.95)
+2025-03-03 11:41:13,890 - __main__ - INFO - 6. Интеграция знаний (Процесс, Confidence: 0.95)
+2025-03-03 11:41:13,890 - __main__ - INFO - 7. Искусственный интеллект (Концепция, Confidence: 0.80)
+2025-03-03 11:41:13,890 - __main__ - INFO - 8. Машинное обучение (Метод, Confidence: 0.80)
+2025-03-03 11:41:13,890 - __main__ - INFO - 9. Нейронные сети (Метод, Confidence: 0.80)
+2025-03-03 11:41:13,891 - __main__ - INFO - 10. Переобучение (Проблема, Confidence: 0.70)
+2025-03-03 11:41:13,891 - __main__ - INFO - 11. Плохая обобщающая способность (Проблема, Confidence: 0.70)
+2025-03-03 11:41:13,891 - __main__ - INFO - 12. BERT (Технология, Confidence: 0.90)
+2025-03-03 11:41:13,891 - __main__ - INFO - 13. GPT (Технология, Confidence: 0.90)
+2025-03-03 11:41:13,891 - __main__ - INFO - 14. Глубокое обучение (Метод, Confidence: 0.85)
+2025-03-03 11:41:13,891 - src.knowledge.relationship_extractor - INFO - Extracting relationships from text of length 1135 in ru
+2025-03-03 11:41:13,891 - src.knowledge.relationship_extractor - INFO - Initializing claude provider with model claude-3-7-sonnet-latest
+2025-03-03 11:41:13,891 - src.knowledge.relationship_extractor - INFO - Calling LLM for relationship extraction (language: ru, text length: 1135)
+2025-03-03 11:41:13,899 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 11:41:36,625 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:41:36,626 - src.knowledge.relationship_extractor - INFO - LLM response received successfully
+2025-03-03 11:41:36,627 - src.knowledge.relationship_extractor - INFO - Extracted 16 relationships
+2025-03-03 11:41:36,627 - __main__ - INFO - Extracted 16 relationships
+2025-03-03 11:41:36,627 - __main__ - INFO - Extracted relationships:
+2025-03-03 11:41:36,627 - __main__ - INFO - 1. Построение графа знаний --[используется_для]--> Граф знаний (Confidence: 1.00)
+2025-03-03 11:41:36,627 - __main__ - INFO -    Context: 'Процесс построения графа знаний включает несколько ключевых этапов'
+2025-03-03 11:41:36,627 - __main__ - INFO - 2. Извлечение сущностей --[часть_от]--> Построение графа знаний (Confidence: 1.00)
+2025-03-03 11:41:36,627 - __main__ - INFO -    Context: 'Процесс построения графа знаний включает несколько ключевых этапов: Во-первых, извлечение сущностей...'
+2025-03-03 11:41:36,627 - __main__ - INFO - 3. Извлечение отношений --[часть_от]--> Построение графа знаний (Confidence: 1.00)
+2025-03-03 11:41:36,627 - __main__ - INFO -    Context: 'Во-вторых, извлечение отношений определяет, как эти сущности связаны между собой.'
+2025-03-03 11:41:36,627 - __main__ - INFO - 4. Разрешение сущностей --[часть_от]--> Построение графа знаний (Confidence: 1.00)
+2025-03-03 11:41:36,627 - __main__ - INFO -    Context: 'В-третьих, разрешение сущностей гарантирует, что различные упоминания одной и той же сущности правильно связаны'
+2025-03-03 11:41:36,627 - __main__ - INFO - 5. Интеграция знаний --[часть_от]--> Построение графа знаний (Confidence: 1.00)
+2025-03-03 11:41:36,627 - __main__ - INFO -    Context: 'В-четвертых, интеграция знаний объединяет извлеченную информацию с существующими базами знаний для создания всеобъемлющего и согласованного графа.'
+2025-03-03 11:41:36,628 - __main__ - INFO - 6. Извлечение сущностей --[предшествует]--> Извлечение отношений (Confidence: 0.90)
+2025-03-03 11:41:36,628 - __main__ - INFO -    Context: 'Во-первых, извлечение сущностей... Во-вторых, извлечение отношений...'
+2025-03-03 11:41:36,628 - __main__ - INFO - 7. Извлечение отношений --[предшествует]--> Разрешение сущностей (Confidence: 0.90)
+2025-03-03 11:41:36,628 - __main__ - INFO -    Context: 'Во-вторых, извлечение отношений... В-третьих, разрешение сущностей...'
+2025-03-03 11:41:36,628 - __main__ - INFO - 8. Разрешение сущностей --[предшествует]--> Интеграция знаний (Confidence: 0.90)
+2025-03-03 11:41:36,628 - __main__ - INFO -    Context: 'В-третьих, разрешение сущностей... В-четвертых, интеграция знаний...'
+2025-03-03 11:41:36,628 - __main__ - INFO - 9. Нейронные сети --[часть_от]--> Машинное обучение (Confidence: 1.00)
+2025-03-03 11:41:36,628 - __main__ - INFO -    Context: 'нейронные сети являются подмножеством методов машинного обучения'
+2025-03-03 11:41:36,628 - __main__ - INFO - 10. Переобучение --[вызывает]--> Плохая обобщающая способность (Confidence: 1.00)
+2025-03-03 11:41:36,628 - __main__ - INFO -    Context: 'переобучение вызывает плохую обобщающую способность'
+2025-03-03 11:41:36,628 - __main__ - INFO - 11. BERT --[является]--> Глубокое обучение (Confidence: 0.90)
+2025-03-03 11:41:36,628 - __main__ - INFO -    Context: 'Продвинутые методы, такие как BERT и GPT, могут значительно улучшить эти шаги, используя глубокое обучение'
+2025-03-03 11:41:36,628 - __main__ - INFO - 12. GPT --[является]--> Глубокое обучение (Confidence: 0.90)
+2025-03-03 11:41:36,628 - __main__ - INFO -    Context: 'Продвинутые методы, такие как BERT и GPT, могут значительно улучшить эти шаги, используя глубокое обучение'
+2025-03-03 11:41:36,628 - __main__ - INFO - 13. Глубокое обучение --[используется_для]--> Извлечение сущностей (Confidence: 0.90)
+2025-03-03 11:41:36,628 - __main__ - INFO -    Context: 'Продвинутые методы, такие как BERT и GPT, могут значительно улучшить эти шаги, используя глубокое обучение для более точного извлечения и связывания.'
+2025-03-03 11:41:36,628 - __main__ - INFO - 14. Глубокое обучение --[используется_для]--> Извлечение отношений (Confidence: 0.90)
+2025-03-03 11:41:36,628 - __main__ - INFO -    Context: 'Продвинутые методы, такие как BERT и GPT, могут значительно улучшить эти шаги, используя глубокое обучение для более точного извлечения и связывания.'
+2025-03-03 11:41:36,628 - __main__ - INFO - 15. Машинное обучение --[часть_от]--> Искусственный интеллект (Confidence: 0.80)
+2025-03-03 11:41:36,629 - __main__ - INFO -    Context: 'в литературе по ИИ сущностями могут быть "искусственный интеллект", "машинное обучение" и "нейронные сети"'
+2025-03-03 11:41:36,629 - __main__ - INFO - 16. Интеграция знаний --[используется_для]--> Граф знаний (Confidence: 1.00)
+2025-03-03 11:41:36,629 - __main__ - INFO -    Context: 'интеграция знаний объединяет извлеченную информацию с существующими базами знаний для создания всеобъемлющего и согласованного графа'
+2025-03-03 11:41:36,631 - __main__ - INFO - Results saved to /Users/shipaleks/Documents/graph_reasoner/output/relationships_ru.json
+2025-03-03 11:42:48,242 - __main__ - INFO - Testing relationship extraction from segments in en
+2025-03-03 11:42:48,405 - src.text_processing.text_loader - INFO - Processed text: 1065 chars, language: en, supported: True
+2025-03-03 11:42:48,405 - src.text_processing.text_segmenter - INFO - Calling LLM for text segmentation (language: en, text length: 1065)
+2025-03-03 11:42:48,417 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 11:42:55,695 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:42:55,704 - src.text_processing.text_segmenter - INFO - Segmentation complete: 7 segments created
+2025-03-03 11:44:25,158 - __main__ - INFO - Testing relationship extraction from segments in en
+2025-03-03 11:44:25,313 - src.text_processing.text_loader - INFO - Processed text: 1065 chars, language: en, supported: True
+2025-03-03 11:44:25,313 - src.text_processing.text_segmenter - INFO - Calling LLM for text segmentation (language: en, text length: 1065)
+2025-03-03 11:44:25,325 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 11:44:32,680 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:44:32,685 - src.text_processing.text_segmenter - INFO - Segmentation complete: 7 segments created
+2025-03-03 11:44:32,686 - __main__ - INFO - Text segmented into 7 segments
+2025-03-03 11:44:32,686 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 89)
+2025-03-03 11:44:32,694 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 11:44:37,494 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:44:37,496 - src.knowledge.entity_extractor - INFO - Extracted 4 entities from text
+2025-03-03 11:44:37,496 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 69)
+2025-03-03 11:44:40,403 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:44:40,404 - src.knowledge.entity_extractor - INFO - Extracted 2 entities from text
+2025-03-03 11:44:40,404 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 226)
+2025-03-03 11:44:45,404 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:44:45,405 - src.knowledge.entity_extractor - INFO - Extracted 4 entities from text
+2025-03-03 11:44:45,405 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 250)
+2025-03-03 11:44:52,860 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:44:52,861 - src.knowledge.entity_extractor - INFO - Extracted 7 entities from text
+2025-03-03 11:44:52,861 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 138)
+2025-03-03 11:44:56,489 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:44:56,490 - src.knowledge.entity_extractor - INFO - Extracted 2 entities from text
+2025-03-03 11:44:56,490 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 142)
+2025-03-03 11:45:00,621 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:45:00,622 - src.knowledge.entity_extractor - INFO - Extracted 3 entities from text
+2025-03-03 11:45:00,622 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 145)
+2025-03-03 11:45:06,901 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:45:06,902 - src.knowledge.entity_extractor - INFO - Extracted 5 entities from text
+2025-03-03 11:45:06,902 - src.knowledge.entity_extractor - INFO - Extracted 25 unique entities from 7 segments
+2025-03-03 11:45:06,902 - src.knowledge.entity_extractor - INFO - Failed to process 0 segments
+2025-03-03 11:45:06,903 - __main__ - INFO - Extracted 25 unique entities from segments
+2025-03-03 11:45:06,904 - __main__ - INFO - Extracted entities:
+2025-03-03 11:45:06,904 - __main__ - INFO - 1. Knowledge graphs (Concept, Confidence: 0.95)
+2025-03-03 11:45:06,904 - __main__ - INFO - 2. Structured information (Concept, Confidence: 0.80)
+2025-03-03 11:45:06,904 - __main__ - INFO - 3. Entities (Concept, Confidence: 0.85)
+2025-03-03 11:45:06,904 - __main__ - INFO - 4. Relationships (Concept, Confidence: 0.85)
+2025-03-03 11:45:06,904 - __main__ - INFO - 5. knowledge graph (Concept, Confidence: 1.00)
+2025-03-03 11:45:06,904 - __main__ - INFO - 6. building a knowledge graph (Process, Confidence: 0.90)
+2025-03-03 11:45:06,904 - __main__ - INFO - 7. entity extraction (Process, Confidence: 0.95)
+2025-03-03 11:45:06,904 - __main__ - INFO - 8. artificial intelligence (Concept, Confidence: 0.90)
+2025-03-03 11:45:06,904 - __main__ - INFO - 9. machine learning (Technology, Confidence: 0.90)
+2025-03-03 11:45:06,904 - __main__ - INFO - 10. neural networks (Technology, Confidence: 0.90)
+2025-03-03 11:45:06,904 - __main__ - INFO - 11. relationship extraction (Process, Confidence: 0.95)
+2025-03-03 11:45:06,904 - __main__ - INFO - 12. hierarchical connection (Concept, Confidence: 0.90)
+2025-03-03 11:45:06,904 - __main__ - INFO - 13. causal connection (Concept, Confidence: 0.90)
+2025-03-03 11:45:06,904 - __main__ - INFO - 14. machine learning techniques (Technology, Confidence: 0.85)
+2025-03-03 11:45:06,904 - __main__ - INFO - 15. overfitting (Problem, Confidence: 0.80)
+2025-03-03 11:45:06,904 - __main__ - INFO - 16. poor generalization (Problem, Confidence: 0.80)
+2025-03-03 11:45:06,904 - __main__ - INFO - 17. Entity Resolution (Process, Confidence: 0.95)
+2025-03-03 11:45:06,904 - __main__ - INFO - 18. Entity (Concept, Confidence: 0.90)
+2025-03-03 11:45:06,905 - __main__ - INFO - 19. Knowledge Integration (Process, Confidence: 0.95)
+2025-03-03 11:45:06,905 - __main__ - INFO - 20. Knowledge Base (Concept, Confidence: 0.85)
+2025-03-03 11:45:06,905 - __main__ - INFO - 21. BERT (Technology, Confidence: 0.95)
+2025-03-03 11:45:06,905 - __main__ - INFO - 22. GPT (Technology, Confidence: 0.95)
+2025-03-03 11:45:06,905 - __main__ - INFO - 23. Deep Learning (Method, Confidence: 0.90)
+2025-03-03 11:45:06,905 - __main__ - INFO - 24. Extraction (Process, Confidence: 0.85)
+2025-03-03 11:45:06,905 - __main__ - INFO - 25. Linking (Process, Confidence: 0.85)
+2025-03-03 11:45:33,542 - __main__ - INFO - Testing relationship extraction from segments in en
+2025-03-03 11:45:33,712 - src.text_processing.text_loader - INFO - Processed text: 1065 chars, language: en, supported: True
+2025-03-03 11:45:33,712 - src.text_processing.text_segmenter - INFO - Calling LLM for text segmentation (language: en, text length: 1065)
+2025-03-03 11:45:33,726 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 11:45:41,112 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:45:41,122 - src.text_processing.text_segmenter - INFO - Segmentation complete: 7 segments created
+2025-03-03 11:45:41,122 - __main__ - INFO - Text segmented into 7 segments
+2025-03-03 11:45:41,123 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 89)
+2025-03-03 11:45:41,130 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 11:45:45,893 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:45:45,894 - src.knowledge.entity_extractor - INFO - Extracted 4 entities from text
+2025-03-03 11:45:45,894 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 69)
+2025-03-03 11:45:48,738 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:45:48,739 - src.knowledge.entity_extractor - INFO - Extracted 2 entities from text
+2025-03-03 11:45:48,739 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 226)
+2025-03-03 11:45:53,539 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:45:53,540 - src.knowledge.entity_extractor - INFO - Extracted 4 entities from text
+2025-03-03 11:45:53,540 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 250)
+2025-03-03 11:46:01,271 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:46:01,272 - src.knowledge.entity_extractor - INFO - Extracted 7 entities from text
+2025-03-03 11:46:01,272 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 138)
+2025-03-03 11:46:04,965 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:46:04,966 - src.knowledge.entity_extractor - INFO - Extracted 2 entities from text
+2025-03-03 11:46:04,966 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 142)
+2025-03-03 11:46:09,141 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:46:09,142 - src.knowledge.entity_extractor - INFO - Extracted 3 entities from text
+2025-03-03 11:46:09,142 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 145)
+2025-03-03 11:46:15,997 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:46:15,999 - src.knowledge.entity_extractor - INFO - Extracted 5 entities from text
+2025-03-03 11:46:15,999 - src.knowledge.entity_extractor - INFO - Extracted 25 unique entities from 7 segments
+2025-03-03 11:46:15,999 - src.knowledge.entity_extractor - INFO - Failed to process 0 segments
+2025-03-03 11:46:16,000 - __main__ - INFO - Extracted 25 unique entities from segments
+2025-03-03 11:46:16,000 - __main__ - INFO - Extracted entities:
+2025-03-03 11:46:16,000 - __main__ - INFO - 1. Knowledge graphs (Concept, Confidence: 0.95)
+2025-03-03 11:46:16,000 - __main__ - INFO - 2. Structured information (Concept, Confidence: 0.80)
+2025-03-03 11:46:16,000 - __main__ - INFO - 3. Entities (Concept, Confidence: 0.85)
+2025-03-03 11:46:16,000 - __main__ - INFO - 4. Relationships (Concept, Confidence: 0.85)
+2025-03-03 11:46:16,000 - __main__ - INFO - 5. knowledge graph (Concept, Confidence: 1.00)
+2025-03-03 11:46:16,000 - __main__ - INFO - 6. building a knowledge graph (Process, Confidence: 0.90)
+2025-03-03 11:46:16,000 - __main__ - INFO - 7. entity extraction (Process, Confidence: 0.95)
+2025-03-03 11:46:16,000 - __main__ - INFO - 8. artificial intelligence (Concept, Confidence: 0.90)
+2025-03-03 11:46:16,000 - __main__ - INFO - 9. machine learning (Technology, Confidence: 0.90)
+2025-03-03 11:46:16,001 - __main__ - INFO - 10. neural networks (Technology, Confidence: 0.90)
+2025-03-03 11:46:16,001 - __main__ - INFO - 11. relationship extraction (Process, Confidence: 0.95)
+2025-03-03 11:46:16,001 - __main__ - INFO - 12. hierarchical connection (Concept, Confidence: 0.90)
+2025-03-03 11:46:16,001 - __main__ - INFO - 13. causal connection (Concept, Confidence: 0.90)
+2025-03-03 11:46:16,001 - __main__ - INFO - 14. machine learning techniques (Technology, Confidence: 0.85)
+2025-03-03 11:46:16,001 - __main__ - INFO - 15. overfitting (Problem, Confidence: 0.80)
+2025-03-03 11:46:16,001 - __main__ - INFO - 16. poor generalization (Problem, Confidence: 0.80)
+2025-03-03 11:46:16,001 - __main__ - INFO - 17. Entity Resolution (Process, Confidence: 0.95)
+2025-03-03 11:46:16,001 - __main__ - INFO - 18. Entity (Concept, Confidence: 0.90)
+2025-03-03 11:46:16,001 - __main__ - INFO - 19. Knowledge Integration (Process, Confidence: 0.95)
+2025-03-03 11:46:16,001 - __main__ - INFO - 20. Knowledge Base (Concept, Confidence: 0.85)
+2025-03-03 11:46:16,001 - __main__ - INFO - 21. BERT (Technology, Confidence: 0.95)
+2025-03-03 11:46:16,001 - __main__ - INFO - 22. GPT (Technology, Confidence: 0.95)
+2025-03-03 11:46:16,001 - __main__ - INFO - 23. Deep Learning (Method, Confidence: 0.90)
+2025-03-03 11:46:16,001 - __main__ - INFO - 24. Extraction (Process, Confidence: 0.85)
+2025-03-03 11:46:16,001 - __main__ - INFO - 25. Linking (Process, Confidence: 0.85)
+2025-03-03 11:46:16,001 - src.knowledge.relationship_extractor - INFO - Extracting relationships from segment dedd84ff-9225-4db3-957e-8e348536c119
+2025-03-03 11:46:16,001 - src.knowledge.relationship_extractor - INFO - Extracting relationships from text of length 89 in en
+2025-03-03 11:46:16,002 - src.knowledge.relationship_extractor - INFO - Initializing claude provider with model claude-3-7-sonnet-latest
+2025-03-03 11:46:16,002 - src.knowledge.relationship_extractor - INFO - Calling LLM for relationship extraction (language: en, text length: 89)
+2025-03-03 11:46:16,010 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 11:46:21,499 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:46:21,501 - src.knowledge.relationship_extractor - INFO - LLM response received successfully
+2025-03-03 11:46:21,502 - src.knowledge.relationship_extractor - INFO - Extracted 4 relationships
+2025-03-03 11:46:21,502 - src.knowledge.relationship_extractor - INFO - Extracting relationships from segment 523bc304-fefb-49ff-b1b1-d29a8bcae7ab
+2025-03-03 11:46:21,502 - src.knowledge.relationship_extractor - INFO - Extracting relationships from text of length 69 in en
+2025-03-03 11:46:21,502 - src.knowledge.relationship_extractor - ERROR - Error extracting relationships: cannot access local variable 'llm_config' where it is not associated with a value
+2025-03-03 11:46:21,502 - src.utils.result - ERROR - Error extracting relationships: cannot access local variable 'llm_config' where it is not associated with a value 
+2025-03-03 11:46:21,502 - src.knowledge.relationship_extractor - WARNING - Failed to extract relationships from segment 523bc304-fefb-49ff-b1b1-d29a8bcae7ab: Error extracting relationships: cannot access local variable 'llm_config' where it is not associated with a value
+2025-03-03 11:46:21,502 - src.knowledge.relationship_extractor - INFO - Extracting relationships from segment bbe854d4-f02e-4baf-a978-a53477bf5e7a
+2025-03-03 11:46:21,502 - src.knowledge.relationship_extractor - INFO - Extracting relationships from text of length 226 in en
+2025-03-03 11:46:21,502 - src.knowledge.relationship_extractor - ERROR - Error extracting relationships: cannot access local variable 'llm_config' where it is not associated with a value
+2025-03-03 11:46:21,502 - src.utils.result - ERROR - Error extracting relationships: cannot access local variable 'llm_config' where it is not associated with a value 
+2025-03-03 11:46:21,502 - src.knowledge.relationship_extractor - WARNING - Failed to extract relationships from segment bbe854d4-f02e-4baf-a978-a53477bf5e7a: Error extracting relationships: cannot access local variable 'llm_config' where it is not associated with a value
+2025-03-03 11:46:21,502 - src.knowledge.relationship_extractor - INFO - Extracting relationships from segment 4d427a5d-bcbe-4a77-b314-68cb3a88f40f
+2025-03-03 11:46:21,502 - src.knowledge.relationship_extractor - INFO - Extracting relationships from text of length 250 in en
+2025-03-03 11:46:21,502 - src.knowledge.relationship_extractor - ERROR - Error extracting relationships: cannot access local variable 'llm_config' where it is not associated with a value
+2025-03-03 11:46:21,503 - src.utils.result - ERROR - Error extracting relationships: cannot access local variable 'llm_config' where it is not associated with a value 
+2025-03-03 11:46:21,503 - src.knowledge.relationship_extractor - WARNING - Failed to extract relationships from segment 4d427a5d-bcbe-4a77-b314-68cb3a88f40f: Error extracting relationships: cannot access local variable 'llm_config' where it is not associated with a value
+2025-03-03 11:46:21,503 - src.knowledge.relationship_extractor - INFO - Extracting relationships from segment 8636d5cd-ded3-466a-8a6d-8fcfbed9ca8d
+2025-03-03 11:46:21,503 - src.knowledge.relationship_extractor - INFO - Extracting relationships from text of length 138 in en
+2025-03-03 11:46:21,503 - src.knowledge.relationship_extractor - ERROR - Error extracting relationships: cannot access local variable 'llm_config' where it is not associated with a value
+2025-03-03 11:46:21,503 - src.utils.result - ERROR - Error extracting relationships: cannot access local variable 'llm_config' where it is not associated with a value 
+2025-03-03 11:46:21,503 - src.knowledge.relationship_extractor - WARNING - Failed to extract relationships from segment 8636d5cd-ded3-466a-8a6d-8fcfbed9ca8d: Error extracting relationships: cannot access local variable 'llm_config' where it is not associated with a value
+2025-03-03 11:46:21,503 - src.knowledge.relationship_extractor - INFO - Extracting relationships from segment fefc2229-ee34-4b09-99d9-d8e068d4e614
+2025-03-03 11:46:21,503 - src.knowledge.relationship_extractor - INFO - Extracting relationships from text of length 142 in en
+2025-03-03 11:46:21,503 - src.knowledge.relationship_extractor - ERROR - Error extracting relationships: cannot access local variable 'llm_config' where it is not associated with a value
+2025-03-03 11:46:21,503 - src.utils.result - ERROR - Error extracting relationships: cannot access local variable 'llm_config' where it is not associated with a value 
+2025-03-03 11:46:21,503 - src.knowledge.relationship_extractor - WARNING - Failed to extract relationships from segment fefc2229-ee34-4b09-99d9-d8e068d4e614: Error extracting relationships: cannot access local variable 'llm_config' where it is not associated with a value
+2025-03-03 11:46:21,503 - src.knowledge.relationship_extractor - INFO - Extracting relationships from segment 21c71b42-87a4-4ea0-8441-7a35d3bbe4cf
+2025-03-03 11:46:21,503 - src.knowledge.relationship_extractor - INFO - Extracting relationships from text of length 145 in en
+2025-03-03 11:46:21,503 - src.knowledge.relationship_extractor - ERROR - Error extracting relationships: cannot access local variable 'llm_config' where it is not associated with a value
+2025-03-03 11:46:21,503 - src.utils.result - ERROR - Error extracting relationships: cannot access local variable 'llm_config' where it is not associated with a value 
+2025-03-03 11:46:21,503 - src.knowledge.relationship_extractor - WARNING - Failed to extract relationships from segment 21c71b42-87a4-4ea0-8441-7a35d3bbe4cf: Error extracting relationships: cannot access local variable 'llm_config' where it is not associated with a value
+2025-03-03 11:46:21,503 - __main__ - INFO - Extracted 4 unique relationships from segments
+2025-03-03 11:46:21,504 - __main__ - INFO - Relationship types:
+2025-03-03 11:46:21,504 - __main__ - INFO - - represents: 1
+2025-03-03 11:46:21,504 - __main__ - INFO - - has_part: 2
+2025-03-03 11:46:21,504 - __main__ - INFO - - related_to: 1
+2025-03-03 11:46:21,504 - __main__ - INFO - Top 5 relationships by confidence:
+2025-03-03 11:46:21,504 - __main__ - INFO - 1. Knowledge graphs --[represents]--> Structured information (Confidence: 1.00)
+2025-03-03 11:46:21,504 - __main__ - INFO -    Context: 'Knowledge graphs represent structured information about entities and their relationships.'
+2025-03-03 11:46:21,504 - __main__ - INFO - 2. Entities --[related_to]--> Relationships (Confidence: 1.00)
+2025-03-03 11:46:21,504 - __main__ - INFO -    Context: 'Knowledge graphs represent structured information about entities and their relationships.'
+2025-03-03 11:46:21,504 - __main__ - INFO - 3. Structured information --[has_part]--> Entities (Confidence: 0.90)
+2025-03-03 11:46:21,504 - __main__ - INFO -    Context: 'Knowledge graphs represent structured information about entities and their relationships.'
+2025-03-03 11:46:21,504 - __main__ - INFO - 4. Structured information --[has_part]--> Relationships (Confidence: 0.90)
+2025-03-03 11:46:21,504 - __main__ - INFO -    Context: 'Knowledge graphs represent structured information about entities and their relationships.'
+2025-03-03 11:46:21,507 - __main__ - INFO - Results saved to /Users/shipaleks/Documents/graph_reasoner/output/relationships_segments_en.json
+2025-03-03 11:47:25,593 - __main__ - INFO - Testing relationship extraction from segments in en
+2025-03-03 11:47:25,758 - src.text_processing.text_loader - INFO - Processed text: 1065 chars, language: en, supported: True
+2025-03-03 11:47:25,759 - src.text_processing.text_segmenter - INFO - Calling LLM for text segmentation (language: en, text length: 1065)
+2025-03-03 11:47:25,773 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 11:47:33,398 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:47:33,406 - src.text_processing.text_segmenter - INFO - Segmentation complete: 7 segments created
+2025-03-03 11:47:33,407 - __main__ - INFO - Text segmented into 7 segments
+2025-03-03 11:47:33,407 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 89)
+2025-03-03 11:47:33,414 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 11:47:38,221 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:47:38,222 - src.knowledge.entity_extractor - INFO - Extracted 4 entities from text
+2025-03-03 11:47:38,222 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 69)
+2025-03-03 11:47:40,930 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:47:40,931 - src.knowledge.entity_extractor - INFO - Extracted 2 entities from text
+2025-03-03 11:47:40,931 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 226)
+2025-03-03 11:47:45,998 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:47:45,999 - src.knowledge.entity_extractor - INFO - Extracted 4 entities from text
+2025-03-03 11:47:45,999 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 250)
+2025-03-03 11:47:53,240 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:47:53,241 - src.knowledge.entity_extractor - INFO - Extracted 7 entities from text
+2025-03-03 11:47:53,241 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 138)
+2025-03-03 11:47:56,830 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:47:56,831 - src.knowledge.entity_extractor - INFO - Extracted 2 entities from text
+2025-03-03 11:47:56,831 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 142)
+2025-03-03 11:48:00,844 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:48:00,846 - src.knowledge.entity_extractor - INFO - Extracted 3 entities from text
+2025-03-03 11:48:00,846 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 145)
+2025-03-03 11:48:07,309 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:48:07,311 - src.knowledge.entity_extractor - INFO - Extracted 5 entities from text
+2025-03-03 11:48:07,311 - src.knowledge.entity_extractor - INFO - Extracted 25 unique entities from 7 segments
+2025-03-03 11:48:07,311 - src.knowledge.entity_extractor - INFO - Failed to process 0 segments
+2025-03-03 11:48:07,313 - __main__ - INFO - Extracted 25 unique entities from segments
+2025-03-03 11:48:07,313 - __main__ - INFO - Extracted entities:
+2025-03-03 11:48:07,313 - __main__ - INFO - 1. Knowledge graphs (Concept, Confidence: 0.95)
+2025-03-03 11:48:07,314 - __main__ - INFO - 2. Structured information (Concept, Confidence: 0.80)
+2025-03-03 11:48:07,314 - __main__ - INFO - 3. Entities (Concept, Confidence: 0.85)
+2025-03-03 11:48:07,314 - __main__ - INFO - 4. Relationships (Concept, Confidence: 0.85)
+2025-03-03 11:48:07,314 - __main__ - INFO - 5. Knowledge Graph (Concept, Confidence: 1.00)
+2025-03-03 11:48:07,314 - __main__ - INFO - 6. Knowledge Graph Construction (Process, Confidence: 0.90)
+2025-03-03 11:48:07,314 - __main__ - INFO - 7. entity extraction (Process, Confidence: 0.95)
+2025-03-03 11:48:07,314 - __main__ - INFO - 8. artificial intelligence (Concept, Confidence: 0.90)
+2025-03-03 11:48:07,314 - __main__ - INFO - 9. machine learning (Technology, Confidence: 0.90)
+2025-03-03 11:48:07,314 - __main__ - INFO - 10. neural networks (Technology, Confidence: 0.90)
+2025-03-03 11:48:07,314 - __main__ - INFO - 11. relationship extraction (Process, Confidence: 0.95)
+2025-03-03 11:48:07,314 - __main__ - INFO - 12. hierarchical connection (Concept, Confidence: 0.90)
+2025-03-03 11:48:07,314 - __main__ - INFO - 13. causal connection (Concept, Confidence: 0.90)
+2025-03-03 11:48:07,314 - __main__ - INFO - 14. machine learning techniques (Technology, Confidence: 0.85)
+2025-03-03 11:48:07,314 - __main__ - INFO - 15. overfitting (Problem, Confidence: 0.80)
+2025-03-03 11:48:07,314 - __main__ - INFO - 16. poor generalization (Problem, Confidence: 0.80)
+2025-03-03 11:48:07,314 - __main__ - INFO - 17. Entity Resolution (Process, Confidence: 0.95)
+2025-03-03 11:48:07,314 - __main__ - INFO - 18. Entity (Concept, Confidence: 0.90)
+2025-03-03 11:48:07,315 - __main__ - INFO - 19. Knowledge Integration (Process, Confidence: 0.95)
+2025-03-03 11:48:07,315 - __main__ - INFO - 20. Knowledge Base (Concept, Confidence: 0.85)
+2025-03-03 11:48:07,315 - __main__ - INFO - 21. BERT (Technology, Confidence: 0.95)
+2025-03-03 11:48:07,315 - __main__ - INFO - 22. GPT (Technology, Confidence: 0.95)
+2025-03-03 11:48:07,315 - __main__ - INFO - 23. Deep Learning (Method, Confidence: 0.90)
+2025-03-03 11:48:07,315 - __main__ - INFO - 24. Extraction (Process, Confidence: 0.85)
+2025-03-03 11:48:07,315 - __main__ - INFO - 25. Linking (Process, Confidence: 0.85)
+2025-03-03 11:48:07,315 - src.knowledge.relationship_extractor - INFO - Extracting relationships from segment d1b7ec57-5fe8-4123-b241-e5dafa049067
+2025-03-03 11:48:07,315 - src.knowledge.relationship_extractor - INFO - Extracting relationships from text of length 89 in en
+2025-03-03 11:48:07,315 - src.knowledge.relationship_extractor - INFO - Initializing claude provider with model claude-3-7-sonnet-latest
+2025-03-03 11:48:07,315 - src.knowledge.relationship_extractor - INFO - Calling LLM for relationship extraction (language: en, text length: 89)
+2025-03-03 11:48:07,324 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 11:48:11,884 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:48:11,893 - src.knowledge.relationship_extractor - INFO - LLM response received successfully
+2025-03-03 11:48:11,894 - src.knowledge.relationship_extractor - INFO - Extracted 4 relationships
+2025-03-03 11:48:11,894 - src.knowledge.relationship_extractor - INFO - Extracting relationships from segment e8d4ea94-1be6-41ff-9fe4-cb38a65752dc
+2025-03-03 11:48:11,894 - src.knowledge.relationship_extractor - INFO - Extracting relationships from text of length 69 in en
+2025-03-03 11:48:11,894 - src.knowledge.relationship_extractor - INFO - Calling LLM for relationship extraction (language: en, text length: 69)
+2025-03-03 11:48:13,165 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:48:13,166 - src.knowledge.relationship_extractor - INFO - LLM response received successfully
+2025-03-03 11:48:13,166 - src.knowledge.relationship_extractor - INFO - Extracted 0 relationships
+2025-03-03 11:48:13,167 - src.knowledge.relationship_extractor - INFO - Extracting relationships from segment c7c433f8-1f30-4251-b292-4f6ab668c74c
+2025-03-03 11:48:13,167 - src.knowledge.relationship_extractor - INFO - Extracting relationships from text of length 226 in en
+2025-03-03 11:48:13,167 - src.knowledge.relationship_extractor - INFO - Calling LLM for relationship extraction (language: en, text length: 226)
+2025-03-03 11:48:17,517 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:48:17,519 - src.knowledge.relationship_extractor - INFO - LLM response received successfully
+2025-03-03 11:48:17,520 - src.knowledge.relationship_extractor - INFO - Extracted 3 relationships
+2025-03-03 11:48:17,520 - src.knowledge.relationship_extractor - INFO - Extracting relationships from segment 722db564-a729-421b-9e34-1e2c652f6594
+2025-03-03 11:48:17,520 - src.knowledge.relationship_extractor - INFO - Extracting relationships from text of length 250 in en
+2025-03-03 11:48:17,520 - src.knowledge.relationship_extractor - INFO - Calling LLM for relationship extraction (language: en, text length: 250)
+2025-03-03 11:48:22,985 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:48:22,986 - src.knowledge.relationship_extractor - INFO - LLM response received successfully
+2025-03-03 11:48:22,986 - src.knowledge.relationship_extractor - WARNING - Source entity 'neural networks' not found in entity map
+2025-03-03 11:48:22,986 - src.knowledge.relationship_extractor - INFO - Extracted 4 relationships
+2025-03-03 11:48:22,986 - src.knowledge.relationship_extractor - INFO - Extracting relationships from segment 974d2a13-78c5-4033-8626-8e5f23ffc949
+2025-03-03 11:48:22,986 - src.knowledge.relationship_extractor - INFO - Extracting relationships from text of length 138 in en
+2025-03-03 11:48:22,986 - src.knowledge.relationship_extractor - INFO - Calling LLM for relationship extraction (language: en, text length: 138)
+2025-03-03 11:48:26,918 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:48:26,920 - src.knowledge.relationship_extractor - INFO - LLM response received successfully
+2025-03-03 11:48:26,920 - src.knowledge.relationship_extractor - INFO - Extracted 2 relationships
+2025-03-03 11:48:26,920 - src.knowledge.relationship_extractor - INFO - Extracting relationships from segment a76501cc-98ca-46ac-b20e-b0d3ab8d29ae
+2025-03-03 11:48:26,920 - src.knowledge.relationship_extractor - INFO - Extracting relationships from text of length 142 in en
+2025-03-03 11:48:26,920 - src.knowledge.relationship_extractor - INFO - Calling LLM for relationship extraction (language: en, text length: 142)
+2025-03-03 11:48:29,871 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:48:29,872 - src.knowledge.relationship_extractor - INFO - LLM response received successfully
+2025-03-03 11:48:29,872 - src.knowledge.relationship_extractor - INFO - Extracted 2 relationships
+2025-03-03 11:48:29,873 - src.knowledge.relationship_extractor - INFO - Extracting relationships from segment 07f558c7-b184-4a0f-bed1-ba4e55fb266e
+2025-03-03 11:48:29,873 - src.knowledge.relationship_extractor - INFO - Extracting relationships from text of length 145 in en
+2025-03-03 11:48:29,873 - src.knowledge.relationship_extractor - INFO - Calling LLM for relationship extraction (language: en, text length: 145)
+2025-03-03 11:48:39,062 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:48:39,071 - src.knowledge.relationship_extractor - INFO - LLM response received successfully
+2025-03-03 11:48:39,071 - src.knowledge.relationship_extractor - INFO - Extracted 9 relationships
+2025-03-03 11:48:39,071 - __main__ - INFO - Extracted 24 unique relationships from segments
+2025-03-03 11:48:39,072 - __main__ - INFO - Relationship types:
+2025-03-03 11:48:39,072 - __main__ - INFO - - has_part: 3
+2025-03-03 11:48:39,072 - __main__ - INFO - - related_to: 2
+2025-03-03 11:48:39,072 - __main__ - INFO - - used_for: 8
+2025-03-03 11:48:39,072 - __main__ - INFO - - part_of: 1
+2025-03-03 11:48:39,072 - __main__ - INFO - - identifies: 2
+2025-03-03 11:48:39,072 - __main__ - INFO - - causes: 1
+2025-03-03 11:48:39,072 - __main__ - INFO - - affects: 1
+2025-03-03 11:48:39,072 - __main__ - INFO - - depends_on: 1
+2025-03-03 11:48:39,072 - __main__ - INFO - - is_a: 2
+2025-03-03 11:48:39,072 - __main__ - INFO - - enables: 2
+2025-03-03 11:48:39,072 - __main__ - INFO - - similar_to: 1
+2025-03-03 11:48:39,072 - __main__ - INFO - Top 5 relationships by confidence:
+2025-03-03 11:48:39,072 - __main__ - INFO - 1. Deep Learning --[enables]--> Extraction (Confidence: 1.00)
+2025-03-03 11:48:39,073 - __main__ - INFO -    Context: 'leveraging deep learning for more accurate extraction and linking'
+2025-03-03 11:48:39,073 - __main__ - INFO - 2. Deep Learning --[enables]--> Linking (Confidence: 1.00)
+2025-03-03 11:48:39,073 - __main__ - INFO -    Context: 'leveraging deep learning for more accurate extraction and linking'
+2025-03-03 11:48:39,073 - __main__ - INFO - 3. Knowledge graphs --[has_part]--> Structured information (Confidence: 0.95)
+2025-03-03 11:48:39,073 - __main__ - INFO -    Context: 'Knowledge graphs represent structured information about entities and their relationships.'
+2025-03-03 11:48:39,073 - __main__ - INFO - 4. Entities --[related_to]--> Relationships (Confidence: 0.95)
+2025-03-03 11:48:39,073 - __main__ - INFO -    Context: 'Knowledge graphs represent structured information about entities and their relationships.'
+2025-03-03 11:48:39,073 - __main__ - INFO - 5. relationship extraction --[identifies]--> hierarchical connection (Confidence: 0.95)
+2025-03-03 11:48:39,073 - __main__ - INFO -    Context: 'relationship extraction determines how these entities are connected. These connections might be hierarchical'
+2025-03-03 11:48:39,075 - __main__ - INFO - Results saved to /Users/shipaleks/Documents/graph_reasoner/output/relationships_segments_en.json
+2025-03-03 11:48:51,460 - __main__ - INFO - Testing relationship extraction with custom types in en
+2025-03-03 11:48:51,460 - __main__ - INFO - Using custom relation types: is_part_of, contains, depends_on, enables, causes, is_used_for, is_type_of, succeeds, improves, contradicts, complements, implements
+2025-03-03 11:48:51,460 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 1072)
+2025-03-03 11:48:51,470 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 11:49:06,265 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:49:06,277 - src.knowledge.entity_extractor - INFO - Extracted 13 entities from text
+2025-03-03 11:49:06,277 - __main__ - INFO - Extracted 13 entities
+2025-03-03 11:49:06,277 - src.knowledge.relationship_extractor - INFO - Extracting relationships from text of length 1072 in en
+2025-03-03 11:49:06,277 - src.knowledge.relationship_extractor - INFO - Initializing claude provider with model claude-3-7-sonnet-latest
+2025-03-03 11:49:06,277 - src.knowledge.relationship_extractor - INFO - Calling LLM for relationship extraction (language: en, text length: 1072)
+2025-03-03 11:49:06,285 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 11:49:22,688 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 11:49:22,689 - src.knowledge.relationship_extractor - INFO - LLM response received successfully
+2025-03-03 11:49:22,689 - src.knowledge.relationship_extractor - INFO - Extracted 15 relationships
+2025-03-03 11:49:22,690 - __main__ - INFO - Extracted 15 relationships using custom types
+2025-03-03 11:49:22,690 - __main__ - INFO - 1. Entity Extraction --[is_part_of]--> Knowledge Graph (Confidence: 1.00)
+2025-03-03 11:49:22,690 - __main__ - INFO - 2. Relationship Extraction --[is_part_of]--> Knowledge Graph (Confidence: 1.00)
+2025-03-03 11:49:22,690 - __main__ - INFO - 3. Entity Resolution --[is_part_of]--> Knowledge Graph (Confidence: 1.00)
+2025-03-03 11:49:22,690 - __main__ - INFO - 4. Knowledge Integration --[is_part_of]--> Knowledge Graph (Confidence: 1.00)
+2025-03-03 11:49:22,690 - __main__ - INFO - 5. Neural Networks --[is_type_of]--> Machine Learning (Confidence: 0.90)
+2025-03-03 11:49:22,690 - __main__ - INFO - 6. Overfitting --[causes]--> Poor Generalization (Confidence: 0.90)
+2025-03-03 11:49:22,690 - __main__ - INFO - 7. BERT --[implements]--> Deep Learning (Confidence: 0.80)
+2025-03-03 11:49:22,690 - __main__ - INFO - 8. GPT --[implements]--> Deep Learning (Confidence: 0.80)
+2025-03-03 11:49:22,690 - __main__ - INFO - 9. BERT --[improves]--> Entity Extraction (Confidence: 0.80)
+2025-03-03 11:49:22,690 - __main__ - INFO - 10. BERT --[improves]--> Relationship Extraction (Confidence: 0.80)
+2025-03-03 11:49:22,690 - __main__ - INFO - 11. GPT --[improves]--> Entity Extraction (Confidence: 0.80)
+2025-03-03 11:49:22,690 - __main__ - INFO - 12. GPT --[improves]--> Relationship Extraction (Confidence: 0.80)
+2025-03-03 11:49:22,690 - __main__ - INFO - 13. Deep Learning --[improves]--> Entity Extraction (Confidence: 0.90)
+2025-03-03 11:49:22,691 - __main__ - INFO - 14. Deep Learning --[improves]--> Entity Resolution (Confidence: 0.80)
+2025-03-03 11:49:22,691 - __main__ - INFO - 15. Machine Learning --[is_type_of]--> Artificial Intelligence (Confidence: 0.70)
+2025-03-03 11:49:22,691 - __main__ - INFO - Relation types used:
+2025-03-03 11:49:22,691 - __main__ - INFO - - is_part_of: 4
+2025-03-03 11:49:22,691 - __main__ - INFO - - is_type_of: 2
+2025-03-03 11:49:22,691 - __main__ - INFO - - causes: 1
+2025-03-03 11:49:22,691 - __main__ - INFO - - implements: 2
+2025-03-03 11:49:22,691 - __main__ - INFO - - improves: 6
