@@ -1,0 +1,76 @@
+{
+  "relationships": [
+    {
+      "id": "40515a15-4f37-4644-a21e-f38ec348ee39",
+      "source_entity": "1892eeea-9b1f-499b-8ccc-7d5496c23491",
+      "target_entity": "b93c3632-5a06-4c5f-924e-033e3acd2caa",
+      "relation_type": "is_a",
+      "context": "neural networks are a type of machine learning technique",
+      "attributes": {},
+      "metadata": {},
+      "bidirectional": false,
+      "strength": 0.9,
+      "confidence": 0.95
+    },
+    {
+      "id": "b313f690-5101-49af-b930-422e10377316",
+      "source_entity": "b93c3632-5a06-4c5f-924e-033e3acd2caa",
+      "target_entity": "d58b6d83-622b-4048-b9bf-5d6ad0e425d4",
+      "relation_type": "is_a",
+      "context": "machine learning, which is itself a branch of artificial intelligence",
+      "attributes": {},
+      "metadata": {},
+      "bidirectional": false,
+      "strength": 0.9,
+      "confidence": 0.95
+    },
+    {
+      "id": "4b7ab6a2-4c0c-4e12-8aa5-8fc0557a6d0e",
+      "source_entity": "4010cab0-d216-4108-b1c0-2a49f72b9413",
+      "target_entity": "d58b6d83-622b-4048-b9bf-5d6ad0e425d4",
+      "relation_type": "has_part",
+      "context": "These form a hierarchy where neural networks are a type of machine learning technique, which is itself a branch of artificial intelligence",
+      "attributes": {},
+      "metadata": {},
+      "bidirectional": false,
+      "strength": 0.8,
+      "confidence": 0.9
+    },
+    {
+      "id": "d939ef4f-cf56-4bd3-a435-47a965561a57",
+      "source_entity": "4010cab0-d216-4108-b1c0-2a49f72b9413",
+      "target_entity": "b93c3632-5a06-4c5f-924e-033e3acd2caa",
+      "relation_type": "has_part",
+      "context": "These form a hierarchy where neural networks are a type of machine learning technique, which is itself a branch of artificial intelligence",
+      "attributes": {},
+      "metadata": {},
+      "bidirectional": false,
+      "strength": 0.8,
+      "confidence": 0.9
+    },
+    {
+      "id": "cd298c87-f00f-46e9-b8a2-d892649bbde7",
+      "source_entity": "4010cab0-d216-4108-b1c0-2a49f72b9413",
+      "target_entity": "1892eeea-9b1f-499b-8ccc-7d5496c23491",
+      "relation_type": "has_part",
+      "context": "These form a hierarchy where neural networks are a type of machine learning technique, which is itself a branch of artificial intelligence",
+      "attributes": {},
+      "metadata": {},
+      "bidirectional": false,
+      "strength": 0.8,
+      "confidence": 0.9
+    },
+    {
+      "id": "5a95cdef-692b-45cf-acbe-32eb81a07bdb",
+      "source_entity": "115f6bcb-271b-462d-be5c-c6ccac9403f1",
+      "target_entity": "4010cab0-d216-4108-b1c0-2a49f72b9413",
+      "relation_type": "related_to",
+      "context": "Key concepts in AI include artificial intelligence, machine learning, and neural networks. These form a hierarchy",
+      "attributes": {},
+      "metadata": {},
+      "bidirectional": true,
+      "strength": 0.7,
+      "confidence": 0.8
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "entities": {
+    "115f6bcb-271b-462d-be5c-c6ccac9403f1": {
+      "id": "115f6bcb-271b-462d-be5c-c6ccac9403f1",
+      "name": "Knowledge Graph Construction",
+      "entity_type": "Process",
+      "context": "Knowledge Graph Construction",
+      "attributes": {
+        "domain": "AI",
+        "role": "main topic"
+      },
+      "metadata": {
+        "extraction_time": 1741010587.810667,
+        "language": "en",
+        "domain_type": "general knowledge"
+      },
+      "confidence": 0.9
+    },
+    "d58b6d83-622b-4048-b9bf-5d6ad0e425d4": {
+      "id": "d58b6d83-622b-4048-b9bf-5d6ad0e425d4",
+      "name": "Artificial Intelligence",
+      "entity_type": "Concept",
+      "context": "Key concepts in AI include artificial intelligence, machine learning, and neural networks.",
+      "attributes": {
+        "abbreviation": "AI",
+        "relationship": "parent concept of machine learning",
+        "role": "key concept"
+      },
+      "metadata": {
+        "extraction_time": 1741010587.8107362,
+        "language": "en",
+        "domain_type": "general knowledge"
+      },
+      "confidence": 0.95
+    },
+    "4010cab0-d216-4108-b1c0-2a49f72b9413": {
+      "id": "4010cab0-d216-4108-b1c0-2a49f72b9413",
+      "name": "Hierarchy of AI Concepts",
+      "entity_type": "Concept",
+      "context": "These form a hierarchy where neural networks are a type of machine learning technique, which is itself a branch of artificial intelligence.",
+      "attributes": {
+        "structure": "AI > Machine Learning > Neural Networks",
+        "role": "organizing principle"
+      },
+      "metadata": {
+        "extraction_time": 1741010587.8107579,
+        "language": "en",
+        "domain_type": "general knowledge"
+      },
+      "confidence": 0.85
+    },
+    "b93c3632-5a06-4c5f-924e-033e3acd2caa": {
+      "id": "b93c3632-5a06-4c5f-924e-033e3acd2caa",
+      "name": "Machine Learning",
+      "entity_type": "Technology",
+      "context": "Key concepts in AI include artificial intelligence, machine learning, and neural networks.",
+      "attributes": {
+        "relationship": "branch of artificial intelligence",
+        "parent": "artificial intelligence",
+        "role": "key concept"
+      },
+      "metadata": {
+        "extraction_time": 1741010587.8107462,
+        "language": "en",
+        "domain_type": "general knowledge"
+      },
+      "confidence": 0.95
+    },
+    "1892eeea-9b1f-499b-8ccc-7d5496c23491": {
+      "id": "1892eeea-9b1f-499b-8ccc-7d5496c23491",
+      "name": "Neural Networks",
+      "entity_type": "Method",
+      "context": "Key concepts in AI include artificial intelligence, machine learning, and neural networks.",
+      "attributes": {
+        "relationship": "type of machine learning technique",
+        "role": "key concept"
+      },
+      "metadata": {
+        "extraction_time": 1741010587.810753,
+        "language": "en",
+        "domain_type": "general knowledge"
+      },
+      "confidence": 0.9
+    }
+  }
+}

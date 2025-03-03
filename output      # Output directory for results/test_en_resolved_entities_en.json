@@ -1,0 +1,865 @@
+{
+  "entities": {
+    "7fbc590d-5348-41a6-b6dd-4715c45af479": {
+      "id": "7fbc590d-5348-41a6-b6dd-4715c45af479",
+      "name": "Knowledge Graph",
+      "entity_type": "Concept",
+      "context": "The process of building a knowledge graph involves several key steps\nWhen building knowledge graphs, it's important to consider issues like data quality, scalability, and domain specificity.\nKnowledge graphs represent a powerful way to organize and reason about information.\nCombining the extracted information with existing knowledge bases.",
+      "attributes": {
+        "components": [
+          "Entity Extraction",
+          "Relationship Extraction",
+          "Entity Resolution",
+          "Knowledge Integration",
+          "entities (nodes)",
+          "relationships (edges)"
+        ],
+        "role": "main topic",
+        "considerations": [
+          "data quality",
+          "scalability",
+          "domain specificity"
+        ],
+        "purpose": "organize and reason about information",
+        "relationship": "target for integration of extracted information",
+        "state": "existing"
+      },
+      "metadata": {
+        "extraction_time": 1741013420.7027042,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "38a2cc27-797b-4278-bd25-344e8ac89ef5",
+        "segment_type": "section",
+        "segment_level": 0,
+        "coreference_resolution": {
+          "original_ids": [
+            "7fbc590d-5348-41a6-b6dd-4715c45af479",
+            "bc784bd0-6449-4188-8883-d30e6a69a485",
+            "748de74c-1195-4868-ab2f-ff8b215e8daf"
+          ],
+          "original_names": [
+            "Knowledge Graph",
+            "Knowledge graphs",
+            "Knowledge Base"
+          ],
+          "resolution_confidence": 0.9
+        }
+      },
+      "confidence": 0.9
+    },
+    "0e68824b-9397-43ba-a1d5-6eab2a3f5ab8": {
+      "id": "0e68824b-9397-43ba-a1d5-6eab2a3f5ab8",
+      "name": "Entity",
+      "entity_type": "Concept",
+      "context": "They consist of entities (nodes) and relationships (edges) that connect these entities.\nDetermining how these entities are connected to each other.",
+      "attributes": {
+        "representation": "nodes",
+        "role": [
+          "component definition",
+          "supporting concept"
+        ],
+        "can_be_connected": true
+      },
+      "metadata": {
+        "extraction_time": 1741013413.295455,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "944a1e23-2483-4acc-86c4-1bd5d4571dd2",
+        "segment_type": "paragraph",
+        "segment_level": 0,
+        "coreference_resolution": {
+          "original_ids": [
+            "0e68824b-9397-43ba-a1d5-6eab2a3f5ab8",
+            "6f8f974c-b000-4d3a-9be0-7b9ed36c60f2"
+          ],
+          "original_names": [
+            "Entities",
+            "Entity"
+          ],
+          "resolution_confidence": 0.95
+        }
+      },
+      "confidence": 0.95
+    },
+    "42826f8f-f29f-4311-b0e6-02abf9432188": {
+      "id": "42826f8f-f29f-4311-b0e6-02abf9432188",
+      "name": "Relationships",
+      "entity_type": "Concept",
+      "context": "They consist of entities (nodes) and relationships (edges) that connect these entities.",
+      "attributes": {
+        "representation": "edges",
+        "function": "connect entities",
+        "role": "component definition"
+      },
+      "metadata": {
+        "extraction_time": 1741013413.295465,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "944a1e23-2483-4acc-86c4-1bd5d4571dd2",
+        "segment_type": "paragraph",
+        "segment_level": 0
+      },
+      "confidence": 0.9
+    },
+    "c0fe8612-3f14-4296-a0e1-38b43c80d5e7": {
+      "id": "c0fe8612-3f14-4296-a0e1-38b43c80d5e7",
+      "name": "Concept",
+      "entity_type": "Concept",
+      "context": "Identifying important concepts, objects, or individuals mentioned in the text.",
+      "attributes": {
+        "property": "can be identified in text",
+        "importance": "important",
+        "role": "extraction target"
+      },
+      "metadata": {
+        "extraction_time": 1741013425.8109078,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "f3b55787-538e-4638-b59a-214e5570ffc0",
+        "segment_type": "block",
+        "segment_level": 1
+      },
+      "confidence": 0.8
+    },
+    "4e4a06e7-2932-4164-a90b-339bdd533423": {
+      "id": "4e4a06e7-2932-4164-a90b-339bdd533423",
+      "name": "Object",
+      "entity_type": "Concept",
+      "context": "Identifying important concepts, objects, or individuals mentioned in the text.",
+      "attributes": {
+        "property": "can be identified in text",
+        "importance": "important",
+        "role": "extraction target"
+      },
+      "metadata": {
+        "extraction_time": 1741013425.810915,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "f3b55787-538e-4638-b59a-214e5570ffc0",
+        "segment_type": "block",
+        "segment_level": 1
+      },
+      "confidence": 0.8
+    },
+    "747a899c-913b-4918-8aa0-3f481afcf89d": {
+      "id": "747a899c-913b-4918-8aa0-3f481afcf89d",
+      "name": "Individual",
+      "entity_type": "Concept",
+      "context": "Identifying important concepts, objects, or individuals mentioned in the text.",
+      "attributes": {
+        "property": "can be identified in text",
+        "importance": "important",
+        "role": "extraction target"
+      },
+      "metadata": {
+        "extraction_time": 1741013425.810922,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "f3b55787-538e-4638-b59a-214e5570ffc0",
+        "segment_type": "block",
+        "segment_level": 1
+      },
+      "confidence": 0.8
+    },
+    "ac72b330-16e1-4ad0-aab7-6bf8fb651f16": {
+      "id": "ac72b330-16e1-4ad0-aab7-6bf8fb651f16",
+      "name": "Entity Linking",
+      "entity_type": "Concept",
+      "context": "Ensuring that different mentions of the same entity are properly linked.",
+      "attributes": {
+        "related_to": "Entity Resolution",
+        "function": "linking different mentions of the same entity",
+        "role": "definition"
+      },
+      "metadata": {
+        "extraction_time": 1741013434.116438,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "ba00947b-8690-4be5-8ad5-f645cd8b326e",
+        "segment_type": "block",
+        "segment_level": 1
+      },
+      "confidence": 0.85
+    },
+    "239c5d59-c738-4287-a243-fe6999b55ca5": {
+      "id": "239c5d59-c738-4287-a243-fe6999b55ca5",
+      "name": "context understanding",
+      "entity_type": "Concept",
+      "context": "These models have shown remarkable capabilities in understanding context",
+      "attributes": {
+        "attributed_to": "deep learning models",
+        "role": "capability"
+      },
+      "metadata": {
+        "extraction_time": 1741013448.7584388,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "c65a25ba-daf5-4033-9273-4e007fcbc654",
+        "segment_type": "paragraph",
+        "segment_level": 0
+      },
+      "confidence": 0.8
+    },
+    "d2469a2f-0dfe-4190-89c2-42c9e0990506": {
+      "id": "d2469a2f-0dfe-4190-89c2-42c9e0990506",
+      "name": "Data Quality",
+      "entity_type": "Concept",
+      "context": "When building knowledge graphs, it's important to consider issues like data quality, scalability, and domain specificity.",
+      "attributes": {
+        "relation": "consideration for knowledge graphs",
+        "role": "supporting concept"
+      },
+      "metadata": {
+        "extraction_time": 1741013455.902178,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "d736508a-93a1-47b9-9f7f-cf5de373437d",
+        "segment_type": "paragraph",
+        "segment_level": 0
+      },
+      "confidence": 0.85
+    },
+    "bf7ad302-7c04-42ce-9cb7-cfaf83069408": {
+      "id": "bf7ad302-7c04-42ce-9cb7-cfaf83069408",
+      "name": "Scalability",
+      "entity_type": "Concept",
+      "context": "When building knowledge graphs, it's important to consider issues like data quality, scalability, and domain specificity.",
+      "attributes": {
+        "relation": "consideration for knowledge graphs",
+        "role": "supporting concept"
+      },
+      "metadata": {
+        "extraction_time": 1741013455.902186,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "d736508a-93a1-47b9-9f7f-cf5de373437d",
+        "segment_type": "paragraph",
+        "segment_level": 0
+      },
+      "confidence": 0.85
+    },
+    "8b9622e4-cf14-4726-912a-f75352617d08": {
+      "id": "8b9622e4-cf14-4726-912a-f75352617d08",
+      "name": "Domain Specificity",
+      "entity_type": "Concept",
+      "context": "When building knowledge graphs, it's important to consider issues like data quality, scalability, and domain specificity.",
+      "attributes": {
+        "relation": "consideration for knowledge graphs",
+        "examples": [
+          "medical research",
+          "financial analysis"
+        ],
+        "role": "supporting concept"
+      },
+      "metadata": {
+        "extraction_time": 1741013455.902192,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "d736508a-93a1-47b9-9f7f-cf5de373437d",
+        "segment_type": "paragraph",
+        "segment_level": 0
+      },
+      "confidence": 0.9
+    },
+    "533a542e-3976-4c25-89b6-8f44f55b5927": {
+      "id": "533a542e-3976-4c25-89b6-8f44f55b5927",
+      "name": "Medical Research Knowledge Graph",
+      "entity_type": "Concept",
+      "context": "For example, a knowledge graph for medical research would have different requirements than one for financial analysis.",
+      "attributes": {
+        "domain": "medical research",
+        "has_requirements": true,
+        "role": "supporting example"
+      },
+      "metadata": {
+        "extraction_time": 1741013455.902199,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "d736508a-93a1-47b9-9f7f-cf5de373437d",
+        "segment_type": "paragraph",
+        "segment_level": 0
+      },
+      "confidence": 0.8
+    },
+    "0c2b0ab9-8a40-4c30-b9db-64cc906b1c3a": {
+      "id": "0c2b0ab9-8a40-4c30-b9db-64cc906b1c3a",
+      "name": "Financial Analysis Knowledge Graph",
+      "entity_type": "Concept",
+      "context": "For example, a knowledge graph for medical research would have different requirements than one for financial analysis.",
+      "attributes": {
+        "domain": "financial analysis",
+        "has_requirements": true,
+        "role": "supporting example"
+      },
+      "metadata": {
+        "extraction_time": 1741013455.902205,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "d736508a-93a1-47b9-9f7f-cf5de373437d",
+        "segment_type": "paragraph",
+        "segment_level": 0
+      },
+      "confidence": 0.8
+    },
+    "5925061d-42da-455b-88c0-a9e16970dba7": {
+      "id": "5925061d-42da-455b-88c0-a9e16970dba7",
+      "name": "Natural language",
+      "entity_type": "Concept",
+      "context": "Handling ambiguity in natural language",
+      "attributes": {
+        "characteristic": "contains ambiguity",
+        "role": "domain context"
+      },
+      "metadata": {
+        "extraction_time": 1741013465.796302,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "8cdb6f0c-0555-4c47-8e22-b1758a7f2cea",
+        "segment_type": "block",
+        "segment_level": 1
+      },
+      "confidence": 0.9
+    },
+    "7e61101a-6626-43e4-86d4-51d182dc4d68": {
+      "id": "7e61101a-6626-43e4-86d4-51d182dc4d68",
+      "name": "Large volumes of data",
+      "entity_type": "Concept",
+      "context": "Scaling to large volumes of data",
+      "attributes": {
+        "requires": "scaling",
+        "role": "target resource"
+      },
+      "metadata": {
+        "extraction_time": 1741013471.7002518,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "a4312a92-81d3-4120-9dab-f03a3b6cc3c6",
+        "segment_type": "block",
+        "segment_level": 1
+      },
+      "confidence": 0.9
+    },
+    "8729fc67-4d91-4104-bd32-b50e71bca400": {
+      "id": "8729fc67-4d91-4104-bd32-b50e71bca400",
+      "name": "Information Update",
+      "entity_type": "Concept",
+      "context": "as new information becomes available",
+      "attributes": {
+        "state": "new",
+        "availability": "becomes available",
+        "role": "supporting concept"
+      },
+      "metadata": {
+        "extraction_time": 1741013475.26107,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "a88a435d-8fc2-4ede-8c35-71cf579b8198",
+        "segment_type": "block",
+        "segment_level": 1
+      },
+      "confidence": 0.85
+    },
+    "a8151150-541f-4882-b554-9ee90ff26b46": {
+      "id": "a8151150-541f-4882-b554-9ee90ff26b46",
+      "name": "Information Extraction",
+      "entity_type": "Process",
+      "context": "Combining the extracted information with existing knowledge bases.\nEntity Extraction: Identifying important concepts, objects, or individuals mentioned in the text.\n1. Entity Extraction: Identifying important concepts, objects, or individuals mentioned in the text.",
+      "attributes": {
+        "state": "completed",
+        "result": "information",
+        "role": [
+          "supporting process",
+          "component step",
+          "main topic"
+        ],
+        "purpose": "Identifying important concepts, objects, or individuals mentioned in the text"
+      },
+      "metadata": {
+        "extraction_time": 1741013439.141558,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "598770cc-b712-4653-b44a-8045f6f0df25",
+        "segment_type": "block",
+        "segment_level": 1,
+        "coreference_resolution": {
+          "original_ids": [
+            "a8151150-541f-4882-b554-9ee90ff26b46",
+            "fde30b3c-a4df-4cbb-acb2-762d20745a0e"
+          ],
+          "original_names": [
+            "Information Extraction",
+            "Entity Extraction"
+          ],
+          "resolution_confidence": 0.85
+        }
+      },
+      "confidence": 0.85
+    },
+    "cdecc8f9-1c46-4288-b664-c1c6e4d2d255": {
+      "id": "cdecc8f9-1c46-4288-b664-c1c6e4d2d255",
+      "name": "Knowledge Integration",
+      "entity_type": "Process",
+      "context": "Knowledge Integration: Combining the extracted information with existing knowledge bases.\n4. Knowledge Integration: Combining the extracted information with existing knowledge bases.\nVarious techniques can be used for knowledge extraction\nknowledge graphs have proven valuable in many applications, from search engines and recommendation systems to scientific research and data integration",
+      "attributes": {
+        "purpose": "Combining extracted information with existing knowledge bases",
+        "role": [
+          "component step",
+          "main topic",
+          "supporting example"
+        ],
+        "description": "Combining the extracted information with existing knowledge bases",
+        "numbered": 4,
+        "techniques": [
+          "rule-based approaches",
+          "deep learning models"
+        ],
+        "uses_knowledge_graphs": true
+      },
+      "metadata": {
+        "extraction_time": 1741013420.702765,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "38a2cc27-797b-4278-bd25-344e8ac89ef5",
+        "segment_type": "section",
+        "segment_level": 0,
+        "coreference_resolution": {
+          "original_ids": [
+            "cdecc8f9-1c46-4288-b664-c1c6e4d2d255",
+            "8e174e8d-02d8-4274-bbe4-143709d6e05b",
+            "b74ec2d4-6873-4108-bac5-bd0526f25991"
+          ],
+          "original_names": [
+            "Knowledge Integration",
+            "knowledge extraction",
+            "Data Integration"
+          ],
+          "resolution_confidence": 0.8
+        }
+      },
+      "confidence": 0.8
+    },
+    "56f0931b-5cff-40fe-b575-bbd79117a151": {
+      "id": "56f0931b-5cff-40fe-b575-bbd79117a151",
+      "name": "Knowledge Graph Maintenance",
+      "entity_type": "Process",
+      "context": "Maintaining the graph over time as new information becomes available",
+      "attributes": {
+        "temporal": "over time",
+        "trigger": "new information",
+        "role": [
+          "main topic",
+          "specific challenge"
+        ],
+        "relation": "challenge in knowledge graph construction",
+        "temporal_aspect": "over time"
+      },
+      "metadata": {
+        "extraction_time": 1741013475.261044,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "a88a435d-8fc2-4ede-8c35-71cf579b8198",
+        "segment_type": "block",
+        "segment_level": 1,
+        "coreference_resolution": {
+          "original_ids": [
+            "56f0931b-5cff-40fe-b575-bbd79117a151",
+            "21f06a49-53f7-4393-b22c-10a491bc3b46"
+          ],
+          "original_names": [
+            "Graph Maintenance",
+            "Knowledge Graph Maintenance"
+          ],
+          "resolution_confidence": 0.95
+        }
+      },
+      "confidence": 0.95
+    },
+    "db5f439b-f401-448c-bbae-d27861029681": {
+      "id": "db5f439b-f401-448c-bbae-d27861029681",
+      "name": "Relationship Extraction",
+      "entity_type": "Process",
+      "context": "Relationship Extraction: Determining how these entities are connected to each other.\n2. Relationship Extraction: Determining how these entities are connected to each other.",
+      "attributes": {
+        "purpose": "Determining how entities are connected to each other",
+        "role": [
+          "component step",
+          "main topic"
+        ],
+        "numbered": "2"
+      },
+      "metadata": {
+        "extraction_time": 1741013420.702754,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "38a2cc27-797b-4278-bd25-344e8ac89ef5",
+        "segment_type": "section",
+        "segment_level": 0
+      },
+      "confidence": 0.95
+    },
+    "4575c779-69b1-451b-9f3a-eecd1fdf7ccc": {
+      "id": "4575c779-69b1-451b-9f3a-eecd1fdf7ccc",
+      "name": "Entity Resolution",
+      "entity_type": "Process",
+      "context": "Entity Resolution: Ensuring that different mentions of the same entity are properly linked.\n3. Entity Resolution: Ensuring that different mentions of the same entity are properly linked.",
+      "attributes": {
+        "purpose": [
+          "Ensuring different mentions of the same entity are properly linked",
+          "Ensuring that different mentions of the same entity are properly linked"
+        ],
+        "role": [
+          "component step",
+          "main topic"
+        ]
+      },
+      "metadata": {
+        "extraction_time": 1741013420.70276,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "38a2cc27-797b-4278-bd25-344e8ac89ef5",
+        "segment_type": "section",
+        "segment_level": 0
+      },
+      "confidence": 0.95
+    },
+    "019f1307-dd9f-4931-bec6-41569097e526": {
+      "id": "019f1307-dd9f-4931-bec6-41569097e526",
+      "name": "structured information extraction",
+      "entity_type": "Process",
+      "context": "extracting structured information from unstructured text",
+      "attributes": {
+        "source": "unstructured text",
+        "performed_by": "deep learning models",
+        "role": "capability"
+      },
+      "metadata": {
+        "extraction_time": 1741013448.758446,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "c65a25ba-daf5-4033-9273-4e007fcbc654",
+        "segment_type": "paragraph",
+        "segment_level": 0
+      },
+      "confidence": 0.8
+    },
+    "1f78e132-2961-4ab7-9dea-80a829e2b1f4": {
+      "id": "1f78e132-2961-4ab7-9dea-80a829e2b1f4",
+      "name": "Knowledge Graph Construction",
+      "entity_type": "Process",
+      "context": "Some common challenges in knowledge graph construction include",
+      "attributes": {
+        "challenges": [
+          "Handling ambiguity in natural language",
+          "Dealing with incomplete or contradictory information",
+          "Scaling to large volumes of data",
+          "Maintaining the graph over time as new information becomes available"
+        ],
+        "role": "main topic"
+      },
+      "metadata": {
+        "extraction_time": 1741013462.702629,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "85bda2d3-fd4b-419a-9a5b-946187b7d582",
+        "segment_type": "section",
+        "segment_level": 0
+      },
+      "confidence": 0.95
+    },
+    "48c05688-c5d2-4e49-8ac4-43dad8fe31c9": {
+      "id": "48c05688-c5d2-4e49-8ac4-43dad8fe31c9",
+      "name": "Scaling",
+      "entity_type": "Process",
+      "context": "Scaling to large volumes of data",
+      "attributes": {
+        "target": "large volumes of data",
+        "role": "main topic"
+      },
+      "metadata": {
+        "extraction_time": 1741013471.700207,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "a4312a92-81d3-4120-9dab-f03a3b6cc3c6",
+        "segment_type": "block",
+        "segment_level": 1
+      },
+      "confidence": 0.95
+    },
+    "d652b60d-1a72-4357-9ba4-600207a3ba38": {
+      "id": "d652b60d-1a72-4357-9ba4-600207a3ba38",
+      "name": "Scientific Research",
+      "entity_type": "Process",
+      "context": "knowledge graphs have proven valuable in many applications, from search engines and recommendation systems to scientific research",
+      "attributes": {
+        "uses_knowledge_graphs": true,
+        "role": "supporting example"
+      },
+      "metadata": {
+        "extraction_time": 1741013481.256736,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "07bb3f9a-3c5f-45e4-9e2b-ddfb8e58a0a4",
+        "segment_type": "paragraph",
+        "segment_level": 0
+      },
+      "confidence": 0.75
+    },
+    "065ef108-f9f6-4a4a-ab45-f79c252eeaab": {
+      "id": "065ef108-f9f6-4a4a-ab45-f79c252eeaab",
+      "name": "rule-based approaches",
+      "entity_type": "Method",
+      "context": "ranging from rule-based approaches to deep learning models",
+      "attributes": {
+        "purpose": "knowledge extraction",
+        "role": "example technique"
+      },
+      "metadata": {
+        "extraction_time": 1741013448.758406,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "c65a25ba-daf5-4033-9273-4e007fcbc654",
+        "segment_type": "paragraph",
+        "segment_level": 0
+      },
+      "confidence": 0.85
+    },
+    "8837079c-f87f-468d-a627-141ec53b2447": {
+      "id": "8837079c-f87f-468d-a627-141ec53b2447",
+      "name": "deep learning models",
+      "entity_type": "Technology",
+      "context": "ranging from rule-based approaches to deep learning models like BERT and GPT",
+      "attributes": {
+        "examples": [
+          "BERT",
+          "GPT"
+        ],
+        "capabilities": [
+          "understanding context",
+          "extracting structured information"
+        ],
+        "role": "example technique"
+      },
+      "metadata": {
+        "extraction_time": 1741013448.7584178,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "c65a25ba-daf5-4033-9273-4e007fcbc654",
+        "segment_type": "paragraph",
+        "segment_level": 0
+      },
+      "confidence": 0.9
+    },
+    "1253801b-0e4e-47d0-b62c-1b9fb5ee8dd6": {
+      "id": "1253801b-0e4e-47d0-b62c-1b9fb5ee8dd6",
+      "name": "BERT",
+      "entity_type": "Technology",
+      "context": "deep learning models like BERT and GPT",
+      "attributes": {
+        "category": "deep learning model",
+        "capabilities": [
+          "understanding context",
+          "extracting structured information"
+        ],
+        "role": "specific example"
+      },
+      "metadata": {
+        "extraction_time": 1741013448.7584262,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "c65a25ba-daf5-4033-9273-4e007fcbc654",
+        "segment_type": "paragraph",
+        "segment_level": 0
+      },
+      "confidence": 0.85
+    },
+    "45f6cf34-7156-496a-8f44-eeb408084ad1": {
+      "id": "45f6cf34-7156-496a-8f44-eeb408084ad1",
+      "name": "GPT",
+      "entity_type": "Technology",
+      "context": "deep learning models like BERT and GPT",
+      "attributes": {
+        "category": "deep learning model",
+        "capabilities": [
+          "understanding context",
+          "extracting structured information"
+        ],
+        "role": "specific example"
+      },
+      "metadata": {
+        "extraction_time": 1741013448.758432,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "c65a25ba-daf5-4033-9273-4e007fcbc654",
+        "segment_type": "paragraph",
+        "segment_level": 0
+      },
+      "confidence": 0.85
+    },
+    "1b49e1e7-483b-45c2-9270-11451da6b759": {
+      "id": "1b49e1e7-483b-45c2-9270-11451da6b759",
+      "name": "Knowledge Graphs",
+      "entity_type": "Technology",
+      "context": "Despite these challenges, knowledge graphs have proven valuable in many applications",
+      "attributes": {
+        "valuable": true,
+        "has_challenges": true,
+        "applications": [
+          "search engines",
+          "recommendation systems",
+          "scientific research",
+          "data integration"
+        ],
+        "role": "main topic"
+      },
+      "metadata": {
+        "extraction_time": 1741013481.256684,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "07bb3f9a-3c5f-45e4-9e2b-ddfb8e58a0a4",
+        "segment_type": "paragraph",
+        "segment_level": 0
+      },
+      "confidence": 0.95
+    },
+    "d581366a-6712-4df1-b38c-0983efb277c6": {
+      "id": "d581366a-6712-4df1-b38c-0983efb277c6",
+      "name": "Search Engines",
+      "entity_type": "Technology",
+      "context": "knowledge graphs have proven valuable in many applications, from search engines",
+      "attributes": {
+        "uses_knowledge_graphs": true,
+        "role": "supporting example"
+      },
+      "metadata": {
+        "extraction_time": 1741013481.256723,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "07bb3f9a-3c5f-45e4-9e2b-ddfb8e58a0a4",
+        "segment_type": "paragraph",
+        "segment_level": 0
+      },
+      "confidence": 0.8
+    },
+    "7bc22613-3ec5-4da1-98ae-dcd3d84ec38c": {
+      "id": "7bc22613-3ec5-4da1-98ae-dcd3d84ec38c",
+      "name": "Recommendation Systems",
+      "entity_type": "Technology",
+      "context": "knowledge graphs have proven valuable in many applications, from search engines and recommendation systems",
+      "attributes": {
+        "uses_knowledge_graphs": true,
+        "role": "supporting example"
+      },
+      "metadata": {
+        "extraction_time": 1741013481.25673,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "07bb3f9a-3c5f-45e4-9e2b-ddfb8e58a0a4",
+        "segment_type": "paragraph",
+        "segment_level": 0
+      },
+      "confidence": 0.8
+    },
+    "a07ab909-3c96-4755-9a08-285a9707dea4": {
+      "id": "a07ab909-3c96-4755-9a08-285a9707dea4",
+      "name": "Natural Language Ambiguity",
+      "entity_type": "Problem",
+      "context": "Handling ambiguity in natural language",
+      "attributes": {
+        "relation": "challenge in knowledge graph construction",
+        "role": "specific challenge"
+      },
+      "metadata": {
+        "extraction_time": 1741013462.702689,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "85bda2d3-fd4b-419a-9a5b-946187b7d582",
+        "segment_type": "section",
+        "segment_level": 0
+      },
+      "confidence": 0.9
+    },
+    "6928d153-a00d-4dae-aff4-5ac44d414de4": {
+      "id": "6928d153-a00d-4dae-aff4-5ac44d414de4",
+      "name": "Incomplete Information",
+      "entity_type": "Problem",
+      "context": "Dealing with incomplete or contradictory information",
+      "attributes": {
+        "relation": "challenge in knowledge graph construction",
+        "variant": "contradictory information",
+        "role": [
+          "specific challenge",
+          "main topic"
+        ],
+        "characteristic": "missing data or details"
+      },
+      "metadata": {
+        "extraction_time": 1741013462.702702,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "85bda2d3-fd4b-419a-9a5b-946187b7d582",
+        "segment_type": "section",
+        "segment_level": 0
+      },
+      "confidence": 0.9
+    },
+    "7feffa14-7bf3-4b0e-afb6-8e3c7bc13a48": {
+      "id": "7feffa14-7bf3-4b0e-afb6-8e3c7bc13a48",
+      "name": "Data Scaling",
+      "entity_type": "Problem",
+      "context": "Scaling to large volumes of data",
+      "attributes": {
+        "relation": "challenge in knowledge graph construction",
+        "concern": "large volumes",
+        "role": "specific challenge"
+      },
+      "metadata": {
+        "extraction_time": 1741013462.702709,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "85bda2d3-fd4b-419a-9a5b-946187b7d582",
+        "segment_type": "section",
+        "segment_level": 0
+      },
+      "confidence": 0.85
+    },
+    "b1701820-2aa1-423f-aa80-9435e60cda79": {
+      "id": "b1701820-2aa1-423f-aa80-9435e60cda79",
+      "name": "Ambiguity in natural language",
+      "entity_type": "Problem",
+      "context": "Handling ambiguity in natural language",
+      "attributes": {
+        "domain": "natural language",
+        "requires": "handling",
+        "role": "main topic"
+      },
+      "metadata": {
+        "extraction_time": 1741013465.79626,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "8cdb6f0c-0555-4c47-8e22-b1758a7f2cea",
+        "segment_type": "block",
+        "segment_level": 1
+      },
+      "confidence": 0.95
+    },
+    "3edc4b2f-dd30-4b63-943c-adbc0ea71a45": {
+      "id": "3edc4b2f-dd30-4b63-943c-adbc0ea71a45",
+      "name": "Contradictory information",
+      "entity_type": "Problem",
+      "context": "Dealing with incomplete or contradictory information",
+      "attributes": {
+        "characteristic": "conflicting data or details",
+        "role": "main topic"
+      },
+      "metadata": {
+        "extraction_time": 1741013468.864453,
+        "language": "en",
+        "domain_type": "general",
+        "segment_id": "6b9bac84-15c7-4b8e-871b-3ea8576442bc",
+        "segment_type": "block",
+        "segment_level": 1
+      },
+      "confidence": 0.9
+    }
+  }
+}

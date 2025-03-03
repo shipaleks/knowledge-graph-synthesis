@@ -580,3 +580,1001 @@ Resolved entities: 9 (from 10 original)
 2025-03-03 13:40:30,908 - __main__ - INFO - 8. Python (Programming Language, Confidence: 0.90)
 2025-03-03 13:40:30,908 - __main__ - INFO - 9. Python (Animal, Confidence: 0.85)
 2025-03-03 13:40:30,909 - __main__ - INFO - Results saved to /Users/shipaleks/Documents/graph_reasoner/output/coreference_en.json
+2025-03-03 14:01:12,334 - root - INFO - Логирование настроено: уровень=INFO               # LOGGING LEVEL (DEBUG, INFO, WARNING, ERROR, CRITICAL), файл=app.log             # Log file path
+2025-03-03 14:01:12,335 - __main__ - INFO - Testing cyclic dependency detection...
+2025-03-03 14:38:32,300 - root - INFO - Логирование настроено: уровень=INFO               # LOGGING LEVEL (DEBUG, INFO, WARNING, ERROR, CRITICAL), файл=app.log             # Log file path
+2025-03-03 14:38:32,300 - __main__ - INFO - Testing cyclic dependency detection...
+2025-03-03 14:41:00,016 - root - INFO - Логирование настроено: уровень=INFO               # LOGGING LEVEL (DEBUG, INFO, WARNING, ERROR, CRITICAL), файл=app.log             # Log file path
+2025-03-03 14:41:00,016 - __main__ - INFO - Testing cyclic dependency detection...
+2025-03-03 14:41:00,017 - src.knowledge.knowledge_verifier - INFO - Initializing LLM provider claude with model claude-3-7-sonnet-latest
+2025-03-03 14:41:00,017 - src.utils.result - ERROR - Error initializing LLM provider: 'Result' object has no attribute 'is_failure' 
+2025-03-03 14:41:47,268 - root - INFO - Логирование настроено: уровень=INFO               # LOGGING LEVEL (DEBUG, INFO, WARNING, ERROR, CRITICAL), файл=app.log             # Log file path
+2025-03-03 14:41:47,268 - __main__ - INFO - Testing cyclic dependency detection...
+2025-03-03 14:41:47,268 - src.knowledge.knowledge_verifier - INFO - Initializing LLM provider claude with model claude-3-7-sonnet-latest
+2025-03-03 14:43:42,024 - root - INFO - Логирование настроено: уровень=INFO               # LOGGING LEVEL (DEBUG, INFO, WARNING, ERROR, CRITICAL), файл=app.log             # Log file path
+2025-03-03 14:43:42,024 - __main__ - INFO - Testing cyclic dependency detection...
+2025-03-03 14:43:42,024 - src.knowledge.knowledge_verifier - INFO - Initializing LLM provider claude with model claude-3-7-sonnet-latest
+2025-03-03 14:45:54,475 - root - INFO - Логирование настроено: уровень=INFO               # LOGGING LEVEL (DEBUG, INFO, WARNING, ERROR, CRITICAL), файл=app.log             # Log file path
+2025-03-03 14:45:54,475 - __main__ - INFO - Testing cyclic dependency detection...
+2025-03-03 14:45:54,476 - src.knowledge.knowledge_verifier - INFO - Initializing LLM provider claude with model claude-3-7-sonnet-latest
+2025-03-03 14:45:54,491 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 14:46:06,164 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:46:06,169 - __main__ - INFO - Successfully detected 4 cyclic dependencies:
+2025-03-03 14:46:06,169 - __main__ - INFO -   - Cycle: Entity A -> Entity B -> Entity C
+2025-03-03 14:46:06,169 - __main__ - INFO -   - Proposed solution: Remove one of the relationships in the cycle: Entity A -> Entity B -> Entity C
+2025-03-03 14:46:06,170 - __main__ - INFO -   - Severity: critical
+2025-03-03 14:46:06,170 - __main__ - INFO -   - Cycle: Entity B -> Entity C -> Entity A
+2025-03-03 14:46:06,170 - __main__ - INFO -   - Proposed solution: Remove one of the relationships in the cycle: Entity B -> Entity C -> Entity A
+2025-03-03 14:46:06,170 - __main__ - INFO -   - Severity: critical
+2025-03-03 14:46:06,170 - __main__ - INFO -   - Cycle: Entity C -> Entity A -> Entity B
+2025-03-03 14:46:06,170 - __main__ - INFO -   - Proposed solution: Remove one of the relationships in the cycle: Entity C -> Entity A -> Entity B
+2025-03-03 14:46:06,170 - __main__ - INFO -   - Severity: critical
+2025-03-03 14:46:06,170 - __main__ - INFO -   - Cycle: Entity A -> Entity B -> Entity C
+2025-03-03 14:46:06,170 - __main__ - INFO -   - Proposed solution: Remove one of the relationships in the cycle: Entity A -> Entity B -> Entity C
+2025-03-03 14:46:06,170 - __main__ - INFO -   - Severity: critical
+2025-03-03 14:46:13,231 - root - INFO - Логирование настроено: уровень=INFO               # LOGGING LEVEL (DEBUG, INFO, WARNING, ERROR, CRITICAL), файл=app.log             # Log file path
+2025-03-03 14:46:13,231 - __main__ - INFO - Testing dangling reference detection...
+2025-03-03 14:46:13,231 - src.knowledge.knowledge_verifier - INFO - Initializing LLM provider claude with model claude-3-7-sonnet-latest
+2025-03-03 14:46:13,241 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 14:46:16,959 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:46:16,963 - __main__ - INFO - Successfully detected 2 dangling references:
+2025-03-03 14:46:58,593 - root - INFO - Логирование настроено: уровень=INFO               # LOGGING LEVEL (DEBUG, INFO, WARNING, ERROR, CRITICAL), файл=app.log             # Log file path
+2025-03-03 14:46:58,594 - __main__ - INFO - Testing dangling reference detection...
+2025-03-03 14:46:58,594 - src.knowledge.knowledge_verifier - INFO - Initializing LLM provider claude with model claude-3-7-sonnet-latest
+2025-03-03 14:46:58,606 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 14:47:04,689 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:47:04,694 - __main__ - INFO - Successfully detected 2 dangling references:
+2025-03-03 14:47:04,694 - __main__ - INFO -   - Relationship ID: 50ca5666-c99f-43c4-9da1-0f83a380a302
+2025-03-03 14:47:04,694 - __main__ - INFO -   - Source: 93f35f6f-c8af-4c0a-b1a9-4d1e2428edcd
+2025-03-03 14:47:04,694 - __main__ - INFO -   - Target: 89ad5589-3474-49eb-bf30-50585b94326b
+2025-03-03 14:47:04,694 - __main__ - INFO -   - Proposed solution: Remove relationship or create the missing target entity with ID: 89ad5589-3474-49eb-bf30-50585b94326b
+2025-03-03 14:47:04,694 - __main__ - INFO -   - Severity: critical
+2025-03-03 14:47:04,694 - __main__ - INFO -   - Relationship ID: 1c174cbe-b44a-4bc6-8266-93a6cdabcae3
+2025-03-03 14:47:04,695 - __main__ - INFO -   - Source: c8d9ba00-9553-445e-a764-555695f79431
+2025-03-03 14:47:04,695 - __main__ - INFO -   - Target: fc413d4e-2235-476f-97b7-e93c0f9fb926
+2025-03-03 14:47:04,695 - __main__ - INFO -   - Proposed solution: Remove relationship or create the missing source entity with ID: c8d9ba00-9553-445e-a764-555695f79431
+2025-03-03 14:47:04,695 - __main__ - INFO -   - Severity: critical
+2025-03-03 14:47:11,437 - root - INFO - Логирование настроено: уровень=INFO               # LOGGING LEVEL (DEBUG, INFO, WARNING, ERROR, CRITICAL), файл=app.log             # Log file path
+2025-03-03 14:47:11,437 - __main__ - INFO - Testing contradiction detection...
+2025-03-03 14:47:11,437 - src.knowledge.knowledge_verifier - INFO - Initializing LLM provider claude with model claude-3-7-sonnet-latest
+2025-03-03 14:47:11,448 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 14:47:26,638 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:47:26,643 - __main__ - INFO - Successfully detected 2 contradictions:
+2025-03-03 14:47:26,643 - __main__ - INFO -   - Issue type: contradictory_relationships
+2025-03-03 14:47:26,643 - __main__ - INFO -   - Relationships: Deep Learning -> Machine Learning (is-a), Deep Learning -> Machine Learning (is-not-a)
+2025-03-03 14:47:26,643 - __main__ - INFO -   - Proposed solution: Resolve the contradiction between relationships of types 'is-a' and 'is-not-a' between 'Deep Learning' and 'Machine Learning'
+2025-03-03 14:47:26,643 - __main__ - INFO -   - Severity: medium
+2025-03-03 14:47:26,643 - __main__ - INFO -   - Issue type: contradictory_relationships
+2025-03-03 14:47:26,643 - __main__ - INFO -   - Relationships: Neural Networks -> Artificial Intelligence (part-of), Neural Networks -> Artificial Intelligence (separate-from)
+2025-03-03 14:47:26,643 - __main__ - INFO -   - Proposed solution: Resolve the contradiction between relationships of types 'part-of' and 'separate-from' between 'Neural Networks' and 'Artificial Intelligence'
+2025-03-03 14:47:26,644 - __main__ - INFO -   - Severity: medium
+2025-03-03 14:47:35,422 - root - INFO - Логирование настроено: уровень=INFO               # LOGGING LEVEL (DEBUG, INFO, WARNING, ERROR, CRITICAL), файл=app.log             # Log file path
+2025-03-03 14:47:35,423 - __main__ - INFO - Testing LLM-based verification...
+2025-03-03 14:47:35,423 - src.knowledge.knowledge_verifier - INFO - Initializing LLM provider claude with model claude-3-7-sonnet-latest
+2025-03-03 14:47:35,432 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 14:47:49,248 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:47:49,252 - __main__ - INFO - Verification completed with 4 issues:
+2025-03-03 14:47:49,252 - __main__ - INFO - Issue 1:
+2025-03-03 14:47:49,252 - __main__ - INFO -   - Type: Temporal inconsistency
+2025-03-03 14:48:14,699 - root - INFO - Логирование настроено: уровень=INFO               # LOGGING LEVEL (DEBUG, INFO, WARNING, ERROR, CRITICAL), файл=app.log             # Log file path
+2025-03-03 14:48:14,699 - __main__ - INFO - Testing LLM-based verification...
+2025-03-03 14:48:14,699 - src.knowledge.knowledge_verifier - INFO - Initializing LLM provider claude with model claude-3-7-sonnet-latest
+2025-03-03 14:48:14,708 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 14:48:27,071 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:48:27,077 - __main__ - INFO - Verification completed with 4 issues:
+2025-03-03 14:48:27,077 - __main__ - INFO - Issue 1:
+2025-03-03 14:48:27,077 - __main__ - INFO -   - Type: Temporal inconsistency
+2025-03-03 14:48:27,077 - __main__ - INFO -   - Elements: nodes, attributes
+2025-03-03 14:48:27,077 - __main__ - INFO -   - Solution: Update the 'year_emerged' attribute to reflect when the modern resurgence of deep learning occurred (around 2006-2012 with breakthrough papers) or clarify that 2010 refers to when deep learning gained mainstream prominence
+2025-03-03 14:48:27,077 - __main__ - INFO -   - Severity: medium
+2025-03-03 14:48:27,077 - __main__ - INFO - Issue 2:
+2025-03-03 14:48:27,077 - __main__ - INFO -   - Type: Missing important connection
+2025-03-03 14:48:27,077 - __main__ - INFO -   - Elements: nodes
+2025-03-03 14:48:27,077 - __main__ - INFO -   - Solution: Add an 'is-a' or 'is-part-of' edge from Neural Networks to Machine Learning
+2025-03-03 14:48:27,077 - __main__ - INFO -   - Severity: medium
+2025-03-03 14:48:27,077 - __main__ - INFO - Issue 3:
+2025-03-03 14:48:27,077 - __main__ - INFO -   - Type: Missing important connection
+2025-03-03 14:48:27,077 - __main__ - INFO -   - Elements: nodes
+2025-03-03 14:48:27,077 - __main__ - INFO -   - Solution: Add a 'can-use' edge from Reinforcement Learning to Neural Networks
+2025-03-03 14:48:27,077 - __main__ - INFO -   - Severity: low
+2025-03-03 14:48:27,077 - __main__ - INFO - Issue 4:
+2025-03-03 14:48:27,077 - __main__ - INFO -   - Type: Inconsistent node typing
+2025-03-03 14:48:27,078 - __main__ - INFO -   - Elements: nodes
+2025-03-03 14:48:27,078 - __main__ - INFO -   - Solution: Consider changing the type of Neural Networks to 'Method' or 'Concept' for consistency, or ensure there's a clear distinction between these type classifications
+2025-03-03 14:48:27,078 - __main__ - INFO -   - Severity: low
+2025-03-03 14:48:27,078 - __main__ - INFO - Verification results saved to output/verification_results_en.json
+2025-03-03 14:48:37,427 - root - INFO - Логирование настроено: уровень=INFO               # LOGGING LEVEL (DEBUG, INFO, WARNING, ERROR, CRITICAL), файл=app.log             # Log file path
+2025-03-03 14:48:37,427 - __main__ - INFO - Testing cyclic dependency detection...
+2025-03-03 14:48:37,427 - src.knowledge.knowledge_verifier - INFO - Initializing LLM provider claude with model claude-3-7-sonnet-latest
+2025-03-03 14:48:37,437 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 14:48:47,490 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:48:47,494 - __main__ - INFO - Successfully detected 4 cyclic dependencies:
+2025-03-03 14:48:47,494 - __main__ - INFO -   - Cycle: Entity A -> Entity B -> Entity C
+2025-03-03 14:48:47,494 - __main__ - INFO -   - Proposed solution: Remove one of the relationships in the cycle: Entity A -> Entity B -> Entity C
+2025-03-03 14:48:47,494 - __main__ - INFO -   - Severity: critical
+2025-03-03 14:48:47,494 - __main__ - INFO -   - Cycle: Entity B -> Entity C -> Entity A
+2025-03-03 14:48:47,494 - __main__ - INFO -   - Proposed solution: Remove one of the relationships in the cycle: Entity B -> Entity C -> Entity A
+2025-03-03 14:48:47,494 - __main__ - INFO -   - Severity: critical
+2025-03-03 14:48:47,494 - __main__ - INFO -   - Cycle: Entity C -> Entity A -> Entity B
+2025-03-03 14:48:47,494 - __main__ - INFO -   - Proposed solution: Remove one of the relationships in the cycle: Entity C -> Entity A -> Entity B
+2025-03-03 14:48:47,495 - __main__ - INFO -   - Severity: critical
+2025-03-03 14:48:47,495 - __main__ - INFO -   - Cycle: Entity A -> Entity B -> Entity C
+2025-03-03 14:48:47,495 - __main__ - INFO -   - Proposed solution: Remove one of the relationships in the cycle: Entity A -> Entity B -> Entity C
+2025-03-03 14:48:47,495 - __main__ - INFO -   - Severity: critical
+2025-03-03 14:48:47,495 - __main__ - INFO - Testing contradiction detection...
+2025-03-03 14:48:47,495 - src.knowledge.knowledge_verifier - INFO - Initializing LLM provider claude with model claude-3-7-sonnet-latest
+2025-03-03 14:48:47,504 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 14:48:56,907 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:48:56,914 - __main__ - INFO - Successfully detected 2 contradictions:
+2025-03-03 14:48:56,914 - __main__ - INFO -   - Issue type: contradictory_relationships
+2025-03-03 14:48:56,914 - __main__ - INFO -   - Relationships: Deep Learning -> Machine Learning (is-a), Deep Learning -> Machine Learning (is-not-a)
+2025-03-03 14:48:56,914 - __main__ - INFO -   - Proposed solution: Resolve the contradiction between relationships of types 'is-a' and 'is-not-a' between 'Deep Learning' and 'Machine Learning'
+2025-03-03 14:48:56,914 - __main__ - INFO -   - Severity: medium
+2025-03-03 14:48:56,914 - __main__ - INFO -   - Issue type: contradictory_relationships
+2025-03-03 14:48:56,915 - __main__ - INFO -   - Relationships: Neural Networks -> Artificial Intelligence (part-of), Neural Networks -> Artificial Intelligence (separate-from)
+2025-03-03 14:48:56,915 - __main__ - INFO -   - Proposed solution: Resolve the contradiction between relationships of types 'part-of' and 'separate-from' between 'Neural Networks' and 'Artificial Intelligence'
+2025-03-03 14:48:56,915 - __main__ - INFO -   - Severity: medium
+2025-03-03 14:48:56,915 - __main__ - INFO - Testing dangling reference detection...
+2025-03-03 14:48:56,915 - src.knowledge.knowledge_verifier - INFO - Initializing LLM provider claude with model claude-3-7-sonnet-latest
+2025-03-03 14:48:56,923 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 14:49:01,245 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:49:01,246 - __main__ - INFO - Successfully detected 2 dangling references:
+2025-03-03 14:49:01,246 - __main__ - INFO -   - Relationship ID: 40b26095-5b2a-4e64-9592-ded50e7bd4de
+2025-03-03 14:49:01,247 - __main__ - INFO -   - Source: f2e6d4f5-56e8-404a-8a0d-ef01cd91712a
+2025-03-03 14:49:01,247 - __main__ - INFO -   - Target: af5000c1-ecaa-4c30-b164-123c635ee2b9
+2025-03-03 14:49:01,247 - __main__ - INFO -   - Proposed solution: Remove relationship or create the missing target entity with ID: af5000c1-ecaa-4c30-b164-123c635ee2b9
+2025-03-03 14:49:01,247 - __main__ - INFO -   - Severity: critical
+2025-03-03 14:49:01,247 - __main__ - INFO -   - Relationship ID: 9a6e172d-9dcf-4986-93a3-ae5373ffdf96
+2025-03-03 14:49:01,247 - __main__ - INFO -   - Source: 3b3c7e2a-6a9c-466f-bc7b-d60a815b52e1
+2025-03-03 14:49:01,247 - __main__ - INFO -   - Target: 992a22a9-a061-41a1-8100-6b4d04359279
+2025-03-03 14:49:01,247 - __main__ - INFO -   - Proposed solution: Remove relationship or create the missing source entity with ID: 3b3c7e2a-6a9c-466f-bc7b-d60a815b52e1
+2025-03-03 14:49:01,247 - __main__ - INFO -   - Severity: critical
+2025-03-03 14:49:01,247 - __main__ - INFO - Testing LLM-based verification...
+2025-03-03 14:49:01,247 - src.knowledge.knowledge_verifier - INFO - Initializing LLM provider claude with model claude-3-7-sonnet-latest
+2025-03-03 14:49:01,255 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 14:49:12,272 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:49:12,280 - __main__ - INFO - Verification completed with 3 issues:
+2025-03-03 14:49:12,280 - __main__ - INFO - Issue 1:
+2025-03-03 14:49:12,280 - __main__ - INFO -   - Type: potential historical inconsistency
+2025-03-03 14:49:12,280 - __main__ - INFO -   - Elements: Deep Learning (ID: 0cff0cbe-d2ad-43fb-a8d7-db3cc3f7fb0f)
+2025-03-03 14:49:12,280 - __main__ - INFO -   - Solution: Consider clarifying the attribute to 'year_popularized: 2010' or add additional context about the historical development of deep learning.
+2025-03-03 14:49:12,280 - __main__ - INFO -   - Severity: low
+2025-03-03 14:49:12,280 - __main__ - INFO - Issue 2:
+2025-03-03 14:49:12,280 - __main__ - INFO -   - Type: missing connection
+2025-03-03 14:49:12,280 - __main__ - INFO -   - Elements: Neural Networks (ID: b1a273e9-1a0f-4146-99c1-453b125f6c52), Machine Learning (ID: f8a27623-17c1-4e10-b792-c1cb1a127633)
+2025-03-03 14:49:12,280 - __main__ - INFO -   - Solution: Consider adding an 'is-a' or 'is-technique-of' edge from Neural Networks to Machine Learning to clarify that neural networks are a machine learning approach.
+2025-03-03 14:49:12,280 - __main__ - INFO -   - Severity: low
+2025-03-03 14:49:12,280 - __main__ - INFO - Issue 3:
+2025-03-03 14:49:12,280 - __main__ - INFO -   - Type: missing connection
+2025-03-03 14:49:12,281 - __main__ - INFO -   - Elements: Reinforcement Learning (ID: 11e34840-7f27-426c-99a4-1f45ce523c0c), Neural Networks (ID: b1a273e9-1a0f-4146-99c1-453b125f6c52)
+2025-03-03 14:49:12,281 - __main__ - INFO -   - Solution: Consider adding a 'can-use' relationship from Reinforcement Learning to Neural Networks.
+2025-03-03 14:49:12,281 - __main__ - INFO -   - Severity: low
+2025-03-03 14:49:12,281 - __main__ - INFO - Verification results saved to output/verification_results_en.json
+2025-03-03 14:53:56,687 - root - INFO - Логирование настроено: уровень=INFO               # LOGGING LEVEL (DEBUG, INFO, WARNING, ERROR, CRITICAL), файл=app.log             # Log file path
+2025-03-03 14:53:56,687 - __main__ - INFO - Testing knowledge extraction pipeline with English text
+2025-03-03 14:53:56,687 - src.knowledge.pipeline - INFO - Starting knowledge extraction pipeline
+2025-03-03 14:53:56,687 - src.text_processing.pipeline - INFO - Starting text processing pipeline
+2025-03-03 14:53:56,857 - src.text_processing.text_loader - INFO - Processed text: 1151 chars, language: en, supported: True
+2025-03-03 14:53:56,857 - src.text_processing.pipeline - INFO - Text loaded: 1151 chars, language: en
+2025-03-03 14:53:56,859 - src.text_processing.text_loader - INFO - Processed text: 1151 chars, language: en, supported: True
+2025-03-03 14:53:56,859 - src.text_processing.text_segmenter - INFO - Calling LLM for text segmentation (language: en, text length: 1151)
+2025-03-03 14:53:56,873 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 14:54:02,931 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:54:02,937 - src.text_processing.text_segmenter - INFO - Segmentation complete: 5 segments created
+2025-03-03 14:54:02,937 - src.text_processing.pipeline - INFO - Text segmented into 5 segments
+2025-03-03 14:54:02,938 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: section)
+2025-03-03 14:54:02,944 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 14:54:06,841 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:54:06,842 - src.text_processing.text_summarizer - INFO - Summarization complete for segment b350c067-1c43-4796-b53a-6c824f02d358
+2025-03-03 14:54:06,842 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: block)
+2025-03-03 14:54:09,442 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:54:09,444 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 2bdb3b37-7336-4274-b554-a6cf2c26d9ed
+2025-03-03 14:54:09,444 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: block)
+2025-03-03 14:54:12,586 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:54:12,587 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 3b84efab-bc85-4ad1-a451-580d3b87a563
+2025-03-03 14:54:12,588 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: block)
+2025-03-03 14:54:16,057 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:54:16,059 - src.text_processing.text_summarizer - INFO - Summarization complete for segment ed8d7a79-c736-4bde-9c2b-6d3563915183
+2025-03-03 14:54:16,059 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: section)
+2025-03-03 14:54:19,253 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:54:19,254 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 3228f45e-b447-4eb4-9a9c-1a484e373627
+2025-03-03 14:54:19,254 - src.text_processing.pipeline - INFO - Generated 5 summaries
+2025-03-03 14:54:19,256 - src.text_processing.pipeline - INFO - Text processing complete in 22.57 seconds
+2025-03-03 14:54:41,352 - root - INFO - Логирование настроено: уровень=INFO               # LOGGING LEVEL (DEBUG, INFO, WARNING, ERROR, CRITICAL), файл=app.log             # Log file path
+2025-03-03 14:54:41,352 - __main__ - INFO - Testing knowledge extraction pipeline with English text
+2025-03-03 14:54:41,352 - src.knowledge.pipeline - INFO - Starting knowledge extraction pipeline
+2025-03-03 14:54:41,352 - src.text_processing.pipeline - INFO - Starting text processing pipeline
+2025-03-03 14:54:41,508 - src.text_processing.text_loader - INFO - Processed text: 1151 chars, language: en, supported: True
+2025-03-03 14:54:41,508 - src.text_processing.pipeline - INFO - Text loaded: 1151 chars, language: en
+2025-03-03 14:54:41,510 - src.text_processing.text_loader - INFO - Processed text: 1151 chars, language: en, supported: True
+2025-03-03 14:54:41,510 - src.text_processing.text_segmenter - INFO - Calling LLM for text segmentation (language: en, text length: 1151)
+2025-03-03 14:54:41,522 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 14:54:47,382 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:54:47,386 - src.text_processing.text_segmenter - INFO - Segmentation complete: 5 segments created
+2025-03-03 14:54:47,386 - src.text_processing.pipeline - INFO - Text segmented into 5 segments
+2025-03-03 14:54:47,387 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: section)
+2025-03-03 14:54:47,393 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 14:54:51,014 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:54:51,015 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 6b6b8a94-e933-4eb1-8098-4deebfc74678
+2025-03-03 14:54:51,015 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: block)
+2025-03-03 14:54:53,950 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:54:53,951 - src.text_processing.text_summarizer - INFO - Summarization complete for segment e27c711b-e729-4c36-a34c-b0d43c8cddfc
+2025-03-03 14:54:53,951 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: block)
+2025-03-03 14:54:57,450 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:54:57,453 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 951af8d9-f9ed-437f-a094-e379a4766a32
+2025-03-03 14:54:57,453 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: block)
+2025-03-03 14:55:00,796 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:55:00,797 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 97b645a1-9918-4e49-a436-03a05a75d9bd
+2025-03-03 14:55:00,797 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: section)
+2025-03-03 14:55:03,531 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:55:03,532 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 59f70783-540c-4cbc-8ec6-9f8eec4682e1
+2025-03-03 14:55:03,532 - src.text_processing.pipeline - INFO - Generated 5 summaries
+2025-03-03 14:55:03,534 - src.text_processing.pipeline - INFO - Text processing complete in 22.18 seconds
+2025-03-03 14:55:03,534 - src.knowledge.pipeline - INFO - Text processed: 2 segments created
+2025-03-03 14:55:03,534 - src.utils.result - ERROR - Unsupported input type: <class 'dict'> 
+2025-03-03 14:55:03,534 - src.utils.result - ERROR - Failed to extract entities: Unsupported input type: <class 'dict'> 
+2025-03-03 14:55:03,534 - __main__ - ERROR - Pipeline processing failed: Failed to extract entities: Unsupported input type: <class 'dict'>
+2025-03-03 14:56:41,653 - root - INFO - Логирование настроено: уровень=INFO               # LOGGING LEVEL (DEBUG, INFO, WARNING, ERROR, CRITICAL), файл=app.log             # Log file path
+2025-03-03 14:56:41,653 - __main__ - INFO - Testing simple knowledge extraction with English text
+2025-03-03 14:56:41,653 - src.knowledge.pipeline - INFO - Starting knowledge extraction pipeline
+2025-03-03 14:56:41,653 - src.text_processing.pipeline - INFO - Starting text processing pipeline
+2025-03-03 14:56:41,808 - src.text_processing.text_loader - INFO - Processed text: 1151 chars, language: en, supported: True
+2025-03-03 14:56:41,808 - src.text_processing.pipeline - INFO - Text loaded: 1151 chars, language: en
+2025-03-03 14:56:41,811 - src.text_processing.text_loader - INFO - Processed text: 1151 chars, language: en, supported: True
+2025-03-03 14:56:41,811 - src.text_processing.text_segmenter - INFO - Calling LLM for text segmentation (language: en, text length: 1151)
+2025-03-03 14:56:41,823 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 14:56:48,337 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:56:48,340 - src.text_processing.text_segmenter - INFO - Segmentation complete: 5 segments created
+2025-03-03 14:56:48,340 - src.text_processing.pipeline - INFO - Text segmented into 5 segments
+2025-03-03 14:56:48,340 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: section)
+2025-03-03 14:56:48,347 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 14:56:52,163 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:56:52,164 - src.text_processing.text_summarizer - INFO - Summarization complete for segment c0734c56-c13e-47e7-81fb-0442059bcea8
+2025-03-03 14:56:52,164 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: paragraph)
+2025-03-03 14:56:54,645 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:56:54,646 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 3629f6ae-5dab-4a44-a3f7-749f4f051fc8
+2025-03-03 14:56:54,646 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: paragraph)
+2025-03-03 14:56:58,159 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:56:58,160 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 6a6f0ab1-bed1-4e53-8888-da6bd17e147c
+2025-03-03 14:56:58,160 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: paragraph)
+2025-03-03 14:57:01,718 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:57:01,719 - src.text_processing.text_summarizer - INFO - Summarization complete for segment bc50c742-3aab-4b46-9be5-dc6d580902e5
+2025-03-03 14:57:01,719 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: section)
+2025-03-03 14:57:05,235 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:57:05,236 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 0b41a8e1-3a47-42e7-acc9-2c4da4289d80
+2025-03-03 14:57:05,236 - src.text_processing.pipeline - INFO - Generated 5 summaries
+2025-03-03 14:57:05,237 - src.text_processing.pipeline - INFO - Text processing complete in 23.58 seconds
+2025-03-03 14:57:05,237 - src.knowledge.pipeline - INFO - Text processed: 5 segments created
+2025-03-03 14:57:05,237 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 262)
+2025-03-03 14:57:05,243 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 14:57:11,511 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:57:11,512 - src.knowledge.entity_extractor - INFO - Extracted 5 entities from text
+2025-03-03 14:57:11,512 - src.knowledge.pipeline - INFO - Entities extracted: 5 entities
+2025-03-03 14:57:11,513 - src.knowledge.pipeline - INFO - Entities saved to output      # Output directory for results/test_simple_en_entities_en.json
+2025-03-03 14:57:53,981 - root - INFO - Логирование настроено: уровень=INFO               # LOGGING LEVEL (DEBUG, INFO, WARNING, ERROR, CRITICAL), файл=app.log             # Log file path
+2025-03-03 14:57:53,982 - __main__ - INFO - Testing simple knowledge extraction with English text
+2025-03-03 14:57:53,982 - src.knowledge.pipeline - INFO - Starting knowledge extraction pipeline
+2025-03-03 14:57:53,982 - src.text_processing.pipeline - INFO - Starting text processing pipeline
+2025-03-03 14:57:54,142 - src.text_processing.text_loader - INFO - Processed text: 1151 chars, language: en, supported: True
+2025-03-03 14:57:54,142 - src.text_processing.pipeline - INFO - Text loaded: 1151 chars, language: en
+2025-03-03 14:57:54,144 - src.text_processing.text_loader - INFO - Processed text: 1151 chars, language: en, supported: True
+2025-03-03 14:57:54,144 - src.text_processing.text_segmenter - INFO - Calling LLM for text segmentation (language: en, text length: 1151)
+2025-03-03 14:57:54,159 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 14:58:00,484 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:58:00,488 - src.text_processing.text_segmenter - INFO - Segmentation complete: 5 segments created
+2025-03-03 14:58:00,488 - src.text_processing.pipeline - INFO - Text segmented into 5 segments
+2025-03-03 14:58:00,488 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: section)
+2025-03-03 14:58:00,495 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 14:58:04,078 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:58:04,078 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 39150a57-3b4a-4700-97a8-43e9f6577455
+2025-03-03 14:58:04,078 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: block)
+2025-03-03 14:58:06,615 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:58:06,616 - src.text_processing.text_summarizer - INFO - Summarization complete for segment fbdedccc-c9ff-48eb-bb00-1f81245179ee
+2025-03-03 14:58:06,617 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: block)
+2025-03-03 14:58:10,189 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:58:10,191 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 1b978d77-4a8d-436b-b031-b879e87a4dc3
+2025-03-03 14:58:10,191 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: block)
+2025-03-03 14:58:14,460 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:58:14,463 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 55b4d783-f5bf-4f5e-b892-445dd9eb074b
+2025-03-03 14:58:14,463 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: section)
+2025-03-03 14:58:17,639 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:58:17,640 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 27c50389-c874-4286-9a04-80acaedfa658
+2025-03-03 14:58:17,640 - src.text_processing.pipeline - INFO - Generated 5 summaries
+2025-03-03 14:58:17,642 - src.text_processing.pipeline - INFO - Text processing complete in 23.66 seconds
+2025-03-03 14:58:17,642 - src.knowledge.pipeline - INFO - Text processed: 5 segments created
+2025-03-03 14:58:17,642 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 262)
+2025-03-03 14:58:17,650 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 14:58:23,550 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:58:23,552 - src.knowledge.entity_extractor - INFO - Extracted 5 entities from text
+2025-03-03 14:58:23,552 - src.knowledge.pipeline - INFO - Entities extracted: 5 entities
+2025-03-03 14:58:23,553 - src.knowledge.pipeline - INFO - Entities saved to output      # Output directory for results/test_simple_en_entities_en.json
+2025-03-03 14:58:23,553 - src.knowledge.relationship_extractor - INFO - Extracting relationships from text of length 262 in en
+2025-03-03 14:58:23,553 - src.knowledge.relationship_extractor - INFO - Initializing claude provider with model claude-3-7-sonnet-latest
+2025-03-03 14:58:23,553 - src.knowledge.relationship_extractor - INFO - Calling LLM for relationship extraction (language: en, text length: 262)
+2025-03-03 14:58:23,561 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 14:58:30,405 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 14:58:30,408 - src.knowledge.relationship_extractor - INFO - LLM response received successfully
+2025-03-03 14:58:30,408 - src.knowledge.relationship_extractor - INFO - Extracted 6 relationships
+2025-03-03 14:58:30,408 - src.knowledge.pipeline - INFO - Relationships extracted: 6 relationships
+2025-03-03 14:58:30,409 - src.knowledge.pipeline - INFO - Relationships saved to output      # Output directory for results/test_simple_en_relationships_en.json
+2025-03-03 15:02:38,401 - root - INFO - Логирование настроено: уровень=INFO               # LOGGING LEVEL (DEBUG, INFO, WARNING, ERROR, CRITICAL), файл=app.log             # Log file path
+2025-03-03 15:02:38,401 - __main__ - INFO - Testing simple knowledge extraction with English text
+2025-03-03 15:02:38,402 - src.knowledge.pipeline - INFO - Starting knowledge extraction pipeline
+2025-03-03 15:02:38,402 - src.text_processing.pipeline - INFO - Starting text processing pipeline
+2025-03-03 15:02:38,560 - src.text_processing.text_loader - INFO - Processed text: 1151 chars, language: en, supported: True
+2025-03-03 15:02:38,561 - src.text_processing.pipeline - INFO - Text loaded: 1151 chars, language: en
+2025-03-03 15:02:38,563 - src.text_processing.text_loader - INFO - Processed text: 1151 chars, language: en, supported: True
+2025-03-03 15:02:38,563 - src.text_processing.text_segmenter - INFO - Calling LLM for text segmentation (language: en, text length: 1151)
+2025-03-03 15:02:38,575 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 15:02:44,418 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:02:44,422 - src.text_processing.text_segmenter - INFO - Segmentation complete: 5 segments created
+2025-03-03 15:02:44,422 - src.text_processing.pipeline - INFO - Text segmented into 5 segments
+2025-03-03 15:02:44,423 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: section)
+2025-03-03 15:02:44,430 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 15:02:48,396 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:02:48,398 - src.text_processing.text_summarizer - INFO - Summarization complete for segment f1fdea5b-87d9-45c8-8ca6-bb0ed91e8050
+2025-03-03 15:02:48,398 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: block)
+2025-03-03 15:02:51,097 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:02:51,098 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 47cbf5c8-db34-4860-8a0c-94d4f2b9fb27
+2025-03-03 15:02:51,098 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: block)
+2025-03-03 15:02:54,824 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:02:54,824 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 1e295628-837a-49a4-9c68-94d81f651484
+2025-03-03 15:02:54,825 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: block)
+2025-03-03 15:02:57,929 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:02:57,930 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 2f872364-7bec-4360-8643-d8ee9b0b7d82
+2025-03-03 15:02:57,930 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: section)
+2025-03-03 15:03:01,056 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:03:01,057 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 68a032a4-8f10-4f38-ae69-8c24c539ab4d
+2025-03-03 15:03:01,057 - src.text_processing.pipeline - INFO - Generated 5 summaries
+2025-03-03 15:03:01,059 - src.text_processing.pipeline - INFO - Text processing complete in 22.66 seconds
+2025-03-03 15:03:01,059 - src.knowledge.pipeline - INFO - Text processed: 5 segments created
+2025-03-03 15:03:01,059 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 262)
+2025-03-03 15:03:01,067 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 15:03:07,809 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:03:07,810 - src.knowledge.entity_extractor - INFO - Extracted 5 entities from text
+2025-03-03 15:03:07,811 - src.knowledge.pipeline - INFO - Entities extracted: 5 entities
+2025-03-03 15:03:07,811 - src.knowledge.pipeline - INFO - Entities saved to output      # Output directory for results/test_simple_en_entities_en.json
+2025-03-03 15:03:07,811 - src.knowledge.relationship_extractor - INFO - Extracting relationships from text of length 262 in en
+2025-03-03 15:03:07,811 - src.knowledge.relationship_extractor - INFO - Initializing claude provider with model claude-3-7-sonnet-latest
+2025-03-03 15:03:07,811 - src.knowledge.relationship_extractor - INFO - Calling LLM for relationship extraction (language: en, text length: 262)
+2025-03-03 15:03:07,819 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 15:03:13,152 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:03:13,153 - src.knowledge.relationship_extractor - INFO - LLM response received successfully
+2025-03-03 15:03:13,153 - src.knowledge.relationship_extractor - INFO - Extracted 6 relationships
+2025-03-03 15:03:13,153 - src.knowledge.pipeline - INFO - Relationships extracted: 6 relationships
+2025-03-03 15:03:13,154 - src.knowledge.pipeline - INFO - Relationships saved to output      # Output directory for results/test_simple_en_relationships_en.json
+2025-03-03 15:03:13,154 - src.knowledge.coreference_resolver - INFO - Resolving coreferences for 5 entities across 4 types
+2025-03-03 15:03:13,154 - src.knowledge.coreference_resolver - INFO - Processing 1 entities of type Process
+2025-03-03 15:03:13,154 - src.knowledge.coreference_resolver - INFO - Processing 2 entities of type Concept
+2025-03-03 15:03:13,159 - src.knowledge.coreference_resolver - INFO - Processing 1 entities of type Technology
+2025-03-03 15:03:13,159 - src.knowledge.coreference_resolver - INFO - Processing 1 entities of type Method
+2025-03-03 15:03:13,159 - src.knowledge.coreference_resolver - INFO - Coreference resolution complete. Original entities: 5, Resolved entities: 5
+2025-03-03 15:03:13,159 - src.knowledge.pipeline - INFO - Coreferences resolved: now 5 entities
+2025-03-03 15:03:13,160 - src.knowledge.pipeline - INFO - Entities saved to output      # Output directory for results/test_simple_en_resolved_entities_en.json
+2025-03-03 15:03:13,160 - src.knowledge.knowledge_verifier - INFO - Initializing LLM provider claude with model claude-3-7-sonnet-latest
+2025-03-03 15:03:13,167 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 15:03:22,067 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:03:22,068 - src.knowledge.pipeline - INFO - Knowledge verification complete: graph is valid
+2025-03-03 15:03:22,068 - src.knowledge.pipeline - INFO - Found 2 issues in the knowledge graph
+2025-03-03 15:03:22,069 - src.knowledge.pipeline - INFO - Verification results saved to output      # Output directory for results/test_simple_en_verification_en.json
+2025-03-03 15:45:08,550 - __main__ - INFO - Testing knowledge extraction pipeline with en text
+2025-03-03 15:45:08,551 - src.knowledge.pipeline - INFO - Starting knowledge extraction pipeline
+2025-03-03 15:45:08,551 - src.text_processing.pipeline - INFO - Starting text processing pipeline
+2025-03-03 15:45:08,712 - src.text_processing.text_loader - INFO - Processed text: 1573 chars, language: en, supported: True
+2025-03-03 15:45:08,712 - src.text_processing.pipeline - INFO - Text loaded: 1573 chars, language: en
+2025-03-03 15:45:08,714 - src.text_processing.text_loader - INFO - Processed text: 1573 chars, language: en, supported: True
+2025-03-03 15:45:08,714 - src.text_processing.text_segmenter - INFO - Calling LLM for text segmentation (language: en, text length: 1573)
+2025-03-03 15:45:08,726 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 15:45:24,105 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:45:24,112 - src.text_processing.text_segmenter - INFO - Segmentation complete: 14 segments created
+2025-03-03 15:45:24,113 - src.text_processing.pipeline - INFO - Text segmented into 14 segments
+2025-03-03 15:45:24,113 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: section)
+2025-03-03 15:45:24,122 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 15:45:27,194 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:45:27,196 - src.text_processing.text_summarizer - INFO - Summarization complete for segment ee57571c-a9c2-435b-bb9b-6fff19dc9536
+2025-03-03 15:45:27,196 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: section)
+2025-03-03 15:45:29,830 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:45:29,831 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 8c529402-564d-4155-bfc8-23bf3f88c568
+2025-03-03 15:45:29,831 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: subsection)
+2025-03-03 15:45:34,226 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:45:34,233 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 99c12a13-7f11-4191-83fb-20f808458662
+2025-03-03 15:45:34,234 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: subsection)
+2025-03-03 15:45:38,981 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:45:38,981 - src.text_processing.text_summarizer - INFO - Summarization complete for segment d04455f2-c967-4ad4-9c0f-e7c00386a263
+2025-03-03 15:45:38,982 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: subsection)
+2025-03-03 15:45:42,477 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:45:42,478 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 5571d870-8c7a-43a3-981d-5ed796995f3e
+2025-03-03 15:45:42,478 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: subsection)
+2025-03-03 15:45:46,821 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:45:46,821 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 9a98943d-d56c-43fa-be94-ac1ae60f7e70
+2025-03-03 15:45:46,821 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: section)
+2025-03-03 15:45:50,695 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:45:50,697 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 76a4045e-bfcd-49f2-8bf6-aac8379b88cf
+2025-03-03 15:45:50,697 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: section)
+2025-03-03 15:45:54,253 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:45:54,254 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 3cd7b638-4ff7-493c-a42b-fbae41565f4a
+2025-03-03 15:45:54,254 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: section)
+2025-03-03 15:45:58,093 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:45:58,095 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 4351305b-3b1e-4616-ad71-74d147d16269
+2025-03-03 15:45:58,095 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: block)
+2025-03-03 15:46:01,718 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:46:01,720 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 481023e5-406f-421f-bca9-b85ac744a52f
+2025-03-03 15:46:01,720 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: block)
+2025-03-03 15:46:05,464 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:46:05,465 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 657b6c46-01d4-4620-9176-bdbe8c7f5acd
+2025-03-03 15:46:05,465 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: block)
+2025-03-03 15:46:08,968 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:46:08,969 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 7eec5776-852a-4ccd-8209-bee69882c3ab
+2025-03-03 15:46:08,969 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: block)
+2025-03-03 15:46:12,445 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:46:12,446 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 7e870337-7fd6-4acc-aa3c-1d8b57f41e1b
+2025-03-03 15:46:12,446 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: section)
+2025-03-03 15:46:15,262 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:46:15,274 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 50d2feb2-bbf7-4860-8500-35a7ca7ff957
+2025-03-03 15:46:15,274 - src.text_processing.pipeline - INFO - Generated 14 summaries
+2025-03-03 15:46:15,277 - src.text_processing.pipeline - INFO - Text processing complete in 66.72 seconds
+2025-03-03 15:47:04,251 - __main__ - INFO - Testing knowledge extraction pipeline with en text
+2025-03-03 15:47:04,251 - src.knowledge.pipeline - INFO - Starting knowledge extraction pipeline
+2025-03-03 15:47:04,251 - src.text_processing.pipeline - INFO - Starting text processing pipeline
+2025-03-03 15:47:04,411 - src.text_processing.text_loader - INFO - Processed text: 1573 chars, language: en, supported: True
+2025-03-03 15:47:04,411 - src.text_processing.pipeline - INFO - Text loaded: 1573 chars, language: en
+2025-03-03 15:47:04,413 - src.text_processing.text_loader - INFO - Processed text: 1573 chars, language: en, supported: True
+2025-03-03 15:47:04,413 - src.text_processing.text_segmenter - INFO - Calling LLM for text segmentation (language: en, text length: 1573)
+2025-03-03 15:47:04,428 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 15:47:19,331 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:47:19,338 - src.text_processing.text_segmenter - INFO - Segmentation complete: 14 segments created
+2025-03-03 15:47:19,338 - src.text_processing.pipeline - INFO - Text segmented into 14 segments
+2025-03-03 15:47:19,339 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: paragraph)
+2025-03-03 15:47:19,348 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 15:47:22,162 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:47:22,164 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 450d55c4-3b96-42dd-a4a4-5b5d354e78a9
+2025-03-03 15:47:22,164 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: block)
+2025-03-03 15:47:25,294 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:47:25,295 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 378d550d-c7aa-4b2b-a9e7-57688dec7fdb
+2025-03-03 15:47:25,295 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: paragraph)
+2025-03-03 15:47:28,423 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:47:28,424 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 3d338bc3-9246-4a09-9522-a5fb83a8605b
+2025-03-03 15:47:28,424 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: paragraph)
+2025-03-03 15:47:32,127 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:47:32,128 - src.text_processing.text_summarizer - INFO - Summarization complete for segment ff5adbd4-c5c8-4f37-b10c-e28e664e62e1
+2025-03-03 15:47:32,129 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: paragraph)
+2025-03-03 15:47:35,568 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:47:35,568 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 6b6b8717-54d3-4ea5-9c23-30f83fe0ab0d
+2025-03-03 15:47:35,568 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: paragraph)
+2025-03-03 15:47:39,084 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:47:39,084 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 859d7d9f-46a9-44a8-9256-486988c977d8
+2025-03-03 15:47:39,084 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: paragraph)
+2025-03-03 15:47:42,999 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:47:43,000 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 4a1efd58-ac3c-4d93-807b-e602cae7c669
+2025-03-03 15:47:43,001 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: paragraph)
+2025-03-03 15:47:45,875 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:47:45,876 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 1d214b2b-c7e9-4351-914e-cf1d7158090c
+2025-03-03 15:47:45,876 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: block)
+2025-03-03 15:47:49,370 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:47:49,371 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 4a4ee38b-4b05-427b-86e7-8e4a1f82f299
+2025-03-03 15:47:49,371 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: paragraph)
+2025-03-03 15:47:52,900 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:47:52,901 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 706474e6-84ec-4dba-b73e-8434d1575c84
+2025-03-03 15:47:52,901 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: paragraph)
+2025-03-03 15:47:56,238 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:47:56,241 - src.text_processing.text_summarizer - INFO - Summarization complete for segment e1e05300-b4db-49fa-87cc-20af9822d325
+2025-03-03 15:47:56,242 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: paragraph)
+2025-03-03 15:47:59,804 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:47:59,805 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 2b36f035-cf37-4617-b800-e7e23fc8f700
+2025-03-03 15:47:59,805 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: paragraph)
+2025-03-03 15:48:03,203 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:48:03,213 - src.text_processing.text_summarizer - INFO - Summarization complete for segment c339b027-4e00-4095-89c5-6a21fb9582ad
+2025-03-03 15:48:03,213 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: paragraph)
+2025-03-03 15:48:05,886 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:48:05,887 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 16d49ffe-a223-49c0-84c8-c387a8378c6d
+2025-03-03 15:48:05,887 - src.text_processing.pipeline - INFO - Generated 14 summaries
+2025-03-03 15:48:05,889 - src.text_processing.pipeline - INFO - Text processing complete in 61.64 seconds
+2025-03-03 15:48:05,889 - src.knowledge.pipeline - INFO - Text processed: 14 segments, language: en
+2025-03-03 15:49:04,128 - __main__ - INFO - Testing knowledge extraction pipeline with en text
+2025-03-03 15:49:04,129 - src.knowledge.pipeline - INFO - Starting knowledge extraction pipeline
+2025-03-03 15:49:04,129 - src.text_processing.pipeline - INFO - Starting text processing pipeline
+2025-03-03 15:49:04,289 - src.text_processing.text_loader - INFO - Processed text: 1573 chars, language: en, supported: True
+2025-03-03 15:49:04,289 - src.text_processing.pipeline - INFO - Text loaded: 1573 chars, language: en
+2025-03-03 15:49:04,291 - src.text_processing.text_loader - INFO - Processed text: 1573 chars, language: en, supported: True
+2025-03-03 15:49:04,292 - src.text_processing.text_segmenter - INFO - Calling LLM for text segmentation (language: en, text length: 1573)
+2025-03-03 15:49:04,304 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 15:49:18,528 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:49:18,532 - src.text_processing.text_segmenter - INFO - Segmentation complete: 14 segments created
+2025-03-03 15:49:18,532 - src.text_processing.pipeline - INFO - Text segmented into 14 segments
+2025-03-03 15:49:18,533 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: paragraph)
+2025-03-03 15:49:18,540 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 15:49:22,910 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:49:22,911 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 944a1e23-2483-4acc-86c4-1bd5d4571dd2
+2025-03-03 15:49:22,911 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: section)
+2025-03-03 15:49:25,655 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:49:25,656 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 38a2cc27-797b-4278-bd25-344e8ac89ef5
+2025-03-03 15:49:25,656 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: block)
+2025-03-03 15:49:29,285 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:49:29,286 - src.text_processing.text_summarizer - INFO - Summarization complete for segment f3b55787-538e-4638-b59a-214e5570ffc0
+2025-03-03 15:49:29,286 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: block)
+2025-03-03 15:49:32,452 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:49:32,453 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 5020f5c5-bcad-43af-b6fb-98dab47c8a7d
+2025-03-03 15:49:32,453 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: block)
+2025-03-03 15:49:36,783 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:49:36,784 - src.text_processing.text_summarizer - INFO - Summarization complete for segment ba00947b-8690-4be5-8ad5-f645cd8b326e
+2025-03-03 15:49:36,784 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: block)
+2025-03-03 15:49:40,112 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:49:40,113 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 598770cc-b712-4653-b44a-8045f6f0df25
+2025-03-03 15:49:40,114 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: paragraph)
+2025-03-03 15:49:44,259 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:49:44,262 - src.text_processing.text_summarizer - INFO - Summarization complete for segment c65a25ba-daf5-4033-9273-4e007fcbc654
+2025-03-03 15:49:44,262 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: paragraph)
+2025-03-03 15:49:47,939 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:49:47,940 - src.text_processing.text_summarizer - INFO - Summarization complete for segment d736508a-93a1-47b9-9f7f-cf5de373437d
+2025-03-03 15:49:47,940 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: section)
+2025-03-03 15:49:51,580 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:49:51,581 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 85bda2d3-fd4b-419a-9a5b-946187b7d582
+2025-03-03 15:49:51,581 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: block)
+2025-03-03 15:49:55,123 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:49:55,123 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 8cdb6f0c-0555-4c47-8e22-b1758a7f2cea
+2025-03-03 15:49:55,124 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: block)
+2025-03-03 15:49:58,539 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:49:58,540 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 6b9bac84-15c7-4b8e-871b-3ea8576442bc
+2025-03-03 15:49:58,540 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: block)
+2025-03-03 15:50:01,990 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:50:01,991 - src.text_processing.text_summarizer - INFO - Summarization complete for segment a4312a92-81d3-4120-9dab-f03a3b6cc3c6
+2025-03-03 15:50:01,992 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: block)
+2025-03-03 15:50:06,014 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:50:06,015 - src.text_processing.text_summarizer - INFO - Summarization complete for segment a88a435d-8fc2-4ede-8c35-71cf579b8198
+2025-03-03 15:50:06,015 - src.text_processing.text_summarizer - INFO - Calling LLM for text summarization (language: en, segment type: paragraph)
+2025-03-03 15:50:08,793 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:50:08,799 - src.text_processing.text_summarizer - INFO - Summarization complete for segment 07bb3f9a-3c5f-45e4-9e2b-ddfb8e58a0a4
+2025-03-03 15:50:08,799 - src.text_processing.pipeline - INFO - Generated 14 summaries
+2025-03-03 15:50:08,801 - src.text_processing.pipeline - INFO - Text processing complete in 64.67 seconds
+2025-03-03 15:50:08,801 - src.knowledge.pipeline - INFO - Text processed: 14 segments, language: en
+2025-03-03 15:50:08,801 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 171)
+2025-03-03 15:50:08,809 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 15:50:13,294 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:50:13,295 - src.knowledge.entity_extractor - INFO - Extracted 3 entities from text
+2025-03-03 15:50:13,295 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 446)
+2025-03-03 15:50:20,701 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:50:20,702 - src.knowledge.entity_extractor - INFO - Extracted 6 entities from text
+2025-03-03 15:50:20,702 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 100)
+2025-03-03 15:50:25,809 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:50:25,810 - src.knowledge.entity_extractor - INFO - Extracted 4 entities from text
+2025-03-03 15:50:25,811 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 87)
+2025-03-03 15:50:30,419 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:50:30,421 - src.knowledge.entity_extractor - INFO - Extracted 2 entities from text
+2025-03-03 15:50:30,421 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 94)
+2025-03-03 15:50:34,110 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:50:34,116 - src.knowledge.entity_extractor - INFO - Extracted 2 entities from text
+2025-03-03 15:50:34,116 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 92)
+2025-03-03 15:50:39,140 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:50:39,141 - src.knowledge.entity_extractor - INFO - Extracted 3 entities from text
+2025-03-03 15:50:39,141 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 269)
+2025-03-03 15:50:48,757 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:50:48,758 - src.knowledge.entity_extractor - INFO - Extracted 7 entities from text
+2025-03-03 15:50:48,758 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 240)
+2025-03-03 15:50:55,894 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:50:55,902 - src.knowledge.entity_extractor - INFO - Extracted 6 entities from text
+2025-03-03 15:50:55,902 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 265)
+2025-03-03 15:51:02,701 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:51:02,702 - src.knowledge.entity_extractor - INFO - Extracted 5 entities from text
+2025-03-03 15:51:02,703 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 40)
+2025-03-03 15:51:05,795 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:51:05,796 - src.knowledge.entity_extractor - INFO - Extracted 2 entities from text
+2025-03-03 15:51:05,796 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 54)
+2025-03-03 15:51:08,863 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:51:08,864 - src.knowledge.entity_extractor - INFO - Extracted 2 entities from text
+2025-03-03 15:51:08,864 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 34)
+2025-03-03 15:51:11,698 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:51:11,700 - src.knowledge.entity_extractor - INFO - Extracted 2 entities from text
+2025-03-03 15:51:11,700 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 70)
+2025-03-03 15:51:15,260 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:51:15,261 - src.knowledge.entity_extractor - INFO - Extracted 2 entities from text
+2025-03-03 15:51:15,261 - src.knowledge.entity_extractor - INFO - Calling LLM for entity extraction (language: en, text length: 177)
+2025-03-03 15:51:21,255 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:51:21,256 - src.knowledge.entity_extractor - INFO - Extracted 5 entities from text
+2025-03-03 15:51:21,256 - src.knowledge.entity_extractor - INFO - Extracted 44 unique entities from 14 segments
+2025-03-03 15:51:21,257 - src.knowledge.entity_extractor - INFO - Failed to process 0 segments
+2025-03-03 15:51:21,258 - src.knowledge.pipeline - INFO - Extracted 44 entities
+2025-03-03 15:51:21,260 - src.knowledge.pipeline - INFO - Saved 44 entities to output      # Output directory for results/test_en_entities_en.json
+2025-03-03 15:51:21,260 - src.knowledge.relationship_extractor - INFO - Extracting relationships from segment 944a1e23-2483-4acc-86c4-1bd5d4571dd2
+2025-03-03 15:51:21,260 - src.knowledge.relationship_extractor - INFO - Extracting relationships from text of length 171 in en
+2025-03-03 15:51:21,260 - src.knowledge.relationship_extractor - INFO - Initializing claude provider with model claude-3-7-sonnet-latest
+2025-03-03 15:51:21,260 - src.knowledge.relationship_extractor - INFO - Calling LLM for relationship extraction (language: en, text length: 171)
+2025-03-03 15:51:21,270 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 15:51:25,448 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:51:25,455 - src.knowledge.relationship_extractor - INFO - LLM response received successfully
+2025-03-03 15:51:25,456 - src.knowledge.relationship_extractor - INFO - Extracted 3 relationships
+2025-03-03 15:51:25,456 - src.knowledge.relationship_extractor - INFO - Extracting relationships from segment 38a2cc27-797b-4278-bd25-344e8ac89ef5
+2025-03-03 15:51:25,456 - src.knowledge.relationship_extractor - INFO - Extracting relationships from text of length 446 in en
+2025-03-03 15:51:25,456 - src.knowledge.relationship_extractor - INFO - Calling LLM for relationship extraction (language: en, text length: 446)
+2025-03-03 15:51:33,910 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:51:33,916 - src.knowledge.relationship_extractor - INFO - LLM response received successfully
+2025-03-03 15:51:33,917 - src.knowledge.relationship_extractor - INFO - Extracted 7 relationships
+2025-03-03 15:51:33,917 - src.knowledge.relationship_extractor - INFO - Extracting relationships from segment f3b55787-538e-4638-b59a-214e5570ffc0
+2025-03-03 15:51:33,917 - src.knowledge.relationship_extractor - INFO - Extracting relationships from text of length 100 in en
+2025-03-03 15:51:33,917 - src.knowledge.relationship_extractor - INFO - Calling LLM for relationship extraction (language: en, text length: 100)
+2025-03-03 15:51:38,347 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:51:38,348 - src.knowledge.relationship_extractor - INFO - LLM response received successfully
+2025-03-03 15:51:38,348 - src.knowledge.relationship_extractor - INFO - Extracted 3 relationships
+2025-03-03 15:51:38,348 - src.knowledge.relationship_extractor - INFO - Extracting relationships from segment 5020f5c5-bcad-43af-b6fb-98dab47c8a7d
+2025-03-03 15:51:38,348 - src.knowledge.relationship_extractor - INFO - Extracting relationships from text of length 87 in en
+2025-03-03 15:51:38,348 - src.knowledge.relationship_extractor - INFO - Calling LLM for relationship extraction (language: en, text length: 87)
+2025-03-03 15:51:40,082 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:51:40,083 - src.knowledge.relationship_extractor - INFO - LLM response received successfully
+2025-03-03 15:51:40,083 - src.knowledge.relationship_extractor - INFO - Extracted 0 relationships
+2025-03-03 15:51:40,083 - src.knowledge.relationship_extractor - INFO - Extracting relationships from segment ba00947b-8690-4be5-8ad5-f645cd8b326e
+2025-03-03 15:51:40,083 - src.knowledge.relationship_extractor - INFO - Extracting relationships from text of length 94 in en
+2025-03-03 15:51:40,083 - src.knowledge.relationship_extractor - INFO - Calling LLM for relationship extraction (language: en, text length: 94)
+2025-03-03 15:51:42,471 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:51:42,473 - src.knowledge.relationship_extractor - INFO - LLM response received successfully
+2025-03-03 15:51:42,473 - src.knowledge.relationship_extractor - WARNING - Source entity 'entity resolution' not found in entity map
+2025-03-03 15:51:42,473 - src.knowledge.relationship_extractor - INFO - Extracted 0 relationships
+2025-03-03 15:51:42,473 - src.knowledge.relationship_extractor - INFO - Extracting relationships from segment 598770cc-b712-4653-b44a-8045f6f0df25
+2025-03-03 15:51:42,473 - src.knowledge.relationship_extractor - INFO - Extracting relationships from text of length 92 in en
+2025-03-03 15:51:42,473 - src.knowledge.relationship_extractor - INFO - Calling LLM for relationship extraction (language: en, text length: 92)
+2025-03-03 15:51:46,022 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:51:46,023 - src.knowledge.relationship_extractor - INFO - LLM response received successfully
+2025-03-03 15:51:46,023 - src.knowledge.relationship_extractor - INFO - Extracted 2 relationships
+2025-03-03 15:51:46,023 - src.knowledge.relationship_extractor - INFO - Extracting relationships from segment c65a25ba-daf5-4033-9273-4e007fcbc654
+2025-03-03 15:51:46,023 - src.knowledge.relationship_extractor - INFO - Extracting relationships from text of length 269 in en
+2025-03-03 15:51:46,023 - src.knowledge.relationship_extractor - INFO - Calling LLM for relationship extraction (language: en, text length: 269)
+2025-03-03 15:51:54,486 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:51:54,488 - src.knowledge.relationship_extractor - INFO - LLM response received successfully
+2025-03-03 15:51:54,488 - src.knowledge.relationship_extractor - INFO - Extracted 8 relationships
+2025-03-03 15:51:54,488 - src.knowledge.relationship_extractor - INFO - Extracting relationships from segment d736508a-93a1-47b9-9f7f-cf5de373437d
+2025-03-03 15:51:54,488 - src.knowledge.relationship_extractor - INFO - Extracting relationships from text of length 240 in en
+2025-03-03 15:51:54,489 - src.knowledge.relationship_extractor - INFO - Calling LLM for relationship extraction (language: en, text length: 240)
+2025-03-03 15:52:01,801 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:52:01,809 - src.knowledge.relationship_extractor - INFO - LLM response received successfully
+2025-03-03 15:52:01,809 - src.knowledge.relationship_extractor - WARNING - Target entity 'knowledge graph construction' not found in entity map
+2025-03-03 15:52:01,809 - src.knowledge.relationship_extractor - WARNING - Target entity 'knowledge graph construction' not found in entity map
+2025-03-03 15:52:01,809 - src.knowledge.relationship_extractor - WARNING - Target entity 'knowledge graph construction' not found in entity map
+2025-03-03 15:52:01,809 - src.knowledge.relationship_extractor - INFO - Extracted 3 relationships
+2025-03-03 15:52:01,809 - src.knowledge.relationship_extractor - INFO - Extracting relationships from segment 85bda2d3-fd4b-419a-9a5b-946187b7d582
+2025-03-03 15:52:01,809 - src.knowledge.relationship_extractor - INFO - Extracting relationships from text of length 265 in en
+2025-03-03 15:52:01,810 - src.knowledge.relationship_extractor - INFO - Calling LLM for relationship extraction (language: en, text length: 265)
+2025-03-03 15:52:14,199 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:52:14,202 - src.knowledge.relationship_extractor - INFO - LLM response received successfully
+2025-03-03 15:52:14,202 - src.knowledge.relationship_extractor - INFO - Extracted 11 relationships
+2025-03-03 15:52:14,203 - src.knowledge.relationship_extractor - INFO - Extracting relationships from segment 8cdb6f0c-0555-4c47-8e22-b1758a7f2cea
+2025-03-03 15:52:14,203 - src.knowledge.relationship_extractor - INFO - Extracting relationships from text of length 40 in en
+2025-03-03 15:52:14,203 - src.knowledge.relationship_extractor - INFO - Calling LLM for relationship extraction (language: en, text length: 40)
+2025-03-03 15:52:18,498 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:52:18,499 - src.knowledge.relationship_extractor - INFO - LLM response received successfully
+2025-03-03 15:52:18,499 - src.knowledge.relationship_extractor - INFO - Extracted 3 relationships
+2025-03-03 15:52:18,499 - src.knowledge.relationship_extractor - INFO - Extracting relationships from segment 6b9bac84-15c7-4b8e-871b-3ea8576442bc
+2025-03-03 15:52:18,499 - src.knowledge.relationship_extractor - INFO - Extracting relationships from text of length 54 in en
+2025-03-03 15:52:18,499 - src.knowledge.relationship_extractor - INFO - Calling LLM for relationship extraction (language: en, text length: 54)
+2025-03-03 15:52:21,081 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:52:21,084 - src.knowledge.relationship_extractor - INFO - LLM response received successfully
+2025-03-03 15:52:21,085 - src.knowledge.relationship_extractor - INFO - Extracted 1 relationships
+2025-03-03 15:52:21,085 - src.knowledge.relationship_extractor - INFO - Extracting relationships from segment a4312a92-81d3-4120-9dab-f03a3b6cc3c6
+2025-03-03 15:52:21,085 - src.knowledge.relationship_extractor - INFO - Extracting relationships from text of length 34 in en
+2025-03-03 15:52:21,086 - src.knowledge.relationship_extractor - INFO - Calling LLM for relationship extraction (language: en, text length: 34)
+2025-03-03 15:52:24,996 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:52:24,998 - src.knowledge.relationship_extractor - INFO - LLM response received successfully
+2025-03-03 15:52:24,999 - src.knowledge.relationship_extractor - INFO - Extracted 3 relationships
+2025-03-03 15:52:24,999 - src.knowledge.relationship_extractor - INFO - Extracting relationships from segment a88a435d-8fc2-4ede-8c35-71cf579b8198
+2025-03-03 15:52:24,999 - src.knowledge.relationship_extractor - INFO - Extracting relationships from text of length 70 in en
+2025-03-03 15:52:24,999 - src.knowledge.relationship_extractor - INFO - Calling LLM for relationship extraction (language: en, text length: 70)
+2025-03-03 15:52:29,070 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:52:29,078 - src.knowledge.relationship_extractor - INFO - LLM response received successfully
+2025-03-03 15:52:29,079 - src.knowledge.relationship_extractor - INFO - Extracted 3 relationships
+2025-03-03 15:52:29,079 - src.knowledge.relationship_extractor - INFO - Extracting relationships from segment 07bb3f9a-3c5f-45e4-9e2b-ddfb8e58a0a4
+2025-03-03 15:52:29,079 - src.knowledge.relationship_extractor - INFO - Extracting relationships from text of length 177 in en
+2025-03-03 15:52:29,079 - src.knowledge.relationship_extractor - INFO - Calling LLM for relationship extraction (language: en, text length: 177)
+2025-03-03 15:52:35,823 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:52:35,824 - src.knowledge.relationship_extractor - INFO - LLM response received successfully
+2025-03-03 15:52:35,825 - src.knowledge.relationship_extractor - INFO - Extracted 6 relationships
+2025-03-03 15:52:35,825 - src.knowledge.pipeline - INFO - Extracted 53 relationships
+2025-03-03 15:52:35,826 - src.knowledge.pipeline - INFO - Saved 53 relationships to output      # Output directory for results/test_en_relationships_en.json
+2025-03-03 15:52:35,827 - src.knowledge.coreference_resolver - INFO - Resolving coreferences for 44 entities across 5 types
+2025-03-03 15:52:35,827 - src.knowledge.coreference_resolver - INFO - Processing 19 entities of type Concept
+2025-03-03 15:52:35,833 - src.knowledge.coreference_resolver - INFO - Initialized claude provider with model claude-3-7-sonnet-latest
+2025-03-03 15:52:35,842 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 15:52:43,419 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:52:43,420 - src.knowledge.coreference_resolver - INFO - Processing 13 entities of type Process
+2025-03-03 15:52:57,463 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:52:57,465 - src.knowledge.coreference_resolver - INFO - Processing 1 entities of type Method
+2025-03-03 15:52:57,465 - src.knowledge.coreference_resolver - INFO - Processing 6 entities of type Technology
+2025-03-03 15:52:57,465 - src.knowledge.coreference_resolver - INFO - Processing 5 entities of type Problem
+2025-03-03 15:52:57,466 - src.knowledge.coreference_resolver - INFO - Coreference resolution complete. Original entities: 44, Resolved entities: 37
+2025-03-03 15:52:57,466 - src.knowledge.pipeline - INFO - Resolved entities: 37 after coreference resolution
+2025-03-03 15:52:57,467 - src.knowledge.pipeline - INFO - Saved 37 resolved entities to output      # Output directory for results/test_en_resolved_entities_en.json
+2025-03-03 15:52:57,467 - src.knowledge.knowledge_verifier - INFO - Initializing LLM provider claude with model claude-3-7-sonnet-latest
+2025-03-03 15:52:57,475 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 15:53:27,982 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 15:53:27,992 - src.knowledge.pipeline - INFO - Knowledge graph verified: 29 issues found
+2025-03-03 15:53:27,993 - src.knowledge.pipeline - INFO - Saved verification results with 29 issues to output      # Output directory for results/test_en_verification_en.json
+2025-03-03 15:53:27,996 - src.knowledge.pipeline - INFO - Saved complete knowledge extraction results to output      # Output directory for results/test_en_extraction_en.json
+2025-03-03 15:53:27,996 - src.knowledge.pipeline - INFO - Knowledge extraction complete in 263.86 seconds
+2025-03-03 15:53:27,997 - __main__ - INFO - Knowledge extraction completed successfully:
+2025-03-03 15:53:27,997 - __main__ - INFO -   - Entities: 37
+2025-03-03 15:53:27,997 - __main__ - INFO -   - Relationships: 53
+2025-03-03 15:53:27,997 - __main__ - INFO -   - Verification issues: 29
+2025-03-03 15:53:27,997 - __main__ - INFO -   - Knowledge graph valid: False
+2025-03-03 15:53:27,997 - __main__ - INFO - Timing information:
+2025-03-03 15:53:27,997 - __main__ - INFO -   - text_processing: 64.67 seconds
+2025-03-03 15:53:27,997 - __main__ - INFO -   - entity_extraction: 72.46 seconds
+2025-03-03 15:53:27,997 - __main__ - INFO -   - relationship_extraction: 74.57 seconds
+2025-03-03 15:53:27,997 - __main__ - INFO -   - coreference_resolution: 21.64 seconds
+2025-03-03 15:53:27,997 - __main__ - INFO -   - knowledge_verification: 30.52 seconds
+2025-03-03 15:53:27,997 - __main__ - INFO -   - overall: 263.86 seconds
+2025-03-03 17:16:07,419 - __main__ - INFO - Testing knowledge graph creation
+2025-03-03 17:16:07,420 - __main__ - INFO - Creating a simple example knowledge graph
+2025-03-03 17:16:07,420 - __main__ - INFO - Created graph with 5 entities and 7 relationships
+2025-03-03 17:16:07,421 - __main__ - INFO - Graph statistics: {
+  "entity_count": 5,
+  "relationship_count": 7,
+  "entity_types": {
+    "Concept": 1,
+    "Process": 3,
+    "Technology": 1
+  },
+  "relationship_types": {
+    "creates_part_of": 2,
+    "creates": 1,
+    "precedes": 2,
+    "used_by": 2
+  },
+  "graph_metrics": {
+    "nodes": 5,
+    "edges": 9,
+    "density": 0.45,
+    "avg_clustering": null,
+    "avg_shortest_path": null,
+    "connected": true
+  }
+}
+2025-03-03 17:16:07,421 - __main__ - INFO - Saved graph to output/test_graph.json
+2025-03-03 17:16:07,727 - src.graph_management.graph - INFO - Graph visualization saved to output/test_graph.png
+2025-03-03 17:16:07,728 - __main__ - INFO - Saved graph visualization to output/test_graph.png
+2025-03-03 17:16:07,728 - __main__ - INFO - Testing knowledge graph operations
+2025-03-03 17:16:07,728 - __main__ - INFO - Found 1 Concept entities and 3 Process entities
+2025-03-03 17:16:07,728 - __main__ - INFO - Found 1 'creates' relationships and 2 'precedes' relationships
+2025-03-03 17:16:07,728 - __main__ - INFO - LLM entity has 2 relationships
+2025-03-03 17:16:07,859 - src.graph_management.graph - INFO - Graph visualization saved to output/test_graph_before_merge.png
+2025-03-03 17:16:07,860 - __main__ - INFO - Merged GPT and Claude into a new entity: Foundation Models
+2025-03-03 17:16:07,994 - src.graph_management.graph - INFO - Graph visualization saved to output/test_graph_after_merge.png
+2025-03-03 17:16:07,994 - __main__ - INFO - Testing loading graph from JSON
+2025-03-03 17:16:07,995 - __main__ - INFO - Loaded graph with 6 entities and 9 relationships
+2025-03-03 17:16:07,995 - __main__ - INFO - Graph loaded successfully with matching entity and relationship counts
+2025-03-03 17:16:56,340 - __main__ - INFO - Testing graph creation from extraction file: output/knowledge_graph_en.json
+2025-03-03 17:16:56,340 - src.graph_management.graph_creator - INFO - Creating knowledge graph from JSON file: output/knowledge_graph_en.json
+2025-03-03 17:16:56,341 - src.graph_management.graph_creator - ERROR - Failed to create knowledge graph from extraction results: 'entity_type'
+2025-03-03 17:16:56,341 - src.graph_management.graph_creator - ERROR - Failed to create knowledge graph from JSON file: type object 'Result' has no attribute 'failure'
+2025-03-03 17:17:55,031 - __main__ - INFO - Testing graph creation from extraction file: output/knowledge_graph_en.json
+2025-03-03 17:17:55,031 - src.graph_management.graph_creator - INFO - Creating knowledge graph from JSON file: output/knowledge_graph_en.json
+2025-03-03 17:17:55,032 - src.graph_management.graph_creator - ERROR - Failed to create knowledge graph from extraction results: 'EntityRegistry' object has no attribute 'add_entity'
+2025-03-03 17:17:55,032 - src.utils.result - ERROR - Failed to create knowledge graph from extraction results: 'EntityRegistry' object has no attribute 'add_entity' 
+2025-03-03 17:19:43,965 - __main__ - INFO - Testing graph creation from extraction file: output/knowledge_graph_en.json
+2025-03-03 17:19:43,965 - src.graph_management.graph_creator - INFO - Creating knowledge graph from JSON file: output/knowledge_graph_en.json
+2025-03-03 17:19:43,967 - src.graph_management.graph_creator - INFO - Creating knowledge graph 'knowledge_graph_en' from registries
+2025-03-03 17:19:43,967 - src.graph_management.graph_creator - INFO - Entity count: 52
+2025-03-03 17:19:43,967 - src.graph_management.graph_creator - ERROR - Failed to create knowledge graph: 'RelationshipRegistry' object has no attribute 'relationships'
+2025-03-03 17:19:43,967 - src.utils.result - ERROR - Failed to create knowledge graph: 'RelationshipRegistry' object has no attribute 'relationships' 
+2025-03-03 17:19:43,967 - __main__ - ERROR - Failed to create graph: Failed to create knowledge graph: 'RelationshipRegistry' object has no attribute 'relationships'
+2025-03-03 17:20:14,088 - __main__ - INFO - Testing graph creation from extraction file: output/knowledge_graph_en.json
+2025-03-03 17:20:14,089 - src.graph_management.graph_creator - INFO - Creating knowledge graph from JSON file: output/knowledge_graph_en.json
+2025-03-03 17:20:14,090 - src.graph_management.graph_creator - INFO - Creating knowledge graph 'knowledge_graph_en' from registries
+2025-03-03 17:20:14,090 - src.graph_management.graph_creator - INFO - Entity count: 52
+2025-03-03 17:20:14,090 - src.graph_management.graph_creator - INFO - Relationship count: 104
+2025-03-03 17:20:14,090 - src.graph_management.graph - WARNING - Target entity kg1 does not exist in the graph
+2025-03-03 17:20:14,090 - src.graph_management.graph - WARNING - Target entity kg1 does not exist in the graph
+2025-03-03 17:20:14,090 - src.graph_management.graph - WARNING - Target entity kg1 does not exist in the graph
+2025-03-03 17:20:14,090 - src.graph_management.graph - WARNING - Source entity kg1 does not exist in the graph
+2025-03-03 17:20:14,090 - src.graph_management.graph - WARNING - Source entity kg1 does not exist in the graph
+2025-03-03 17:20:14,090 - src.graph_management.graph - WARNING - Source entity kg1 does not exist in the graph
+2025-03-03 17:20:14,090 - src.graph_management.graph - WARNING - Source entity kg1 does not exist in the graph
+2025-03-03 17:20:14,091 - src.graph_management.graph - WARNING - Source entity kg1 does not exist in the graph
+2025-03-03 17:20:14,091 - src.graph_management.graph - WARNING - Source entity kg1 does not exist in the graph
+2025-03-03 17:20:14,091 - src.graph_management.graph - WARNING - Target entity kg1 does not exist in the graph
+2025-03-03 17:20:14,091 - src.graph_management.graph - WARNING - Target entity kg1 does not exist in the graph
+2025-03-03 17:20:14,091 - src.graph_management.graph - WARNING - Target entity kg1 does not exist in the graph
+2025-03-03 17:20:14,091 - src.graph_management.graph - WARNING - Target entity kg1 does not exist in the graph
+2025-03-03 17:20:14,091 - src.graph_management.graph - WARNING - Target entity kg1 does not exist in the graph
+2025-03-03 17:20:14,091 - src.graph_management.graph - WARNING - Source entity kg1 does not exist in the graph
+2025-03-03 17:20:14,091 - src.graph_management.graph - WARNING - Source entity kg1 does not exist in the graph
+2025-03-03 17:20:14,091 - src.graph_management.graph - WARNING - Source entity kg1 does not exist in the graph
+2025-03-03 17:20:14,091 - src.graph_management.graph - WARNING - Source entity kg1 does not exist in the graph
+2025-03-03 17:20:14,091 - src.graph_management.graph - WARNING - Source entity kg1 does not exist in the graph
+2025-03-03 17:20:14,093 - src.graph_management.graph_creator - INFO - Graph created with 52 entities and 85 relationships
+2025-03-03 17:20:14,093 - __main__ - INFO - Created graph with 52 entities and 85 relationships
+2025-03-03 17:20:14,094 - __main__ - INFO - Saved graph to output/knowledge_graph_en_graph.json
+2025-03-03 17:20:14,545 - src.graph_management.graph - INFO - Graph visualization saved to output/knowledge_graph_en_graph.png
+2025-03-03 17:20:14,545 - __main__ - INFO - Saved graph visualization to output/knowledge_graph_en_graph.png
+2025-03-03 17:20:14,547 - __main__ - INFO - Graph statistics: {
+  "entity_count": 52,
+  "relationship_count": 85,
+  "entity_types": {
+    "Concept": 14,
+    "Document": 1,
+    "Field": 1,
+    "Process": 6,
+    "Component": 4,
+    "Attribute": 4,
+    "System": 3,
+    "Domain": 2,
+    "Method": 5,
+    "document_section": 1,
+    "topic": 1,
+    "concept": 3,
+    "TextSegment": 1,
+    "technology": 6
+  },
+  "relationship_types": {
+    "focuses_on": 1,
+    "is_a_type_of": 1,
+    "related_to": 1,
+    "belongs_to": 1,
+    "covers": 2,
+    "PART_OF": 2,
+    "IDENTIFIED_BY": 1,
+    "POSITIONED_IN": 1,
+    "HAS_STRUCTURE": 1,
+    "combines": 2,
+    "is_essential_for": 1,
+    "enables": 4,
+    "introduces": 2,
+    "part_of": 1,
+    "functions_within": 1,
+    "describes": 3,
+    "SIMILAR_TO": 1,
+    "connected_by": 1,
+    "defines": 2,
+    "contains": 4,
+    "includes": 4,
+    "may_include": 1,
+    "provides_basis_for": 1,
+    "follows": 1,
+    "SPANS": 1,
+    "is_applied_to": 1,
+    "utilizes": 1,
+    "requires": 2,
+    "informs": 1,
+    "guides": 2,
+    "is_part_of": 1,
+    "USED_FOR": 1,
+    "CREATES": 1,
+    "is_method_of": 5,
+    "affects": 6,
+    "relates_to": 1,
+    "contextualizes": 1,
+    "transitions_to": 1,
+    "is_challenge_for": 5,
+    "addresses": 3,
+    "involves": 1,
+    "ensures": 1,
+    "outlines": 1,
+    "highlights": 1,
+    "contrasts_with": 1,
+    "is_type_of": 4,
+    "integrates_with": 1,
+    "enhances": 1,
+    "supports": 1
+  },
+  "graph_metrics": {
+    "nodes": 52,
+    "edges": 55,
+    "density": 0.020739064856711915,
+    "avg_clustering": 0.20533371040723983,
+    "avg_shortest_path": null,
+    "connected": false
+  }
+}
+2025-03-03 17:24:23,724 - __main__ - INFO - Testing save and load functionality
+2025-03-03 17:24:23,725 - src.graph_management.graph_storage - INFO - Created new version save_load_test_1741019063 for graph save_load_test
+2025-03-03 17:24:23,725 - src.graph_management.graph_storage - INFO - Saved graph save_load_test to /var/folders/bd/vx0nhgzs1dxgk26s7pkxyb140000gn/T/tmpwai66idi/graphs/save_load_test.json
+2025-03-03 17:24:23,725 - __main__ - INFO - Successfully saved graph to /var/folders/bd/vx0nhgzs1dxgk26s7pkxyb140000gn/T/tmpwai66idi/graphs/save_load_test.json
+2025-03-03 17:24:23,725 - src.graph_management.graph_storage - INFO - Loaded graph save_load_test from /var/folders/bd/vx0nhgzs1dxgk26s7pkxyb140000gn/T/tmpwai66idi/graphs/save_load_test.json
+2025-03-03 17:24:23,725 - __main__ - INFO - Successfully loaded graph with correct contents
+2025-03-03 17:24:23,725 - __main__ - INFO - Testing graph versioning
+2025-03-03 17:24:23,726 - src.graph_management.graph_storage - INFO - Created new version version_test_1741019063 for graph version_test
+2025-03-03 17:24:23,726 - src.graph_management.graph_storage - INFO - Saved graph version_test to /var/folders/bd/vx0nhgzs1dxgk26s7pkxyb140000gn/T/tmpwai66idi/graphs/version_test.json
+2025-03-03 17:24:23,726 - __main__ - INFO - Saved initial version of graph
+2025-03-03 17:24:23,727 - src.graph_management.graph_storage - INFO - Created new version version_test_1741019063 for graph version_test
+2025-03-03 17:24:23,727 - src.graph_management.graph_storage - INFO - Saved graph version_test to /var/folders/bd/vx0nhgzs1dxgk26s7pkxyb140000gn/T/tmpwai66idi/graphs/version_test.json
+2025-03-03 17:24:23,727 - __main__ - INFO - Saved second version of graph
+2025-03-03 17:25:00,673 - __main__ - INFO - Testing save and load functionality
+2025-03-03 17:25:00,674 - src.graph_management.graph_storage - INFO - Created new version save_load_test_1741019100 for graph save_load_test
+2025-03-03 17:25:00,674 - src.graph_management.graph_storage - INFO - Saved graph save_load_test to /var/folders/bd/vx0nhgzs1dxgk26s7pkxyb140000gn/T/tmphayrcd_g/graphs/save_load_test.json
+2025-03-03 17:25:00,674 - __main__ - INFO - Successfully saved graph to /var/folders/bd/vx0nhgzs1dxgk26s7pkxyb140000gn/T/tmphayrcd_g/graphs/save_load_test.json
+2025-03-03 17:25:00,674 - src.graph_management.graph_storage - INFO - Loaded graph save_load_test from /var/folders/bd/vx0nhgzs1dxgk26s7pkxyb140000gn/T/tmphayrcd_g/graphs/save_load_test.json
+2025-03-03 17:25:00,674 - __main__ - INFO - Successfully loaded graph with correct contents
+2025-03-03 17:25:00,674 - __main__ - INFO - All tests completed successfully!
+2025-03-03 17:25:10,900 - __main__ - INFO - Testing graph versioning
+2025-03-03 17:25:10,901 - src.graph_management.graph_storage - INFO - Created new version version_test_1741019110 for graph version_test
+2025-03-03 17:25:10,901 - src.graph_management.graph_storage - INFO - Saved graph version_test to /var/folders/bd/vx0nhgzs1dxgk26s7pkxyb140000gn/T/tmp4q0vj1as/graphs/version_test.json
+2025-03-03 17:25:10,901 - __main__ - INFO - Saved initial version of graph
+2025-03-03 17:25:11,906 - src.graph_management.graph_storage - INFO - Created new version version_test_1741019111 for graph version_test
+2025-03-03 17:25:11,906 - src.graph_management.graph_storage - INFO - Saved graph version_test to /var/folders/bd/vx0nhgzs1dxgk26s7pkxyb140000gn/T/tmp4q0vj1as/graphs/version_test.json
+2025-03-03 17:25:11,906 - __main__ - INFO - Saved second version of graph
+2025-03-03 17:25:11,907 - __main__ - INFO - Found 2 versions
+2025-03-03 17:25:11,907 - __main__ - INFO -   Version: version_test_1741019111, created at: 2025-03-03T17:25:11.905909
+2025-03-03 17:25:11,907 - __main__ - INFO -   Version: version_test_1741019110, created at: 2025-03-03T17:25:10.901275
+2025-03-03 17:25:11,907 - src.graph_management.graph_storage - INFO - Added description to version version_test_1741019111 of graph version_test
+2025-03-03 17:25:11,908 - __main__ - INFO - Successfully added and verified version description
+2025-03-03 17:25:11,908 - src.graph_management.graph_storage - INFO - Loaded graph version_test from /var/folders/bd/vx0nhgzs1dxgk26s7pkxyb140000gn/T/tmp4q0vj1as/graphs/version_test.json
+2025-03-03 17:25:11,908 - __main__ - INFO - Successfully loaded latest version with expected entity count
+2025-03-03 17:25:11,908 - src.graph_management.graph_storage - INFO - Loaded graph version_test from /var/folders/bd/vx0nhgzs1dxgk26s7pkxyb140000gn/T/tmp4q0vj1as/versions/version_test_1741019111.json
+2025-03-03 17:25:11,908 - __main__ - INFO - Successfully loaded specific version with expected entity count
+2025-03-03 17:25:11,908 - __main__ - INFO - All tests completed successfully!
+2025-03-03 17:25:25,573 - __main__ - INFO - Testing graph export functionality
+2025-03-03 17:25:25,574 - src.graph_management.graph_storage - INFO - Created new version export_test_1741019125 for graph export_test
+2025-03-03 17:25:25,574 - src.graph_management.graph_storage - INFO - Saved graph export_test to /var/folders/bd/vx0nhgzs1dxgk26s7pkxyb140000gn/T/tmp2rpvr5tj/graphs/export_test.json
+2025-03-03 17:25:25,574 - src.graph_management.graph_storage - INFO - Loaded graph export_test from /var/folders/bd/vx0nhgzs1dxgk26s7pkxyb140000gn/T/tmp2rpvr5tj/graphs/export_test.json
+2025-03-03 17:25:25,575 - src.graph_management.graph_storage - INFO - Exported graph export_test to output/export_test.json in json format
+2025-03-03 17:25:25,575 - __main__ - INFO - Exported graph to JSON: output/export_test.json
+2025-03-03 17:25:25,575 - src.graph_management.graph_storage - INFO - Loaded graph export_test from /var/folders/bd/vx0nhgzs1dxgk26s7pkxyb140000gn/T/tmp2rpvr5tj/graphs/export_test.json
+2025-03-03 17:25:25,599 - src.graph_management.graph_storage - ERROR - Failed to export graph export_test: GraphML does not support type <class 'dict'> as data values.
+2025-03-03 17:25:25,599 - src.utils.result - ERROR - Failed to export graph export_test: GraphML does not support type <class 'dict'> as data values. 
+2025-03-03 17:25:55,554 - __main__ - INFO - Testing graph export functionality
+2025-03-03 17:25:55,555 - src.graph_management.graph_storage - INFO - Created new version export_test_1741019155 for graph export_test
+2025-03-03 17:25:55,555 - src.graph_management.graph_storage - INFO - Saved graph export_test to /var/folders/bd/vx0nhgzs1dxgk26s7pkxyb140000gn/T/tmpig31adtr/graphs/export_test.json
+2025-03-03 17:25:55,556 - src.graph_management.graph_storage - INFO - Loaded graph export_test from /var/folders/bd/vx0nhgzs1dxgk26s7pkxyb140000gn/T/tmpig31adtr/graphs/export_test.json
+2025-03-03 17:25:55,556 - src.graph_management.graph_storage - INFO - Exported graph export_test to output/export_test.json in json format
+2025-03-03 17:25:55,556 - __main__ - INFO - Exported graph to JSON: output/export_test.json
+2025-03-03 17:25:55,556 - src.graph_management.graph_storage - INFO - Loaded graph export_test from /var/folders/bd/vx0nhgzs1dxgk26s7pkxyb140000gn/T/tmpig31adtr/graphs/export_test.json
+2025-03-03 17:25:55,556 - src.graph_management.graph_storage - INFO - Exported graph export_test to output/export_test.cypher in cypher format
+2025-03-03 17:25:55,556 - __main__ - INFO - Exported graph to Cypher: output/export_test.cypher
+2025-03-03 17:25:55,556 - __main__ - INFO - GraphML export skipped due to attribute type limitations
+2025-03-03 17:25:55,556 - __main__ - INFO - Successfully tested export formats
+2025-03-03 17:25:55,557 - __main__ - INFO - All tests completed successfully!
+2025-03-03 17:26:04,343 - __main__ - INFO - Testing convenience functions
+2025-03-03 17:26:04,344 - src.graph_management.graph_storage - INFO - Created new version convenience_test_1741019164 for graph convenience_test
+2025-03-03 17:26:04,344 - src.graph_management.graph_storage - INFO - Saved graph convenience_test to /var/folders/bd/vx0nhgzs1dxgk26s7pkxyb140000gn/T/tmpil96twpt/graphs/convenience_test.json
+2025-03-03 17:26:04,345 - __main__ - INFO - Successfully found graph using list_available_graphs
+2025-03-03 17:26:04,345 - src.graph_management.graph_storage - INFO - Loaded graph convenience_test from /var/folders/bd/vx0nhgzs1dxgk26s7pkxyb140000gn/T/tmpil96twpt/graphs/convenience_test.json
+2025-03-03 17:26:04,345 - __main__ - INFO - Successfully loaded graph using convenience function
+2025-03-03 17:26:04,345 - __main__ - INFO - All tests completed successfully!
+2025-03-03 17:26:22,940 - __main__ - INFO - Testing save and load functionality
+2025-03-03 17:26:22,941 - src.graph_management.graph_storage - INFO - Created new version save_load_test_1741019182 for graph save_load_test
+2025-03-03 17:26:22,941 - src.graph_management.graph_storage - INFO - Saved graph save_load_test to /var/folders/bd/vx0nhgzs1dxgk26s7pkxyb140000gn/T/tmp5206r4y2/graphs/save_load_test.json
+2025-03-03 17:26:22,941 - __main__ - INFO - Successfully saved graph to /var/folders/bd/vx0nhgzs1dxgk26s7pkxyb140000gn/T/tmp5206r4y2/graphs/save_load_test.json
+2025-03-03 17:26:22,941 - src.graph_management.graph_storage - INFO - Loaded graph save_load_test from /var/folders/bd/vx0nhgzs1dxgk26s7pkxyb140000gn/T/tmp5206r4y2/graphs/save_load_test.json
+2025-03-03 17:26:22,942 - __main__ - INFO - Successfully loaded graph with correct contents
+2025-03-03 17:26:22,942 - __main__ - INFO - Testing graph versioning
+2025-03-03 17:26:22,942 - src.graph_management.graph_storage - INFO - Created new version version_test_1741019182 for graph version_test
+2025-03-03 17:26:22,942 - src.graph_management.graph_storage - INFO - Saved graph version_test to /var/folders/bd/vx0nhgzs1dxgk26s7pkxyb140000gn/T/tmp5206r4y2/graphs/version_test.json
+2025-03-03 17:26:22,942 - __main__ - INFO - Saved initial version of graph
+2025-03-03 17:26:23,945 - src.graph_management.graph_storage - INFO - Created new version version_test_1741019183 for graph version_test
+2025-03-03 17:26:23,945 - src.graph_management.graph_storage - INFO - Saved graph version_test to /var/folders/bd/vx0nhgzs1dxgk26s7pkxyb140000gn/T/tmp5206r4y2/graphs/version_test.json
+2025-03-03 17:26:23,946 - __main__ - INFO - Saved second version of graph
+2025-03-03 17:26:23,946 - __main__ - INFO - Found 2 versions
+2025-03-03 17:26:23,946 - __main__ - INFO -   Version: version_test_1741019183, created at: 2025-03-03T17:26:23.945324
+2025-03-03 17:26:23,946 - __main__ - INFO -   Version: version_test_1741019182, created at: 2025-03-03T17:26:22.942671
+2025-03-03 17:26:23,947 - src.graph_management.graph_storage - INFO - Added description to version version_test_1741019183 of graph version_test
+2025-03-03 17:26:23,947 - __main__ - INFO - Successfully added and verified version description
+2025-03-03 17:26:23,947 - src.graph_management.graph_storage - INFO - Loaded graph version_test from /var/folders/bd/vx0nhgzs1dxgk26s7pkxyb140000gn/T/tmp5206r4y2/graphs/version_test.json
+2025-03-03 17:26:23,947 - __main__ - INFO - Successfully loaded latest version with expected entity count
+2025-03-03 17:26:23,947 - src.graph_management.graph_storage - INFO - Loaded graph version_test from /var/folders/bd/vx0nhgzs1dxgk26s7pkxyb140000gn/T/tmp5206r4y2/versions/version_test_1741019183.json
+2025-03-03 17:26:23,948 - __main__ - INFO - Successfully loaded specific version with expected entity count
+2025-03-03 17:26:23,948 - __main__ - INFO - Testing graph export functionality
+2025-03-03 17:26:23,949 - src.graph_management.graph_storage - INFO - Created new version export_test_1741019183 for graph export_test
+2025-03-03 17:26:23,949 - src.graph_management.graph_storage - INFO - Saved graph export_test to /var/folders/bd/vx0nhgzs1dxgk26s7pkxyb140000gn/T/tmp5206r4y2/graphs/export_test.json
+2025-03-03 17:26:23,949 - src.graph_management.graph_storage - INFO - Loaded graph export_test from /var/folders/bd/vx0nhgzs1dxgk26s7pkxyb140000gn/T/tmp5206r4y2/graphs/export_test.json
+2025-03-03 17:26:23,949 - src.graph_management.graph_storage - INFO - Exported graph export_test to output/export_test.json in json format
+2025-03-03 17:26:23,949 - __main__ - INFO - Exported graph to JSON: output/export_test.json
+2025-03-03 17:26:23,950 - src.graph_management.graph_storage - INFO - Loaded graph export_test from /var/folders/bd/vx0nhgzs1dxgk26s7pkxyb140000gn/T/tmp5206r4y2/graphs/export_test.json
+2025-03-03 17:26:23,950 - src.graph_management.graph_storage - INFO - Exported graph export_test to output/export_test.cypher in cypher format
+2025-03-03 17:26:23,950 - __main__ - INFO - Exported graph to Cypher: output/export_test.cypher
+2025-03-03 17:26:23,950 - __main__ - INFO - GraphML export skipped due to attribute type limitations
+2025-03-03 17:26:23,950 - __main__ - INFO - Successfully tested export formats
+2025-03-03 17:26:23,950 - __main__ - INFO - Testing convenience functions
+2025-03-03 17:26:23,951 - src.graph_management.graph_storage - INFO - Created new version convenience_test_1741019183 for graph convenience_test
+2025-03-03 17:26:23,951 - src.graph_management.graph_storage - INFO - Saved graph convenience_test to /var/folders/bd/vx0nhgzs1dxgk26s7pkxyb140000gn/T/tmp5206r4y2/graphs/convenience_test.json
+2025-03-03 17:26:23,952 - __main__ - INFO - Successfully found graph using list_available_graphs
+2025-03-03 17:26:23,952 - src.graph_management.graph_storage - INFO - Loaded graph convenience_test from /var/folders/bd/vx0nhgzs1dxgk26s7pkxyb140000gn/T/tmp5206r4y2/graphs/convenience_test.json
+2025-03-03 17:26:23,952 - __main__ - INFO - Successfully loaded graph using convenience function
+2025-03-03 17:26:23,952 - __main__ - INFO - All tests completed successfully!
+2025-03-03 18:03:31,023 - numexpr.utils - INFO - NumExpr defaulting to 12 threads.
+2025-03-03 18:03:31,575 - src.graph_management.graph_query - WARNING - Target entity nonexistent not found
+2025-03-03 18:03:31,575 - src.graph_management.graph_reasoning - WARNING - No paths found between person1 and nonexistent
+2025-03-03 18:06:01,039 - numexpr.utils - INFO - NumExpr defaulting to 12 threads.
+2025-03-03 18:06:01,204 - src.graph_management.graph_query - WARNING - Target entity nonexistent not found
+2025-03-03 18:06:01,204 - src.graph_management.graph_reasoning - WARNING - No paths found between person1 and nonexistent
+2025-03-03 18:06:01,204 - src.graph_management.graph - WARNING - Relationship rel_contradictory2 does not exist in the graph
+2025-03-03 18:06:01,204 - src.graph_management.graph - WARNING - Relationship rel_contradictory2 does not exist in the graph
+2025-03-03 18:06:01,204 - src.graph_management.graph - WARNING - Relationship rel_contradictory2 does not exist in the graph
+2025-03-03 18:06:01,204 - src.graph_management.graph - WARNING - Relationship rel_contradictory2 does not exist in the graph
+2025-03-03 18:06:01,204 - src.graph_management.graph - WARNING - Relationship rel_contradictory2 does not exist in the graph
+2025-03-03 18:06:01,204 - src.graph_management.graph - WARNING - Relationship rel_contradictory2 does not exist in the graph
+2025-03-03 18:06:56,967 - src.graph_management.graph - WARNING - Relationship rel_contradiction does not exist in the graph

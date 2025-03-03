@@ -1,0 +1,228 @@
+{
+  "segments": [
+    {
+      "id": "944a1e23-2483-4acc-86c4-1bd5d4571dd2",
+      "text": "Knowledge graphs represent a powerful way to organize and reason about information. They consist of entities (nodes) and relationships (edges) that connect these entities.",
+      "segment_type": "paragraph",
+      "level": 0,
+      "title": null,
+      "parent_id": null,
+      "children_ids": [],
+      "metadata": {
+        "position": {
+          "start": 0,
+          "end": 165
+        }
+      }
+    },
+    {
+      "id": "38a2cc27-797b-4278-bd25-344e8ac89ef5",
+      "text": "The process of building a knowledge graph involves several key steps: 1. Entity Extraction: Identifying important concepts, objects, or individuals mentioned in the text. 2. Relationship Extraction: Determining how these entities are connected to each other. 3. Entity Resolution: Ensuring that different mentions of the same entity are properly linked. 4. Knowledge Integration: Combining the extracted information with existing knowledge bases.",
+      "segment_type": "section",
+      "level": 0,
+      "title": null,
+      "parent_id": null,
+      "children_ids": [
+        "f3b55787-538e-4638-b59a-214e5570ffc0",
+        "5020f5c5-bcad-43af-b6fb-98dab47c8a7d",
+        "ba00947b-8690-4be5-8ad5-f645cd8b326e",
+        "598770cc-b712-4653-b44a-8045f6f0df25"
+      ],
+      "metadata": {
+        "position": {
+          "start": 166,
+          "end": 583
+        }
+      },
+      "children": [
+        {
+          "id": "f3b55787-538e-4638-b59a-214e5570ffc0",
+          "text": "1. Entity Extraction: Identifying important concepts, objects, or individuals mentioned in the text.",
+          "segment_type": "block",
+          "level": 1,
+          "title": null,
+          "parent_id": "38a2cc27-797b-4278-bd25-344e8ac89ef5",
+          "children_ids": [],
+          "metadata": {
+            "position": {
+              "start": 231,
+              "end": 324
+            }
+          }
+        },
+        {
+          "id": "5020f5c5-bcad-43af-b6fb-98dab47c8a7d",
+          "text": "2. Relationship Extraction: Determining how these entities are connected to each other.",
+          "segment_type": "block",
+          "level": 1,
+          "title": null,
+          "parent_id": "38a2cc27-797b-4278-bd25-344e8ac89ef5",
+          "children_ids": [],
+          "metadata": {
+            "position": {
+              "start": 325,
+              "end": 408
+            }
+          }
+        },
+        {
+          "id": "ba00947b-8690-4be5-8ad5-f645cd8b326e",
+          "text": "3. Entity Resolution: Ensuring that different mentions of the same entity are properly linked.",
+          "segment_type": "block",
+          "level": 1,
+          "title": null,
+          "parent_id": "38a2cc27-797b-4278-bd25-344e8ac89ef5",
+          "children_ids": [],
+          "metadata": {
+            "position": {
+              "start": 409,
+              "end": 498
+            }
+          }
+        },
+        {
+          "id": "598770cc-b712-4653-b44a-8045f6f0df25",
+          "text": "4. Knowledge Integration: Combining the extracted information with existing knowledge bases.",
+          "segment_type": "block",
+          "level": 1,
+          "title": null,
+          "parent_id": "38a2cc27-797b-4278-bd25-344e8ac89ef5",
+          "children_ids": [],
+          "metadata": {
+            "position": {
+              "start": 499,
+              "end": 583
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "c65a25ba-daf5-4033-9273-4e007fcbc654",
+      "text": "Various techniques can be used for knowledge extraction, ranging from rule-based approaches to deep learning models like BERT and GPT. These models have shown remarkable capabilities in understanding context and extracting structured information from unstructured text.",
+      "segment_type": "paragraph",
+      "level": 0,
+      "title": null,
+      "parent_id": null,
+      "children_ids": [],
+      "metadata": {
+        "position": {
+          "start": 584,
+          "end": 835
+        }
+      }
+    },
+    {
+      "id": "d736508a-93a1-47b9-9f7f-cf5de373437d",
+      "text": "When building knowledge graphs, it's important to consider issues like data quality, scalability, and domain specificity. For example, a knowledge graph for medical research would have different requirements than one for financial analysis.",
+      "segment_type": "paragraph",
+      "level": 0,
+      "title": null,
+      "parent_id": null,
+      "children_ids": [],
+      "metadata": {
+        "position": {
+          "start": 836,
+          "end": 1054
+        }
+      }
+    },
+    {
+      "id": "85bda2d3-fd4b-419a-9a5b-946187b7d582",
+      "text": "Some common challenges in knowledge graph construction include: - Handling ambiguity in natural language - Dealing with incomplete or contradictory information - Scaling to large volumes of data - Maintaining the graph over time as new information becomes available",
+      "segment_type": "section",
+      "level": 0,
+      "title": null,
+      "parent_id": null,
+      "children_ids": [
+        "8cdb6f0c-0555-4c47-8e22-b1758a7f2cea",
+        "6b9bac84-15c7-4b8e-871b-3ea8576442bc",
+        "a4312a92-81d3-4120-9dab-f03a3b6cc3c6",
+        "a88a435d-8fc2-4ede-8c35-71cf579b8198"
+      ],
+      "metadata": {
+        "position": {
+          "start": 1055,
+          "end": 1310
+        }
+      },
+      "children": [
+        {
+          "id": "8cdb6f0c-0555-4c47-8e22-b1758a7f2cea",
+          "text": "- Handling ambiguity in natural language",
+          "segment_type": "block",
+          "level": 1,
+          "title": null,
+          "parent_id": "85bda2d3-fd4b-419a-9a5b-946187b7d582",
+          "children_ids": [],
+          "metadata": {
+            "position": {
+              "start": 1111,
+              "end": 1153
+            }
+          }
+        },
+        {
+          "id": "6b9bac84-15c7-4b8e-871b-3ea8576442bc",
+          "text": "- Dealing with incomplete or contradictory information",
+          "segment_type": "block",
+          "level": 1,
+          "title": null,
+          "parent_id": "85bda2d3-fd4b-419a-9a5b-946187b7d582",
+          "children_ids": [],
+          "metadata": {
+            "position": {
+              "start": 1154,
+              "end": 1210
+            }
+          }
+        },
+        {
+          "id": "a4312a92-81d3-4120-9dab-f03a3b6cc3c6",
+          "text": "- Scaling to large volumes of data",
+          "segment_type": "block",
+          "level": 1,
+          "title": null,
+          "parent_id": "85bda2d3-fd4b-419a-9a5b-946187b7d582",
+          "children_ids": [],
+          "metadata": {
+            "position": {
+              "start": 1211,
+              "end": 1247
+            }
+          }
+        },
+        {
+          "id": "a88a435d-8fc2-4ede-8c35-71cf579b8198",
+          "text": "- Maintaining the graph over time as new information becomes available",
+          "segment_type": "block",
+          "level": 1,
+          "title": null,
+          "parent_id": "85bda2d3-fd4b-419a-9a5b-946187b7d582",
+          "children_ids": [],
+          "metadata": {
+            "position": {
+              "start": 1248,
+              "end": 1310
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "07bb3f9a-3c5f-45e4-9e2b-ddfb8e58a0a4",
+      "text": "Despite these challenges, knowledge graphs have proven valuable in many applications, from search engines and recommendation systems to scientific research and data integration.",
+      "segment_type": "paragraph",
+      "level": 0,
+      "title": null,
+      "parent_id": null,
+      "children_ids": [],
+      "metadata": {
+        "position": {
+          "start": 1311,
+          "end": 1476
+        }
+      }
+    }
+  ]
+}

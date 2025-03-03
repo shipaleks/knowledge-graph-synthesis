@@ -1,0 +1,279 @@
+{
+  "issues": [
+    {
+      "issue_type": "dangling_reference",
+      "involved_elements": [
+        "2b181631-ac3a-4e62-bf2a-be705b8f3ff1"
+      ],
+      "proposed_solution": "Remove relationship or create the missing source entity with ID: bc784bd0-6449-4188-8883-d30e6a69a485",
+      "severity": "critical",
+      "metadata": {}
+    },
+    {
+      "issue_type": "dangling_reference",
+      "involved_elements": [
+        "a191a687-edde-4ea5-83ef-52adee49c121"
+      ],
+      "proposed_solution": "Remove relationship or create the missing source entity with ID: bc784bd0-6449-4188-8883-d30e6a69a485",
+      "severity": "critical",
+      "metadata": {}
+    },
+    {
+      "issue_type": "dangling_reference",
+      "involved_elements": [
+        "0b1d4e05-6cb7-47f5-9f74-94e1b3c6dfe1"
+      ],
+      "proposed_solution": "Remove relationship or create the missing source entity with ID: 6f8f974c-b000-4d3a-9be0-7b9ed36c60f2",
+      "severity": "critical",
+      "metadata": {}
+    },
+    {
+      "issue_type": "dangling_reference",
+      "involved_elements": [
+        "a10debf4-7e3a-4eab-938c-0dc8888b4773"
+      ],
+      "proposed_solution": "Remove relationship or create the missing source entity with ID: 6f8f974c-b000-4d3a-9be0-7b9ed36c60f2",
+      "severity": "critical",
+      "metadata": {}
+    },
+    {
+      "issue_type": "dangling_reference",
+      "involved_elements": [
+        "f3bb9ed6-9537-434b-93b8-7c5e68b17a2f"
+      ],
+      "proposed_solution": "Remove relationship or create the missing source entity with ID: 6f8f974c-b000-4d3a-9be0-7b9ed36c60f2",
+      "severity": "critical",
+      "metadata": {}
+    },
+    {
+      "issue_type": "dangling_reference",
+      "involved_elements": [
+        "7f7e630f-a1ab-4e64-bc1c-765d0a1114ec"
+      ],
+      "proposed_solution": "Remove relationship or create the missing target entity with ID: 6f8f974c-b000-4d3a-9be0-7b9ed36c60f2",
+      "severity": "critical",
+      "metadata": {}
+    },
+    {
+      "issue_type": "dangling_reference",
+      "involved_elements": [
+        "542ad48e-005f-47e4-9590-def467bdcb7b"
+      ],
+      "proposed_solution": "Remove relationship or create the missing target entity with ID: 6f8f974c-b000-4d3a-9be0-7b9ed36c60f2",
+      "severity": "critical",
+      "metadata": {}
+    },
+    {
+      "issue_type": "dangling_reference",
+      "involved_elements": [
+        "ad38b367-91d2-4051-963a-40e7e32f3629"
+      ],
+      "proposed_solution": "Remove relationship or create the missing target entity with ID: 748de74c-1195-4868-ab2f-ff8b215e8daf",
+      "severity": "critical",
+      "metadata": {}
+    },
+    {
+      "issue_type": "dangling_reference",
+      "involved_elements": [
+        "b187afaf-2f13-4040-a045-273c90ecd6d2"
+      ],
+      "proposed_solution": "Remove relationship or create the missing target entity with ID: 748de74c-1195-4868-ab2f-ff8b215e8daf",
+      "severity": "critical",
+      "metadata": {}
+    },
+    {
+      "issue_type": "dangling_reference",
+      "involved_elements": [
+        "a73baf40-b633-4161-b67f-8f4029fe87b0"
+      ],
+      "proposed_solution": "Remove relationship or create the missing target entity with ID: 748de74c-1195-4868-ab2f-ff8b215e8daf",
+      "severity": "critical",
+      "metadata": {}
+    },
+    {
+      "issue_type": "dangling_reference",
+      "involved_elements": [
+        "a31ffebb-b646-4a8a-a86c-dc3138ed59f1"
+      ],
+      "proposed_solution": "Remove relationship or create the missing target entity with ID: 8e174e8d-02d8-4274-bbe4-143709d6e05b",
+      "severity": "critical",
+      "metadata": {}
+    },
+    {
+      "issue_type": "dangling_reference",
+      "involved_elements": [
+        "9b22159b-dc5d-4510-8306-fc6b005eaf49"
+      ],
+      "proposed_solution": "Remove relationship or create the missing target entity with ID: 8e174e8d-02d8-4274-bbe4-143709d6e05b",
+      "severity": "critical",
+      "metadata": {}
+    },
+    {
+      "issue_type": "dangling_reference",
+      "involved_elements": [
+        "7bbb4dd4-846b-42e4-945c-aaee858700f1"
+      ],
+      "proposed_solution": "Remove relationship or create the missing target entity with ID: 8e174e8d-02d8-4274-bbe4-143709d6e05b",
+      "severity": "critical",
+      "metadata": {}
+    },
+    {
+      "issue_type": "dangling_reference",
+      "involved_elements": [
+        "e05fec42-368a-4a6e-ada1-e557be491a27"
+      ],
+      "proposed_solution": "Remove relationship or create the missing source entity with ID: 21f06a49-53f7-4393-b22c-10a491bc3b46",
+      "severity": "critical",
+      "metadata": {}
+    },
+    {
+      "issue_type": "dangling_reference",
+      "involved_elements": [
+        "77961f9a-9262-4114-a447-bdcec341622f"
+      ],
+      "proposed_solution": "Remove relationship or create the missing target entity with ID: 21f06a49-53f7-4393-b22c-10a491bc3b46",
+      "severity": "critical",
+      "metadata": {}
+    },
+    {
+      "issue_type": "dangling_reference",
+      "involved_elements": [
+        "85676057-dd94-436f-a9f4-dd54e380e084"
+      ],
+      "proposed_solution": "Remove relationship or create the missing target entity with ID: 21f06a49-53f7-4393-b22c-10a491bc3b46",
+      "severity": "critical",
+      "metadata": {}
+    },
+    {
+      "issue_type": "dangling_reference",
+      "involved_elements": [
+        "30dec891-03d8-4797-9698-03632245f21a"
+      ],
+      "proposed_solution": "Remove relationship or create the missing target entity with ID: 21f06a49-53f7-4393-b22c-10a491bc3b46",
+      "severity": "critical",
+      "metadata": {}
+    },
+    {
+      "issue_type": "dangling_reference",
+      "involved_elements": [
+        "7f69371a-c3f5-4dd7-aec8-e5d0d5d18fab"
+      ],
+      "proposed_solution": "Remove relationship or create the missing target entity with ID: 21f06a49-53f7-4393-b22c-10a491bc3b46",
+      "severity": "critical",
+      "metadata": {}
+    },
+    {
+      "issue_type": "dangling_reference",
+      "involved_elements": [
+        "ca025447-3749-4752-bb49-a11132c1721a"
+      ],
+      "proposed_solution": "Remove relationship or create the missing target entity with ID: b74ec2d4-6873-4108-bac5-bd0526f25991",
+      "severity": "critical",
+      "metadata": {}
+    },
+    {
+      "issue_type": "dangling_reference",
+      "involved_elements": [
+        "8cdfea54-91b2-48b9-9499-05c2b7c8d092"
+      ],
+      "proposed_solution": "Remove relationship or create the missing target entity with ID: b74ec2d4-6873-4108-bac5-bd0526f25991",
+      "severity": "critical",
+      "metadata": {}
+    },
+    {
+      "issue_type": "Bidirectional redundancy",
+      "involved_elements": [
+        "Edge ID: 8ae290f2-169e-4d12-b01d-00c6b782ddda (Incomplete Information -> Contradictory information)",
+        "Edge ID: af1c614e-f240-4c67-b387-07326bd7708b (Contradictory information -> Incomplete Information)"
+      ],
+      "proposed_solution": "Remove one of the two bidirectional 'related_to' edges between Incomplete Information and Contradictory information as they represent the same relationship.",
+      "severity": "low",
+      "metadata": {}
+    },
+    {
+      "issue_type": "Cyclic dependency",
+      "involved_elements": [
+        "Edge ID: 260fb641-7f0f-4632-824c-1828891e553a (Data Scaling -> Scaling)",
+        "Edge ID: 007b767d-28c6-4c35-a9c6-a3c0972c7149 (Scaling -> Data Scaling)"
+      ],
+      "proposed_solution": "Remove one of the 'is_a' relationships as they create a circular definition. Keep only one direction, likely 'Scaling is_a Data Scaling' should be removed, and 'Data Scaling is_a Scaling' kept.",
+      "severity": "medium",
+      "metadata": {}
+    },
+    {
+      "issue_type": "Redundant similar_to relationship",
+      "involved_elements": [
+        "Edge ID: 9f30b0b9-65c4-4b53-ab8e-2841ce4d993e (Natural Language Ambiguity <-> Ambiguity in natural language)",
+        "Edge ID: 3c1a9ba1-626b-4b75-b44f-96905eac8c3c (Ambiguity in natural language -> Natural Language Ambiguity)"
+      ],
+      "proposed_solution": "These nodes have both a bidirectional 'similar_to' relationship and a unidirectional 'is_a' relationship. Keep only the 'is_a' relationship for clarity as it's more specific.",
+      "severity": "low",
+      "metadata": {}
+    },
+    {
+      "issue_type": "Redundant relationships",
+      "involved_elements": [
+        "Edge ID: 20f68d68-8a31-4f3e-99f7-6f58ca25e7e1 (Ambiguity in natural language <-> Natural language)",
+        "Edge ID: 2cd36683-6b86-4cb5-9c14-04e228e32b60 (Ambiguity in natural language -> Natural language)"
+      ],
+      "proposed_solution": "The bidirectional 'related_to' and unidirectional 'part_of' relationships between the same nodes are redundant. Keep only the more specific 'part_of' relationship.",
+      "severity": "low",
+      "metadata": {}
+    },
+    {
+      "issue_type": "Inconsistent relationship directionality",
+      "involved_elements": [
+        "Edge ID: 0ea428cf-66f5-482f-9be9-14cd0ed90de0 (Large volumes of data -> Data Scaling)",
+        "Edge ID: 34e45e11-946d-4bc2-83de-3cad41b7a2e1 (Data Scaling -> Large volumes of data)",
+        "Edge ID: 137817be-6278-4cb6-91dc-8eb2a95e670e (Scaling -> Large volumes of data)"
+      ],
+      "proposed_solution": "The relationships between Large volumes of data, Data Scaling, and Scaling are inconsistent. Edge 0ea428cf has 'causes' direction, while 34e45e11 has 'related_to' in the opposite direction. Standardize these relationships by keeping the causal relationship and removing the related_to relationship.",
+      "severity": "medium",
+      "metadata": {}
+    },
+    {
+      "issue_type": "Attribute inconsistency",
+      "involved_elements": [
+        "Node ID: 4575c779-69b1-451b-9f3a-eecd1fdf7ccc (Entity Resolution)"
+      ],
+      "proposed_solution": "The 'purpose' attribute contains duplicate values with slight wording differences. Keep only one version of the purpose statement.",
+      "severity": "low",
+      "metadata": {}
+    },
+    {
+      "issue_type": "Missing connection",
+      "involved_elements": [
+        "Node ID: 7fbc590d-5348-41a6-b6dd-4715c45af479 (Knowledge Graph)",
+        "Node ID: 1b49e1e7-483b-45c2-9270-11451da6b759 (Knowledge Graphs)"
+      ],
+      "proposed_solution": "There should be a relationship between 'Knowledge Graph' (singular) and 'Knowledge Graphs' (plural) nodes, as they represent the same concept. Either merge these nodes or create an 'is_a' or 'equivalent_to' relationship between them.",
+      "severity": "medium",
+      "metadata": {}
+    },
+    {
+      "issue_type": "Missing connection",
+      "involved_elements": [
+        "Node ID: 4575c779-69b1-451b-9f3a-eecd1fdf7ccc (Entity Resolution)",
+        "Node ID: ac72b330-16e1-4ad0-aab7-6bf8fb651f16 (Entity Linking)"
+      ],
+      "proposed_solution": "The attribute of Entity Linking states it's 'related_to: Entity Resolution', but there's no edge connecting these nodes. Add a 'related_to' edge between Entity Linking and Entity Resolution.",
+      "severity": "medium",
+      "metadata": {}
+    },
+    {
+      "issue_type": "Missing connection",
+      "involved_elements": [
+        "Node ID: a8151150-541f-4882-b554-9ee90ff26b46 (Information Extraction)",
+        "Node ID: 7fbc590d-5348-41a6-b6dd-4715c45af479 (Knowledge Graph)"
+      ],
+      "proposed_solution": "Knowledge Graph has an attribute 'relationship: target for integration of extracted information', but there's no direct edge connecting Information Extraction to Knowledge Graph. Add a relationship to represent this integration.",
+      "severity": "medium",
+      "metadata": {}
+    }
+  ],
+  "is_valid": false,
+  "metadata": {
+    "rule_checks_completed": true,
+    "llm_verification_completed": true
+  }
+}

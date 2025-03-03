@@ -1,0 +1,207 @@
+{
+  "segments": {
+    "segments": [
+      {
+        "id": "f1fdea5b-87d9-45c8-8ca6-bb0ed91e8050",
+        "text": "Knowledge Graph Construction",
+        "segment_type": "section",
+        "level": 0,
+        "title": null,
+        "parent_id": null,
+        "children_ids": [
+          "47cbf5c8-db34-4860-8a0c-94d4f2b9fb27",
+          "1e295628-837a-49a4-9c68-94d81f651484",
+          "2f872364-7bec-4360-8643-d8ee9b0b7d82"
+        ],
+        "metadata": {
+          "position": {
+            "start": 0,
+            "end": 31
+          }
+        },
+        "children": [
+          {
+            "id": "47cbf5c8-db34-4860-8a0c-94d4f2b9fb27",
+            "text": "Building a knowledge graph involves several key steps. Entity extraction identifies important concepts, objects, or individuals mentioned in the text. Relationship extraction determines how these entities are connected. Entity resolution ensures different mentions of the same entity are properly linked. Knowledge integration combines the extracted information with existing knowledge bases.",
+            "segment_type": "block",
+            "level": 1,
+            "title": null,
+            "parent_id": "f1fdea5b-87d9-45c8-8ca6-bb0ed91e8050",
+            "children_ids": [],
+            "metadata": {
+              "position": {
+                "start": 32,
+                "end": 369
+              }
+            }
+          },
+          {
+            "id": "1e295628-837a-49a4-9c68-94d81f651484",
+            "text": "Various techniques are used in knowledge extraction. Rule-based approaches define patterns to recognize entities and relationships. Machine learning methods use statistical models trained on labeled data. Deep learning approaches like BERT and GPT provide advanced natural language understanding capabilities.",
+            "segment_type": "block",
+            "level": 1,
+            "title": null,
+            "parent_id": "f1fdea5b-87d9-45c8-8ca6-bb0ed91e8050",
+            "children_ids": [],
+            "metadata": {
+              "position": {
+                "start": 370,
+                "end": 660
+              }
+            }
+          },
+          {
+            "id": "2f872364-7bec-4360-8643-d8ee9b0b7d82",
+            "text": "Common challenges include handling ambiguity, scaling to large datasets, and maintaining consistency. In particular, overfitting in machine learning models can lead to poor generalization.",
+            "segment_type": "block",
+            "level": 1,
+            "title": null,
+            "parent_id": "f1fdea5b-87d9-45c8-8ca6-bb0ed91e8050",
+            "children_ids": [],
+            "metadata": {
+              "position": {
+                "start": 661,
+                "end": 836
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "68a032a4-8f10-4f38-ae69-8c24c539ab4d",
+        "text": "Key concepts in AI include artificial intelligence, machine learning, and neural networks. These form a hierarchy where neural networks are a type of machine learning technique, which is itself a branch of artificial intelligence.",
+        "segment_type": "section",
+        "level": 0,
+        "title": null,
+        "parent_id": null,
+        "children_ids": [],
+        "metadata": {
+          "position": {
+            "start": 837,
+            "end": 1058
+          }
+        }
+      }
+    ]
+  },
+  "summaries": {
+    "f1fdea5b-87d9-45c8-8ca6-bb0ed91e8050": {
+      "summary": "Knowledge Graph Construction involves the process of building structured representations of knowledge that connect entities and their relationships. This section likely outlines methodologies, challenges, and techniques for creating knowledge graphs from various data sources.",
+      "key_points": [
+        "Explains the process of transforming raw data into structured knowledge graphs",
+        "Likely covers entity extraction, relationship identification, and ontology development",
+        "Addresses techniques for integrating multiple data sources into a unified knowledge graph",
+        "Discusses validation and quality assurance methods for knowledge graph construction"
+      ],
+      "role": "methodology",
+      "keywords": [
+        "knowledge graph",
+        "entity extraction",
+        "ontology",
+        "data integration",
+        "semantic relationships"
+      ],
+      "segment_id": "f1fdea5b-87d9-45c8-8ca6-bb0ed91e8050",
+      "segment_type": "section",
+      "language": "en",
+      "timestamp": 1741010568.398273
+    },
+    "47cbf5c8-db34-4860-8a0c-94d4f2b9fb27": {
+      "summary": "Building a knowledge graph involves entity extraction, relationship extraction, entity resolution, and knowledge integration as key steps in the process.",
+      "key_points": [
+        "Entity extraction identifies important concepts, objects, or individuals in text",
+        "Relationship extraction determines connections between entities",
+        "Entity resolution links different mentions of the same entity",
+        "Knowledge integration combines extracted information with existing knowledge bases"
+      ],
+      "role": "explanation",
+      "keywords": [
+        "knowledge graph",
+        "entity extraction",
+        "relationship extraction",
+        "entity resolution",
+        "knowledge integration"
+      ],
+      "segment_id": "47cbf5c8-db34-4860-8a0c-94d4f2b9fb27",
+      "segment_type": "block",
+      "language": "en",
+      "timestamp": 1741010571.098387
+    },
+    "1e295628-837a-49a4-9c68-94d81f651484": {
+      "summary": "This text segment outlines the primary techniques used in knowledge extraction, including rule-based approaches, machine learning methods, and deep learning models.",
+      "key_points": [
+        "Rule-based approaches use defined patterns to identify entities and relationships",
+        "Machine learning methods rely on statistical models trained with labeled data",
+        "Advanced deep learning models like BERT and GPT offer sophisticated natural language understanding",
+        "Knowledge extraction employs a spectrum of techniques from manual pattern definition to complex neural networks"
+      ],
+      "role": "explanation",
+      "keywords": [
+        "knowledge extraction",
+        "rule-based approaches",
+        "machine learning",
+        "deep learning",
+        "natural language understanding"
+      ],
+      "segment_id": "1e295628-837a-49a4-9c68-94d81f651484",
+      "segment_type": "block",
+      "language": "en",
+      "timestamp": 1741010574.824946
+    },
+    "2f872364-7bec-4360-8643-d8ee9b0b7d82": {
+      "summary": "This text segment outlines common challenges in machine learning, highlighting issues like ambiguity, scalability, consistency, and specifically noting overfitting as a problem for generalization.",
+      "key_points": [
+        "Handling ambiguity is a significant challenge in machine learning",
+        "Scaling to large datasets presents difficulties",
+        "Maintaining consistency across models is problematic",
+        "Overfitting specifically leads to poor generalization performance"
+      ],
+      "role": "explanation",
+      "keywords": [
+        "overfitting",
+        "generalization",
+        "ambiguity",
+        "scalability",
+        "consistency"
+      ],
+      "segment_id": "2f872364-7bec-4360-8643-d8ee9b0b7d82",
+      "segment_type": "block",
+      "language": "en",
+      "timestamp": 1741010577.930026
+    },
+    "68a032a4-8f10-4f38-ae69-8c24c539ab4d": {
+      "summary": "This section explains the hierarchical relationship between key AI concepts, showing that neural networks are a subset of machine learning, which is itself a subset of artificial intelligence.",
+      "key_points": [
+        "Artificial intelligence, machine learning, and neural networks are key concepts in AI",
+        "These concepts form a hierarchical structure",
+        "Neural networks are a specific type of machine learning technique",
+        "Machine learning is a branch of the broader field of artificial intelligence"
+      ],
+      "role": "definition",
+      "keywords": [
+        "artificial intelligence",
+        "machine learning",
+        "neural networks",
+        "hierarchy",
+        "AI concepts"
+      ],
+      "segment_id": "68a032a4-8f10-4f38-ae69-8c24c539ab4d",
+      "segment_type": "section",
+      "language": "en",
+      "timestamp": 1741010581.0573592
+    }
+  },
+  "metadata": {
+    "language": "en",
+    "text_length": 1151,
+    "segment_count": 5,
+    "summary_count": 5,
+    "timing": {
+      "text_loading": 0.15878987312316895,
+      "segmentation": 5.861665964126587,
+      "summarization": 16.634176015853882,
+      "overall": 22.65657615661621
+    },
+    "process_date": 1741010581.058818
+  }
+}

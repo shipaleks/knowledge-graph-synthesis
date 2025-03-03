@@ -211,6 +211,59 @@ class SegmentationResult:
         indent = 2 if pretty else None
         return json.dumps(hierarchy, ensure_ascii=False, indent=indent)
     
+    @classmethod
+    def from_dict(cls, data: Dict[str, Any]) -> 'SegmentationResult':
+        """
+        Create a segmentation result from a dictionary.
+        
+        Args:
+            data: Dictionary representation of the segmentation result
+            
+        Returns:
+            SegmentationResult: New segmentation result instance
+        """
+        result = cls()
+        
+        # Helper function to recursively process segments
+        def process_segment(segment_data: Dict[str, Any]) -> None:
+            # Create segment from data
+            segment = Segment.from_dict(segment_data)
+            result.add_segment(segment)
+            
+            # Process children if any
+            for child_data in segment_data.get("children", []):
+                child = Segment.from_dict(child_data)
+                child.parent_id = segment.id
+                segment.add_child(child.id)
+                result.add_segment(child)
+                
+                # Process nested children recursively
+                if "children" in child_data:
+                    for grandchild_data in child_data["children"]:
+                        process_segment_with_parent(grandchild_data, child.id)
+        
+        # Helper function to process a segment with a known parent
+        def process_segment_with_parent(segment_data: Dict[str, Any], parent_id: str) -> None:
+            segment = Segment.from_dict(segment_data)
+            segment.parent_id = parent_id
+            result.add_segment(segment)
+            
+            # Add as child to parent
+            parent = result.get_segment(parent_id)
+            if parent:
+                parent.add_child(segment.id)
+            
+            # Process children recursively
+            for child_data in segment_data.get("children", []):
+                process_segment_with_parent(child_data, segment.id)
+        
+        # Process all root segments
+        if "segments" in data:
+            for segment_data in data["segments"]:
+                process_segment(segment_data)
+        
+        return result
+    
     def __len__(self) -> int:
         """
         Get the number of segments.
