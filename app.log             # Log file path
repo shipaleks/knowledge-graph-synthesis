@@ -521,3 +521,62 @@
 2025-03-03 11:49:22,691 - __main__ - INFO - - causes: 1
 2025-03-03 11:49:22,691 - __main__ - INFO - - implements: 2
 2025-03-03 11:49:22,691 - __main__ - INFO - - improves: 6
+2025-03-03 13:40:13,605 - __main__ - INFO - Testing coreference resolution on custom group in en
+2025-03-03 13:40:13,605 - __main__ - INFO - Created 4 test entities
+2025-03-03 13:40:13,605 - __main__ - INFO - Original entities:
+2025-03-03 13:40:13,605 - __main__ - INFO - 1. Artificial Intelligence (Concept, Confidence: 0.95)
+2025-03-03 13:40:13,605 - __main__ - INFO - 2. AI (Concept, Confidence: 0.90)
+2025-03-03 13:40:13,605 - __main__ - INFO - 3. Machine Intelligence (Concept, Confidence: 0.85)
+2025-03-03 13:40:13,605 - __main__ - INFO - 4. Computer Vision (Field, Confidence: 0.90)
+2025-03-03 13:40:13,605 - src.knowledge.coreference_resolver - INFO - Initialized claude provider with model claude-3-7-sonnet-latest
+2025-03-03 13:40:13,621 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 13:40:19,219 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 13:40:19,224 - __main__ - INFO - 
+Identified 1 coreference groups:
+2025-03-03 13:40:19,224 - __main__ - INFO - Group 1:
+2025-03-03 13:40:19,224 - __main__ - INFO -   Canonical name: Artificial Intelligence
+2025-03-03 13:40:19,224 - __main__ - INFO -   Merge decision: True
+2025-03-03 13:40:19,224 - __main__ - INFO -   Reason: These entities refer to the same concept with different names. 'Artificial Intelligence', 'Machine Intelligence', and 'AI' are synonyms that describe the same field of computer science focused on creating systems that mimic human intelligence.
+2025-03-03 13:40:19,224 - __main__ - INFO -   Confidence: 0.90
+2025-03-03 13:40:19,224 - __main__ - INFO -   Entities in group:
+2025-03-03 13:40:19,224 - __main__ - INFO -     1. Artificial Intelligence (Concept)
+2025-03-03 13:40:19,224 - __main__ - INFO -     2. AI (Concept)
+2025-03-03 13:40:19,224 - __main__ - INFO -     3. Machine Intelligence (Concept)
+2025-03-03 13:40:19,226 - __main__ - INFO - Results saved to /Users/shipaleks/Documents/graph_reasoner/output/coreference_custom_en.json
+2025-03-03 13:40:27,456 - __main__ - INFO - Testing coreference resolution in en
+2025-03-03 13:40:27,456 - __main__ - INFO - Created 10 test entities
+2025-03-03 13:40:27,456 - __main__ - INFO - Original entities:
+2025-03-03 13:40:27,456 - __main__ - INFO - 1. Knowledge Graph (Concept, Confidence: 1.00)
+2025-03-03 13:40:27,456 - __main__ - INFO - 2. KG (Concept, Confidence: 0.85)
+2025-03-03 13:40:27,456 - __main__ - INFO - 3. Neural Networks (Technology, Confidence: 0.95)
+2025-03-03 13:40:27,456 - __main__ - INFO - 4. Deep Learning (Technology, Confidence: 0.90)
+2025-03-03 13:40:27,456 - __main__ - INFO - 5. neural net (Technology, Confidence: 0.80)
+2025-03-03 13:40:27,456 - __main__ - INFO - 6. Entity Extraction (Process, Confidence: 0.95)
+2025-03-03 13:40:27,456 - __main__ - INFO - 7. Python (Programming Language, Confidence: 0.90)
+2025-03-03 13:40:27,457 - __main__ - INFO - 8. Python (Animal, Confidence: 0.85)
+2025-03-03 13:40:27,457 - __main__ - INFO - 9. BERT (Technology, Confidence: 0.95)
+2025-03-03 13:40:27,457 - __main__ - INFO - 10. GPT (Technology, Confidence: 0.95)
+2025-03-03 13:40:27,457 - src.knowledge.coreference_resolver - INFO - Resolving coreferences for 10 entities across 5 types
+2025-03-03 13:40:27,457 - src.knowledge.coreference_resolver - INFO - Processing 2 entities of type Concept
+2025-03-03 13:40:27,458 - src.knowledge.coreference_resolver - INFO - Processing 5 entities of type Technology
+2025-03-03 13:40:27,458 - src.knowledge.coreference_resolver - INFO - Initialized claude provider with model claude-3-7-sonnet-latest
+2025-03-03 13:40:27,468 - src.llm.claude_provider - INFO - Claude provider initialized with model: claude-3-7-sonnet-latest
+2025-03-03 13:40:30,903 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-03 13:40:30,907 - src.knowledge.coreference_resolver - INFO - Processing 1 entities of type Process
+2025-03-03 13:40:30,907 - src.knowledge.coreference_resolver - INFO - Processing 1 entities of type Programming Language
+2025-03-03 13:40:30,907 - src.knowledge.coreference_resolver - INFO - Processing 1 entities of type Animal
+2025-03-03 13:40:30,908 - src.knowledge.coreference_resolver - INFO - Coreference resolution complete. Original entities: 10, Resolved entities: 9
+2025-03-03 13:40:30,908 - __main__ - INFO - 
+Resolved entities: 9 (from 10 original)
+2025-03-03 13:40:30,908 - __main__ - INFO - 1. Knowledge Graph (Concept, Confidence: 1.00)
+2025-03-03 13:40:30,908 - __main__ - INFO - 2. KG (Concept, Confidence: 0.85)
+2025-03-03 13:40:30,908 - __main__ - INFO - 3. Neural Networks (Technology, Confidence: 0.95)
+2025-03-03 13:40:30,908 - __main__ - INFO -    Merged from: neural net, Neural Networks
+2025-03-03 13:40:30,908 - __main__ - INFO -    Confidence: 0.95
+2025-03-03 13:40:30,908 - __main__ - INFO - 4. Deep Learning (Technology, Confidence: 0.90)
+2025-03-03 13:40:30,908 - __main__ - INFO - 5. BERT (Technology, Confidence: 0.95)
+2025-03-03 13:40:30,908 - __main__ - INFO - 6. GPT (Technology, Confidence: 0.95)
+2025-03-03 13:40:30,908 - __main__ - INFO - 7. Entity Extraction (Process, Confidence: 0.95)
+2025-03-03 13:40:30,908 - __main__ - INFO - 8. Python (Programming Language, Confidence: 0.90)
+2025-03-03 13:40:30,908 - __main__ - INFO - 9. Python (Animal, Confidence: 0.85)
+2025-03-03 13:40:30,909 - __main__ - INFO - Results saved to /Users/shipaleks/Documents/graph_reasoner/output/coreference_en.json
