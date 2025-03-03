@@ -17,6 +17,10 @@ from src.graph_management.graph_reasoning import (
     GraphReasoning, reason_over_paths, detect_graph_conflicts,
     resolve_graph_conflicts, infer_new_knowledge
 )
+from src.graph_management.graph_visualizer import (
+    GraphVisualizer, visualize_graph, visualize_subgraph,
+    visualize_path, visualize_filtered_graph
+)
 
 __all__ = [
     'KnowledgeGraph',
@@ -33,5 +37,10 @@ __all__ = [
     'reason_over_paths',
     'detect_graph_conflicts',
     'resolve_graph_conflicts',
-    'infer_new_knowledge'
+    'infer_new_knowledge',
+    'GraphVisualizer',
+    'visualize_graph',
+    'visualize_subgraph',
+    'visualize_path',
+    'visualize_filtered_graph'
 ]

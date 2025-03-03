@@ -141,7 +141,7 @@ This document outlines the step-by-step implementation plan for the Knowledge Gr
 - Integrate with PyVis
 - Add customization options
 - Create interactive HTML output
-- Status: TO-DO
+- Status: DONE
 
 ### Step 20: Complete Graph Management
 - Integrate creation, storage, and querying

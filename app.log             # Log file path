@@ -1578,3 +1578,98 @@ Resolved entities: 9 (from 10 original)
 2025-03-03 18:06:01,204 - src.graph_management.graph - WARNING - Relationship rel_contradictory2 does not exist in the graph
 2025-03-03 18:06:01,204 - src.graph_management.graph - WARNING - Relationship rel_contradictory2 does not exist in the graph
 2025-03-03 18:06:56,967 - src.graph_management.graph - WARNING - Relationship rel_contradiction does not exist in the graph
+2025-03-03 18:20:45,056 - src.graph_management.graph_visualizer - ERROR - Error creating visualization: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-03 18:20:45,056 - src.utils.result - ERROR - Failed to create visualization: Expecting property name enclosed in double quotes: line 1 column 2 (char 1) 
+2025-03-03 18:20:45,056 - src.graph_management.graph_visualizer - ERROR - Error creating visualization: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-03 18:20:45,056 - src.utils.result - ERROR - Failed to create visualization: Expecting property name enclosed in double quotes: line 1 column 2 (char 1) 
+2025-03-03 18:20:45,057 - src.graph_management.graph_visualizer - ERROR - Error creating visualization: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-03 18:20:45,057 - src.utils.result - ERROR - Failed to create visualization: Expecting property name enclosed in double quotes: line 1 column 2 (char 1) 
+2025-03-03 18:20:45,057 - src.graph_management.graph_visualizer - ERROR - Error creating visualization: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-03 18:20:45,057 - src.utils.result - ERROR - Failed to create visualization: Expecting property name enclosed in double quotes: line 1 column 2 (char 1) 
+2025-03-03 18:20:45,057 - src.graph_management.graph_visualizer - ERROR - Error creating visualization: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-03 18:20:45,057 - src.utils.result - ERROR - Failed to create visualization: Expecting property name enclosed in double quotes: line 1 column 2 (char 1) 
+2025-03-03 18:20:45,057 - src.graph_management.graph_visualizer - ERROR - Error creating visualization: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-03 18:20:45,057 - src.utils.result - ERROR - Failed to create visualization: Expecting property name enclosed in double quotes: line 1 column 2 (char 1) 
+2025-03-03 18:20:45,058 - src.graph_management.graph_visualizer - ERROR - Error creating visualization: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-03 18:20:45,058 - src.utils.result - ERROR - Failed to create visualization: Expecting property name enclosed in double quotes: line 1 column 2 (char 1) 
+2025-03-03 18:20:45,058 - src.graph_management.graph_visualizer - ERROR - Error creating visualization: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-03 18:20:45,058 - src.utils.result - ERROR - Failed to create visualization: Expecting property name enclosed in double quotes: line 1 column 2 (char 1) 
+2025-03-03 18:20:45,058 - src.graph_management.graph_visualizer - ERROR - Error creating visualization: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-03 18:20:45,058 - src.utils.result - ERROR - Failed to create visualization: Expecting property name enclosed in double quotes: line 1 column 2 (char 1) 
+2025-03-03 18:20:45,058 - src.graph_management.graph_visualizer - ERROR - Error creating visualization: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-03 18:20:45,058 - src.utils.result - ERROR - Failed to create visualization: Expecting property name enclosed in double quotes: line 1 column 2 (char 1) 
+2025-03-03 18:20:45,058 - src.graph_management.graph_visualizer - ERROR - Error creating visualization: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-03 18:20:45,058 - src.utils.result - ERROR - Failed to create visualization: Expecting property name enclosed in double quotes: line 1 column 2 (char 1) 
+2025-03-03 18:20:45,058 - src.graph_management.graph_visualizer - ERROR - Error highlighting path: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-03 18:20:45,059 - src.utils.result - ERROR - Failed to highlight path: Expecting property name enclosed in double quotes: line 1 column 2 (char 1) 
+2025-03-03 18:20:45,059 - src.graph_management.graph_visualizer - ERROR - Error creating visualization: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-03 18:20:45,059 - src.utils.result - ERROR - Failed to create visualization: Expecting property name enclosed in double quotes: line 1 column 2 (char 1) 
+2025-03-03 18:20:45,059 - src.graph_management.graph_visualizer - ERROR - Error highlighting entities: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-03 18:20:45,059 - src.utils.result - ERROR - Failed to highlight entities: Expecting property name enclosed in double quotes: line 1 column 2 (char 1) 
+2025-03-03 18:20:45,059 - src.graph_management.graph_visualizer - ERROR - Error creating visualization: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-03 18:20:45,059 - src.utils.result - ERROR - Failed to create visualization: Expecting property name enclosed in double quotes: line 1 column 2 (char 1) 
+2025-03-03 18:20:45,059 - src.graph_management.graph_visualizer - ERROR - Error highlighting entities: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-03 18:20:45,059 - src.utils.result - ERROR - Failed to highlight entities: Expecting property name enclosed in double quotes: line 1 column 2 (char 1) 
+2025-03-03 18:20:45,059 - src.graph_management.graph_visualizer - ERROR - Error creating visualization: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-03 18:20:45,059 - src.utils.result - ERROR - Failed to create visualization: Expecting property name enclosed in double quotes: line 1 column 2 (char 1) 
+2025-03-03 18:24:24,132 - src.graph_management.graph_visualizer - INFO - Visualization saved to output/demos/visualizations/basic_visualization.html
+2025-03-03 18:24:24,139 - src.graph_management.graph_visualizer - INFO - Visualization saved to output/demos/visualizations/default_visualization.html
+2025-03-03 18:24:24,145 - src.graph_management.graph_visualizer - INFO - Visualization saved to output/demos/visualizations/pastel_visualization.html
+2025-03-03 18:24:24,153 - src.graph_management.graph_visualizer - INFO - Visualization saved to output/demos/visualizations/grayscale_visualization.html
+2025-03-03 18:24:24,160 - src.graph_management.graph_visualizer - INFO - Visualization saved to output/demos/visualizations/person_skill_visualization.html
+2025-03-03 18:24:24,168 - src.graph_management.graph_visualizer - INFO - Visualization saved to output/demos/visualizations/work_relationships_visualization.html
+2025-03-03 18:24:24,174 - src.graph_management.graph_visualizer - INFO - Visualization saved to output/demos/visualizations/high_confidence_visualization.html
+2025-03-03 18:24:24,181 - src.graph_management.graph_visualizer - INFO - Visualization saved to output/demos/visualizations/person1_subgraph.html
+2025-03-03 18:24:24,188 - src.graph_management.graph_visualizer - INFO - Visualization saved to output/demos/visualizations/project1_subgraph.html
+2025-03-03 18:24:24,194 - src.graph_management.graph_visualizer - INFO - Visualization saved to output/demos/visualizations/person1_to_person3_path.html
+2025-03-03 18:24:24,202 - src.graph_management.graph_visualizer - INFO - Visualization saved to output/demos/visualizations/custom_path_visualization.html
+2025-03-03 18:24:24,209 - src.graph_management.graph_visualizer - INFO - Visualization saved to output/demos/visualizations/highlighted_persons.html
+2025-03-03 18:24:24,215 - src.graph_management.graph_visualizer - INFO - Visualization saved to output/demos/visualizations/highlighted_high_confidence.html
+2025-03-03 18:26:36,482 - src.graph_management.graph_visualizer - ERROR - Error saving visualization: 'dict' object has no attribute 'enabled'
+2025-03-03 18:26:36,483 - src.utils.result - ERROR - Failed to save visualization: 'dict' object has no attribute 'enabled' 
+2025-03-03 18:26:36,489 - src.graph_management.graph_visualizer - ERROR - Error saving visualization: 'dict' object has no attribute 'enabled'
+2025-03-03 18:26:36,489 - src.utils.result - ERROR - Failed to save visualization: 'dict' object has no attribute 'enabled' 
+2025-03-03 18:26:36,495 - src.graph_management.graph_visualizer - ERROR - Error saving visualization: 'dict' object has no attribute 'enabled'
+2025-03-03 18:26:36,495 - src.utils.result - ERROR - Failed to save visualization: 'dict' object has no attribute 'enabled' 
+2025-03-03 18:26:36,502 - src.graph_management.graph_visualizer - ERROR - Error saving visualization: 'dict' object has no attribute 'enabled'
+2025-03-03 18:26:36,502 - src.utils.result - ERROR - Failed to save visualization: 'dict' object has no attribute 'enabled' 
+2025-03-03 18:26:36,508 - src.graph_management.graph_visualizer - ERROR - Error saving visualization: 'dict' object has no attribute 'enabled'
+2025-03-03 18:26:36,508 - src.utils.result - ERROR - Failed to save visualization: 'dict' object has no attribute 'enabled' 
+2025-03-03 18:26:36,514 - src.graph_management.graph_visualizer - ERROR - Error saving visualization: 'dict' object has no attribute 'enabled'
+2025-03-03 18:26:36,514 - src.utils.result - ERROR - Failed to save visualization: 'dict' object has no attribute 'enabled' 
+2025-03-03 18:26:36,520 - src.graph_management.graph_visualizer - ERROR - Error saving visualization: 'dict' object has no attribute 'enabled'
+2025-03-03 18:26:36,520 - src.utils.result - ERROR - Failed to save visualization: 'dict' object has no attribute 'enabled' 
+2025-03-03 18:26:36,527 - src.graph_management.graph_visualizer - ERROR - Error saving visualization: 'dict' object has no attribute 'enabled'
+2025-03-03 18:26:36,527 - src.utils.result - ERROR - Failed to save visualization: 'dict' object has no attribute 'enabled' 
+2025-03-03 18:26:36,537 - src.graph_management.graph_visualizer - ERROR - Error saving visualization: 'dict' object has no attribute 'enabled'
+2025-03-03 18:26:36,539 - src.utils.result - ERROR - Failed to save visualization: 'dict' object has no attribute 'enabled' 
+2025-03-03 18:26:36,546 - src.graph_management.graph_visualizer - ERROR - Error saving visualization: 'dict' object has no attribute 'enabled'
+2025-03-03 18:26:36,547 - src.utils.result - ERROR - Failed to save visualization: 'dict' object has no attribute 'enabled' 
+2025-03-03 18:26:36,553 - src.graph_management.graph_visualizer - ERROR - Error saving visualization: 'dict' object has no attribute 'enabled'
+2025-03-03 18:26:36,553 - src.utils.result - ERROR - Failed to save visualization: 'dict' object has no attribute 'enabled' 
+2025-03-03 18:26:36,559 - src.graph_management.graph_visualizer - ERROR - Error saving visualization: 'dict' object has no attribute 'enabled'
+2025-03-03 18:26:36,559 - src.utils.result - ERROR - Failed to save visualization: 'dict' object has no attribute 'enabled' 
+2025-03-03 18:26:36,565 - src.graph_management.graph_visualizer - ERROR - Error saving visualization: 'dict' object has no attribute 'enabled'
+2025-03-03 18:26:36,565 - src.utils.result - ERROR - Failed to save visualization: 'dict' object has no attribute 'enabled' 
+2025-03-03 18:26:36,571 - src.graph_management.graph_visualizer - ERROR - Error saving visualization: 'dict' object has no attribute 'enabled'
+2025-03-03 18:26:36,571 - src.utils.result - ERROR - Failed to save visualization: 'dict' object has no attribute 'enabled' 
+2025-03-03 18:29:02,223 - src.graph_management.graph_visualizer - INFO - Visualization saved to output/demos/visualizations/basic_visualization.html
+2025-03-03 18:29:02,230 - src.graph_management.graph_visualizer - INFO - Visualization saved to output/demos/visualizations/default_visualization.html
+2025-03-03 18:29:02,237 - src.graph_management.graph_visualizer - INFO - Visualization saved to output/demos/visualizations/pastel_visualization.html
+2025-03-03 18:29:02,244 - src.graph_management.graph_visualizer - INFO - Visualization saved to output/demos/visualizations/grayscale_visualization.html
+2025-03-03 18:29:02,252 - src.graph_management.graph_visualizer - INFO - Visualization saved to output/demos/visualizations/person_skill_visualization.html
+2025-03-03 18:29:02,259 - src.graph_management.graph_visualizer - INFO - Visualization saved to output/demos/visualizations/work_relationships_visualization.html
+2025-03-03 18:29:02,266 - src.graph_management.graph_visualizer - INFO - Visualization saved to output/demos/visualizations/high_confidence_visualization.html
+2025-03-03 18:29:02,273 - src.graph_management.graph_visualizer - INFO - Visualization saved to output/demos/visualizations/person1_subgraph.html
+2025-03-03 18:29:02,280 - src.graph_management.graph_visualizer - INFO - Visualization saved to output/demos/visualizations/project1_subgraph.html
+2025-03-03 18:29:02,286 - src.graph_management.graph_visualizer - INFO - Visualization saved to output/demos/visualizations/person1_to_person3_path.html
+2025-03-03 18:29:12,691 - src.graph_management.graph_visualizer - INFO - Visualization saved to output/tests/visualizations/filtered_graph.html
+2025-03-03 18:29:12,698 - src.graph_management.graph_visualizer - INFO - Visualization saved to output/tests/visualizations/test_graph.html
+2025-03-03 18:29:12,704 - src.graph_management.graph_visualizer - INFO - Visualization saved to output/tests/visualizations/filtered_graph_helper.html
+2025-03-03 18:29:12,711 - src.graph_management.graph_visualizer - INFO - Visualization saved to output/tests/visualizations/helper_test.html
+2025-03-03 18:29:12,717 - src.graph_management.graph_visualizer - INFO - Visualization saved to output/tests/visualizations/subgraph_test.html
+2025-03-03 18:29:52,236 - src.graph_management.graph_visualizer - INFO - Visualization saved to output/tests/visualizations/filtered_graph.html
+2025-03-03 18:29:52,243 - src.graph_management.graph_visualizer - INFO - Visualization saved to output/tests/visualizations/test_graph.html
+2025-03-03 18:29:52,249 - src.graph_management.graph_visualizer - INFO - Visualization saved to output/tests/visualizations/filtered_graph_helper.html
+2025-03-03 18:29:52,256 - src.graph_management.graph_visualizer - INFO - Visualization saved to output/tests/visualizations/helper_test.html
+2025-03-03 18:29:52,262 - src.graph_management.graph_visualizer - INFO - Visualization saved to output/tests/visualizations/subgraph_test.html
