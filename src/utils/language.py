@@ -98,6 +98,21 @@ def is_supported_language(lang_code: str) -> bool:
     return lang_code.lower() in SUPPORTED_LANGUAGES
 
 
+def is_language_supported(lang_code: str) -> bool:
+    """
+    Проверяет, поддерживается ли язык системой для полной обработки.
+    
+    Alias для is_supported_language для более логичного именования.
+    
+    Args:
+        lang_code (str): Код языка
+        
+    Returns:
+        bool: True, если язык поддерживается, иначе False
+    """
+    return is_supported_language(lang_code)
+
+
 def get_prompt_for_language(lang_code: str, prompt_key: str, prompt_dict: Dict[str, Dict[str, str]]) -> Result[str]:
     """
     Возвращает промпт для указанного языка и ключа.
